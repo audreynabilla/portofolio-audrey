@@ -1,0 +1,429 @@
+{
+  "name": "Audrey Nabilla Laksono",
+  "nim": "A12.2024.07171",
+  "program": "S1 Sistem Informasi",
+  "university": "Universitas Dian Nuswantoro (UDINUS) Semarang",
+  "status": "Semester 5 Aktif · Kelas Unggulan",
+  "tagline": "Menyelaraskan kebutuhan manusia, proses bisnis, dan rekayasa kode ke dalam aplikasi web berarsitektur MVC, riset UI/UX tervalidasi statistik, tata kelola enterprise, serta analitika data.",
+  "email": "112202407171@mhs.dinus.ac.id",
+  "github": "https://github.com/audreynabilla",
+  "github_handle": "audreynabilla",
+  "location": "Semarang, Jawa Tengah, Indonesia",
+  "pillars": [
+    {
+      "num": "01",
+      "title": "Rekayasa Perangkat Lunak Web",
+      "courses": "PWD · PWL · Konsep Basis Data · CRM",
+      "desc": "Merancang dan mengimplementasikan aplikasi web dari skema relasional MySQL hingga antarmuka pengguna. Berbasis PHP Native OOP dengan pemisahan Model-View-Controller (MVC), abstraksi basis data PDO, autentikasi sesi dengan hashing kata sandi, serta penyediaan endpoint JSON RESTful API.",
+      "stack": [
+        "PHP 7.4+ OOP",
+        "Custom MVC",
+        "MySQL / MariaDB PDO",
+        "RESTful JSON API",
+        "Apache .htaccess"
+      ]
+    },
+    {
+      "num": "02",
+      "title": "Analisis Sistem, Proses Bisnis & UI/UX",
+      "courses": "APST · APSIO · IMK · Literasi Informasi",
+      "desc": "Menganalisis kebutuhan fungsional dan operasional organisasi, memodelkan alur kerja sistem menggunakan BPMN 2.0 dan UML komprehensif, serta merancang antarmuka berbasis User-Centered Design (UCD) yang divalidasi statistik dengan System Usability Scale (SUS) dan 10 Heuristik Nielsen.",
+      "stack": [
+        "BPMN 2.0 (Bizagi)",
+        "UML Suite",
+        "UCD Framework",
+        "Heuristic Evaluation",
+        "SUS Testing",
+        "IBM SPSS"
+      ]
+    },
+    {
+      "num": "03",
+      "title": "Sains Data, Statistika & Riset Operasi",
+      "courses": "Statistika Bisnis · Riset Operasi · Analitika Data · Data Mining",
+      "desc": "Mengolah dataset bisnis dan operasional melalui teknik clustering, klasifikasi, optimasi alokasi sumber daya dengan Linear Programming (Simplex), serta pemodelan rantai pasok berbasis SCOR. Menerjemahkan data mentah menjadi keputusan terukur.",
+      "stack": [
+        "Data Mining",
+        "Cluster Analysis",
+        "Linear Programming",
+        "SCOR Framework",
+        "Statistika Inferensial"
+      ]
+    },
+    {
+      "num": "04",
+      "title": "Tata Kelola TI, Audit & Enterprise",
+      "courses": "IT Governance · Audit SI · TKMLTI · Manajemen Inovasi",
+      "desc": "Mengevaluasi keselarasan strategi bisnis dan TI menggunakan kerangka kerja COBIT 2019, merancang katalog layanan dan Service Level Agreement berbasis ITIL v4, serta menilai kepatuhan dan risiko keamanan informasi merujuk pada standar ISO/IEC 27001 dan COSO.",
+      "stack": [
+        "COBIT 2019",
+        "ITIL v4",
+        "ISO/IEC 27001",
+        "COSO Internal Control",
+        "ERP Odoo",
+        "Ward & Peppard"
+      ]
+    }
+  ],
+  "courses_sem5": [
+    {
+      "name": "Penambangan Data (Data Mining)",
+      "code": "A12.6501",
+      "focus": "Clustering, Algoritma K-Means, Asosiasi Apriori, Klasifikasi Decision Tree"
+    },
+    {
+      "name": "Analitika Data",
+      "code": "A12.6502",
+      "focus": "Pemodelan Prediktif, Visualisasi Data Lanjut, Analisis Tren Bisnis"
+    },
+    {
+      "name": "Audit Sistem Informasi",
+      "code": "A12.6503",
+      "focus": "COBIT 2019, Struktur Pengendalian Internal COSO, Identifikasi Risiko TI & Kontrol"
+    },
+    {
+      "name": "Sistem Pendukung Keputusan (SPK)",
+      "code": "A12.6504",
+      "focus": "Metode AHP, TOPSIS, SAW, Promethee untuk Seleksi Multi-Kriteria"
+    },
+    {
+      "name": "Implementasi & Pengujian Sistem",
+      "code": "A12.6505",
+      "focus": "Black Box Testing, White Box (Cyclomatic Complexity), UAT, Quality Assurance"
+    },
+    {
+      "name": "Kecerdasan Buatan (AI)",
+      "code": "A12.6506",
+      "focus": "Pencarian Jalur Heuristik, Knowledge Representation, Neural Networks Dasar"
+    },
+    {
+      "name": "Sistem Informasi Akuntansi (SIA)",
+      "code": "A12.6507",
+      "focus": "Siklus Pendapatan & Pengeluaran, Audit Trail Transaksi Finansial"
+    },
+    {
+      "name": "Keamanan Sistem Informasi",
+      "code": "A12.6508",
+      "focus": "CIA Triad, Kriptografi, CISSP Domain 1–8, Manajemen Insiden & Kerentanan"
+    }
+  ],
+  "projects": [
+    {
+      "id": "pawspa",
+      "num": "01",
+      "category": "web",
+      "category_label": "Aplikasi Web & REST API",
+      "title": "PawSpa — Sistem Reservasi & Manajemen Layanan Grooming Hewan",
+      "context": "Pemrograman Web Lanjut (Semester 4) · Proyek Akhir Kelompok 7",
+      "desc": "Aplikasi web reservasi perawatan hewan peliharaan (anjing dan kucing) yang dibangun menggunakan arsitektur Model-View-Controller (MVC) dengan PHP Native OOP dan MySQL. Mendukung alur lengkap dua peran: pelanggan dapat memilih paket layanan, mengunggah foto hewan serta bukti transfer pembayaran, dan memantau status reservasi secara real-time; administrator mengelola katalog paket, memverifikasi bukti transaksi, dan memantau laporan layanan.",
+      "stack": [
+        "PHP 7.4+ OOP",
+        "Custom MVC",
+        "MySQL / MariaDB",
+        "Apache .htaccess Rewrite",
+        "Multi-Role Auth"
+      ],
+      "github": "https://github.com/audreynabilla/UAS-kelompok-7",
+      "demo": null
+    },
+    {
+      "id": "pwl-crud",
+      "num": "02",
+      "category": "web",
+      "category_label": "Aplikasi Web & REST API",
+      "title": "Sistem Manajemen Inventaris Berbasis MVC & Layanan RESTful JSON API",
+      "context": "Pemrograman Web Lanjut (Semester 4) · Proyek Individu (A12.2024.07171)",
+      "desc": "Sistem inventaris terstruktur dengan arsitektur MVC murni berbasis PHP PDO. Mengintegrasikan lapisan RESTful API JSON lengkap (GET, POST, PUT, DELETE) untuk interoperabilitas antar-aplikasi, SecurityHelper untuk sanitasi XSS/CSRF, serta hashing password menggunakan algoritma BCRYPT.",
+      "stack": [
+        "PHP PDO",
+        "Arsitektur MVC",
+        "RESTful JSON API",
+        "SecurityHelper Sanitizer",
+        "Bcrypt Hashing"
+      ],
+      "github": "https://github.com/audreynabilla/pwl-crud-07171",
+      "demo": "https://youtu.be/afBZMuH899g"
+    },
+    {
+      "id": "djuara-coffee",
+      "num": "03",
+      "category": "web",
+      "category_label": "Aplikasi Web & REST API",
+      "title": "Sistem Informasi CRM & Kasir Multi-Cabang pada Djuara Coffee",
+      "context": "Pengelolaan Hubungan Pelanggan / CRM (Semester 3 — Kelas Unggulan)",
+      "desc": "Rancang bangun sistem CRM dan Point of Sale (POS) untuk jaringan kedai kopi dengan 4 outlet cabang. Mengelola database pelanggan terpusat, engine perhitungan poin loyalitas otomatis berdasarkan tier pembelanjaan, pencatatan transaksi kasir harian, serta perancangan skema relasional ERD dan sequence diagram alur transaksi.",
+      "stack": [
+        "PHP Native",
+        "MySQL Relational",
+        "Multi-Branch POS",
+        "Loyalty Points Engine",
+        "ERD & Sequence Modeling"
+      ],
+      "github": null,
+      "demo": null
+    },
+    {
+      "id": "penjualan-multimodul",
+      "num": "04",
+      "category": "web",
+      "category_label": "Aplikasi Web & REST API",
+      "title": "Aplikasi Web Manajemen Penjualan, Pegawai, Kategori & Supplier",
+      "context": "Pemrograman Web Dasar (Semester 3) · Proyek Individu (penjualan_7171baru)",
+      "desc": "Aplikasi web operasional ritel berbasis PHP dan MySQL yang menghubungkan 4 modul CRUD relasional yang saling berelasi: transaksi penjualan kasir, master data supplier, manajemen pegawai, dan kategori produk. Dilengkapi validasi form sisi server dan antarmuka responsif.",
+      "stack": [
+        "PHP & MySQL",
+        "4 Modul CRUD Relasional",
+        "HTML5 / CSS3 / Vanilla JS",
+        "Bootstrap 5 Components"
+      ],
+      "github": null,
+      "demo": null
+    },
+    {
+      "id": "pt-alkes",
+      "num": "05",
+      "category": "ux",
+      "category_label": "Analisis UML/BPMN & UI/UX",
+      "title": "Analisis & Perancangan Sistem Informasi Jual Beli Alat Kesehatan pada PT. Bina Givensa",
+      "context": "APST (Semester 2) & APSIO (Semester 3 — Kelas Unggulan)",
+      "desc": "Kajian komprehensif analisis sistem rantai distribusi alat kesehatan medis. Memodelkan proses bisnis As-Is dan To-Be dengan standar notasi BPMN 2.0, menyusun spesifikasi kebutuhan sistem berbasis kerangka PIECES, serta merancang artefak diagram UML lengkap (Use Case, Activity, Sequence, dan Class Diagram).",
+      "stack": [
+        "BPMN 2.0 (Bizagi)",
+        "UML (Use Case, Sequence, Class)",
+        "PIECES Analysis",
+        "Data Flow Diagram (DFD)"
+      ],
+      "github": null,
+      "demo": null
+    },
+    {
+      "id": "dpm-km-joins",
+      "num": "06",
+      "category": "ux",
+      "category_label": "Analisis UML/BPMN & UI/UX",
+      "title": "Redesain UI/UX Situs Web DPM-KM UDINUS & Marketplace Pujasera",
+      "context": "Interaksi Manusia & Komputer (Semester 4) & Riset Publikasi Ilmiah",
+      "desc": "Riset antarmuka pengguna berbasis metode User-Centered Design (UCD). Melakukan evaluasi heuristik terhadap 10 prinsip Nielsen-Norman, merancang prototipe antarmuka wireframe hingga high-fidelity di Figma, serta menguji penerimaan pengguna melalui kuesioner System Usability Scale (SUS) dengan skor akhir 78.9 (Kategori Good / Grade B).",
+      "stack": [
+        "10 Nielsen Heuristics",
+        "User-Centered Design (UCD)",
+        "System Usability Scale (SUS: 78.9)",
+        "Figma Hi-Fi Prototype",
+        "IBM SPSS Statistics"
+      ],
+      "github": null,
+      "demo": null
+    },
+    {
+      "id": "itil-audit",
+      "num": "07",
+      "category": "gov",
+      "category_label": "Tata Kelola & Audit TI",
+      "title": "Tata Kelola ITIL & Audit Layanan TI PDAM Tirta Moedal serta ERP Odoo PT Batik Semarang 16",
+      "context": "Tata Kelola Manajemen Layanan TI (Semester 4) & Audit SI (Semester 5)",
+      "desc": "Perancangan Service Strategy dan Service Catalogue berbasis ITIL v4 pada unit PDAM Tirta Moedal Kota Semarang, mencakup manajemen insiden, Service Level Agreement (SLA), dan Request for Change (RFC). Dilanjutkan dengan simulasi implementasi modul Supply Chain dan CRM pada open-source ERP Odoo.",
+      "stack": [
+        "ITIL v4 Framework",
+        "COBIT 5 Governance",
+        "ERP Odoo Open-Source",
+        "SLA & Incident Design",
+        "RFC Workflow"
+      ],
+      "github": null,
+      "demo": null
+    },
+    {
+      "id": "renstra-iot",
+      "num": "08",
+      "category": "gov",
+      "category_label": "Tata Kelola & Audit TI",
+      "title": "Perencanaan Strategis SI (Shopee & Bukalapak) serta Transformasi Digital Posyandu IoT",
+      "context": "Perencanaan Strategis SI & Transformasi Digital (Semester 4)",
+      "desc": "Penyusunan blueprint perencanaan strategis sistem informasi menggunakan metodologi Ward & Peppard, analisis kompetitif pasar e-commerce dengan Balanced Scorecard dan McFarlan Strategic Grid, serta perancangan konseptual integrasi perangkat IoT timbangan digital dengan sistem rekam medik Posyandu.",
+      "stack": [
+        "Ward & Peppard Metodologi",
+        "Balanced Scorecard",
+        "McFarlan Strategic Grid",
+        "Arsitektur IoT & Cloud",
+        "Analisis Value Chain Porter"
+      ],
+      "github": null,
+      "demo": null
+    }
+  ],
+  "papers": [
+    {
+      "title": "Redesign of the DPM-KM Website Interface Based on Heuristic Evaluation Using a User-Centered Design Approach and Validation via the System Usability Scale",
+      "journal": "Jurnal JOINS (Journal of Information System) · UDINUS",
+      "field": "Interaksi Manusia & Komputer (HCI) · Metodologi UCD & Evaluasi Heuristik",
+      "summary": "Mengevaluasi aksesibilitas informasi publik pada situs organisasi mahasiswa DPM-KM UDINUS. Dimulai dari audit 10 Nielsen Heuristics oleh 3 evaluator ahli, perancangan ulang UI interaktif berbasis UCD, dan validasi empiris kepada 32 responden mahasiswa melalui instrumen System Usability Scale (SUS). Skor penerimaan meningkat dari 52.4 (Poor) menjadi 78.9 (Good / B), dengan reliabilitas instrumen Cronbach's Alpha α = 0.716."
+    },
+    {
+      "title": "Analisis Strategi Pengendalian Persediaan Bahan Baku Berbasis Kerangka SCOR dan Optimasi Metodologis untuk Keunggulan Kompetitif Industri",
+      "journal": "Jurnal JOINS (Journal of Information System) · UDINUS",
+      "field": "Riset Operasi & Manajemen Rantai Pasok (Supply Chain Operations Reference)",
+      "summary": "Kajian kuantitatif terhadap pengendalian persediaan bahan baku manufaktur untuk meminimalkan carrying cost dan stockout risk. Mengintegrasikan kerangka Supply Chain Operations Reference (SCOR) pada level proses Plan, Source, dan Make, serta menerapkan formulasi Economic Order Quantity (EOQ), Safety Stock probabilistik, dan Reorder Point (ROP) adaptif."
+    }
+  ],
+  "credentials": [
+    {
+      "id": 1,
+      "title": "Data Integration, Data Storage, & Data Migration",
+      "issuer": "SkillUp · Coursera",
+      "domain": "Arsitektur & Integrasi Data",
+      "date": "April 2026",
+      "code": "MI8X78N3INB9",
+      "url": "https://coursera.org/verify/MI8X78N3INB9"
+    },
+    {
+      "id": 2,
+      "title": "Foundations of User Experience (UX) Design",
+      "issuer": "Google · Coursera",
+      "domain": "Riset & Desain UI/UX",
+      "date": "Mei 2026",
+      "code": null,
+      "url": null
+    },
+    {
+      "id": 3,
+      "title": "Cluster Analysis in Data Mining",
+      "issuer": "University of Illinois Urbana-Champaign",
+      "domain": "Penambangan Data",
+      "date": "Oktober 2026",
+      "code": null,
+      "url": null
+    },
+    {
+      "id": 4,
+      "title": "Pattern Discovery in Data Mining",
+      "issuer": "University of Illinois Urbana-Champaign",
+      "domain": "Penambangan Data",
+      "date": "September 2026",
+      "code": null,
+      "url": null
+    },
+    {
+      "id": 5,
+      "title": "Data Visualization",
+      "issuer": "University of Illinois Urbana-Champaign",
+      "domain": "Visualisasi & Analitika",
+      "date": "September 2026",
+      "code": null,
+      "url": null
+    },
+    {
+      "id": 6,
+      "title": "Governance and Management of IT",
+      "issuer": "Packt · Coursera",
+      "domain": "Tata Kelola TI",
+      "date": "Oktober 2026",
+      "code": null,
+      "url": null
+    },
+    {
+      "id": 7,
+      "title": "Information Systems Auditing and Governance",
+      "issuer": "Packt · Coursera",
+      "domain": "Audit Sistem Informasi",
+      "date": "Oktober 2026",
+      "code": null,
+      "url": null
+    },
+    {
+      "id": 8,
+      "title": "TOGAF 10 Foundation",
+      "issuer": "EDUCBA · Coursera",
+      "domain": "Arsitektur Enterprise",
+      "date": "April 2026",
+      "code": null,
+      "url": null
+    },
+    {
+      "id": 9,
+      "title": "Enterprise Systems",
+      "issuer": "University of Minnesota · Coursera",
+      "domain": "Sistem Enterprise (ERP)",
+      "date": "April 2026",
+      "code": null,
+      "url": null
+    },
+    {
+      "id": 10,
+      "title": "CISSP Domain 1: Security and Risk Management",
+      "issuer": "Infosec · Coursera",
+      "domain": "Keamanan & Risiko SI",
+      "date": "Oktober 2026",
+      "code": null,
+      "url": null
+    },
+    {
+      "id": 11,
+      "title": "CISSP Domain 2: Asset Security",
+      "issuer": "Infosec · Coursera",
+      "domain": "Keamanan Aset Data",
+      "date": "Oktober 2026",
+      "code": null,
+      "url": null
+    },
+    {
+      "id": 12,
+      "title": "CISSP Domain 3: Security Architecture and Engineering",
+      "issuer": "Infosec · Coursera",
+      "domain": "Arsitektur Keamanan",
+      "date": "Oktober 2026",
+      "code": null,
+      "url": null
+    },
+    {
+      "id": 13,
+      "title": "CISSP Domain 4: Communication and Network Security",
+      "issuer": "Infosec · Coursera",
+      "domain": "Keamanan Jaringan",
+      "date": "Oktober 2026",
+      "code": null,
+      "url": null
+    },
+    {
+      "id": 14,
+      "title": "CISSP Domain 5: Identity and Access Management (IAM)",
+      "issuer": "Infosec · Coursera",
+      "domain": "Manajemen Identitas (IAM)",
+      "date": "Oktober 2026",
+      "code": null,
+      "url": null
+    },
+    {
+      "id": 15,
+      "title": "CISSP Domain 6: Security Assessment and Testing",
+      "issuer": "Infosec · Coursera",
+      "domain": "Pengujian Keamanan",
+      "date": "Oktober 2026",
+      "code": null,
+      "url": null
+    },
+    {
+      "id": 16,
+      "title": "CISSP Domain 7: Security Operations",
+      "issuer": "Infosec · Coursera",
+      "domain": "Operasional Keamanan",
+      "date": "Oktober 2026",
+      "code": null,
+      "url": null
+    },
+    {
+      "id": 17,
+      "title": "CISSP Domain 8: Software Development Security",
+      "issuer": "Infosec · Coursera",
+      "domain": "Keamanan Perangkat Lunak",
+      "date": "Oktober 2026",
+      "code": null,
+      "url": null
+    }
+  ],
+  "experience": {
+    "role": "Perancang Desain Produk, Kemasan & Antarmuka Web",
+    "company": "PT. LAMI Coffee",
+    "period": "Desember 2023 — Sekarang",
+    "desc": "Merancang identitas visual merek, kemasan produk kopi komersial bersertifikasi halal, label nutrisi, serta perancangan tata letak antarmuka situs promosi dan katalog digital produk untuk mendukung kanal distribusi ritel."
+  }
+}
