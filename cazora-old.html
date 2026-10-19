@@ -1,0 +1,4323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audrey Nabilla Laksono — Portofolio Sistem Informasi, Riset UI/UX &amp; Rekayasa Web</title>
+  <meta name="description" content="Portofolio resmi Audrey Nabilla Laksono (A12.2024.07171), mahasiswa S1 Sistem Informasi Universitas Dian Nuswantoro (UDINUS) Semarang. Mencakup rekayasa web PHP MVC, riset UI/UX (JOINS), tata kelola TI (ITIL/COBIT), dan 17 sertifikasi Coursera.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="crest.svg">
+  <link rel="stylesheet" href="monograph.css?v=cazora-liquid-v6">
+  <style>
+/* ==========================================================================
+   AUDREY NABILLA LAKSONO — CAZORA PURPLE GLASSMORPHISM PRESENTATION THEME
+   Inspired by CAZORA Business Plan Presentation Template (Envato Elements)
+   ========================================================================== */
+
+:root {
+  --cz-backdrop-violet: #624D96;
+  --cz-backdrop-deep: #44307A;
+  --cz-slide-indigo-1: #2B1774;
+  --cz-slide-indigo-2: #1B0B52;
+  --cz-slide-indigo-3: #12053A;
+
+  --cz-glass-surface: linear-gradient(135deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.07) 100%);
+  --cz-glass-surface-strong: linear-gradient(135deg, rgba(255, 255, 255, 0.32) 0%, rgba(242, 198, 255, 0.14) 100%);
+  --cz-glass-surface-soft: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%);
+  --cz-glass-stroke: rgba(255, 255, 255, 0.32);
+  --cz-glass-stroke-bright: rgba(255, 255, 255, 0.65);
+  --cz-glass-shadow: 0 24px 60px rgba(10, 3, 34, 0.55);
+
+  --cz-white: #FFFFFF;
+  --cz-lavender-text: #EAE3FF;
+  --cz-lavender-dim: #C4B5EC;
+  --cz-pink-bar: #F2C6FF;
+  --cz-pink-accent: #E598FF;
+  --cz-cyan-accent: #5CE1E6;
+  --cz-violet-orb: #9D71F7;
+
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-code: 'JetBrains Mono', monospace;
+
+  --radius-slide: 28px;
+  --radius-glass: 22px;
+  --radius-sm: 14px;
+  --radius-pill: 999px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--cz-backdrop-violet);
+  background-image:
+    radial-gradient(circle at 14% 12%, rgba(235, 205, 255, 0.35) 0%, transparent 38%),
+    radial-gradient(circle at 86% 22%, rgba(142, 98, 238, 0.45) 0%, transparent 40%),
+    radial-gradient(circle at 50% 90%, rgba(68, 36, 148, 0.6) 0%, transparent 52%),
+    linear-gradient(160deg, #705B9E 0%, #543E88 48%, #3A256E 100%);
+  background-attachment: fixed;
+  color: var(--cz-white);
+  line-height: 1.65;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.mono-code {
+  font-family: var(--font-code);
+  letter-spacing: 0.04em;
+}
+
+.bypass-link {
+  position: fixed;
+  top: -100px;
+  left: 1.5rem;
+  z-index: 999;
+  padding: 0.75rem 1.25rem;
+  background: var(--cz-white);
+  color: var(--cz-slide-indigo-3);
+  font-weight: 700;
+  border-radius: var(--radius-pill);
+  transition: top 0.2s ease;
+}
+
+.bypass-link:focus {
+  top: 1.25rem;
+}
+
+/* ==========================================================================
+   AMBIENT 3D LAVENDER SPHERES ON OUTER CANVAS (PARALLAX AIDED)
+   ========================================================================== */
+
+.ambient-cosmos {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.cosmos-orb {
+  position: absolute;
+  border-radius: 50%;
+  will-change: transform;
+}
+
+.orb-alpha {
+  width: 320px;
+  height: 320px;
+  top: 4%;
+  left: 2%;
+  background: radial-gradient(circle at 30% 28%, rgba(245, 225, 255, 0.8) 0%, rgba(155, 118, 232, 0.55) 48%, rgba(78, 52, 148, 0.12) 100%);
+  box-shadow: 0 24px 60px rgba(34, 15, 84, 0.35);
+}
+
+.orb-beta {
+  width: 250px;
+  height: 250px;
+  top: 42%;
+  right: 1.5%;
+  background: radial-gradient(circle at 30% 28%, rgba(242, 222, 255, 0.75) 0%, rgba(142, 106, 224, 0.5) 50%, rgba(68, 42, 134, 0.1) 100%);
+}
+
+.orb-gamma {
+  width: 210px;
+  height: 210px;
+  bottom: 6%;
+  left: 4%;
+  background: radial-gradient(circle at 32% 28%, rgba(245, 215, 255, 0.7) 0%, rgba(135, 96, 215, 0.45) 52%, rgba(58, 34, 122, 0.1) 100%);
+}
+
+.orb-delta {
+  width: 120px;
+  height: 120px;
+  top: 12%;
+  left: 17%;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8) 0%, rgba(175, 138, 245, 0.55) 60%, rgba(88, 58, 162, 0.15) 100%);
+}
+
+/* ==========================================================================
+   IOS LIQUID GLASS FLOATING NAVIGATION DOCK
+   ========================================================================== */
+
+.cazora-dock-wrap {
+  position: sticky;
+  top: 0.9rem;
+  z-index: 100;
+  padding: 0 1.5rem;
+  margin-top: 0.9rem;
+}
+
+.cazora-dock {
+  max-width: 1260px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.55rem 0.95rem;
+  background: linear-gradient(135deg, rgba(42, 22, 115, 0.82) 0%, rgba(22, 9, 70, 0.75) 100%);
+  backdrop-filter: blur(28px) saturate(190%);
+  -webkit-backdrop-filter: blur(28px) saturate(190%);
+  border: 1.5px solid var(--cz-glass-stroke);
+  border-radius: var(--radius-pill);
+  box-shadow:
+    0 18px 46px rgba(10, 3, 35, 0.52),
+    inset 0 1px 2px rgba(255, 255, 255, 0.38);
+}
+
+.dock-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-shrink: 0;
+  padding-left: 0.25rem;
+}
+
+.dock-monogram {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.34) 0%, rgba(242, 198, 255, 0.16) 100%);
+  border: 1.5px solid var(--cz-white);
+  color: var(--cz-white);
+  box-shadow: 0 4px 12px rgba(18, 6, 52, 0.35);
+}
+
+.dock-brand-text {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.16em;
+  color: var(--cz-white);
+}
+
+/* Dock Links Container with Sliding Liquid Pill Indicator */
+.dock-links {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3px;
+  border-radius: var(--radius-pill);
+}
+
+/* The Sliding Liquid Pill (iOS Glass Bubble) */
+.dock-liquid-pill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--radius-pill);
+  pointer-events: none;
+  z-index: 1;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.32) 0%, rgba(242, 198, 255, 0.18) 100%);
+  backdrop-filter: blur(20px) saturate(190%);
+  -webkit-backdrop-filter: blur(20px) saturate(190%);
+  border: 1.5px solid rgba(255, 255, 255, 0.65);
+  box-shadow:
+    0 8px 24px rgba(220, 160, 255, 0.35),
+    inset 0 1px 2px rgba(255, 255, 255, 0.75);
+  opacity: 0;
+  will-change: transform, width, height;
+}
+
+.chapter-link {
+  position: relative;
+  z-index: 2;
+  padding: 0.45rem 0.95rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.83rem;
+  font-weight: 500;
+  color: var(--cz-lavender-text);
+  background: transparent !important;
+  transition: color 0.25s ease, font-weight 0.25s ease;
+  white-space: nowrap;
+}
+
+.chapter-link:hover,
+.chapter-link.is-current {
+  color: #FFFFFF;
+  font-weight: 600;
+  text-shadow: 0 1px 4px rgba(20, 8, 55, 0.45);
+}
+
+.dock-pill-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5rem 1.15rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--cz-white);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.26) 0%, rgba(242, 198, 255, 0.15) 100%);
+  border: 1.5px solid var(--cz-glass-stroke-bright);
+  box-shadow: 0 4px 14px rgba(18, 6, 52, 0.35);
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  flex-shrink: 0;
+}
+
+.dock-pill-cta:hover {
+  transform: translateY(-1px);
+  background: var(--cz-white);
+  color: #1B0B54;
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.35);
+}
+
+/* ==========================================================================
+   CAZORA PRESENTATION SLIDE DECK & INDIVIDUAL SLIDE CARDS
+   ========================================================================== */
+
+.cazora-deck {
+  position: relative;
+  z-index: 1;
+  max-width: 1260px;
+  margin: 1.75rem auto 4rem;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+}
+
+.cazora-slide {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-slide);
+  padding: 2.75rem 3rem 3.25rem;
+  background:
+    radial-gradient(circle at 16% 18%, rgba(142, 82, 250, 0.38) 0%, transparent 45%),
+    radial-gradient(circle at 86% 80%, rgba(218, 134, 255, 0.26) 0%, transparent 46%),
+    linear-gradient(135deg, var(--cz-slide-indigo-1) 0%, var(--cz-slide-indigo-2) 54%, var(--cz-slide-indigo-3) 100%);
+  border: 1.5px solid rgba(255, 255, 255, 0.24);
+  box-shadow:
+    0 34px 80px rgba(12, 4, 38, 0.62),
+    inset 0 1px 0 rgba(255, 255, 255, 0.36);
+  scroll-margin-top: 5.5rem;
+}
+
+/* Authentic CAZORA Top-Right Overlapping 3D Spheres on Every Slide */
+.cazora-slide::before {
+  content: "";
+  position: absolute;
+  top: -58px;
+  right: -42px;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(240, 210, 255, 0.65) 0%, rgba(145, 105, 230, 0.4) 52%, rgba(40, 18, 104, 0.08) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.cazora-slide::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 88px;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 32% 30%, rgba(255, 255, 255, 0.75) 0%, rgba(178, 138, 248, 0.5) 58%, rgba(45, 20, 114, 0.12) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Top-Left Stamp ("01 02 03 04" Vertical Stack + "AN · CAZORA") */
+.slide-corner-stamp {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.slide-step-dots {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-family: var(--font-code);
+  font-size: 0.62rem;
+  line-height: 1.1;
+  color: rgba(255, 255, 255, 0.45);
+  padding-right: 0.65rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.slide-step-dots span {
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.slide-step-dots span.is-lit {
+  color: #1B0B54;
+  background: var(--cz-white);
+  font-weight: 700;
+}
+
+.slide-watermark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: var(--cz-white);
+}
+
+.slide-watermark::before {
+  content: "AN";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  border: 1.2px solid var(--cz-white);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* ==========================================================================
+   LIVING FROSTED GLASS CARDS WITH MOUSE SPOTLIGHT & 3D TILT
+   ========================================================================== */
+
+.glass-card {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  background: var(--cz-glass-surface);
+  backdrop-filter: blur(26px);
+  -webkit-backdrop-filter: blur(26px);
+  border: 1.2px solid var(--cz-glass-stroke);
+  border-radius: var(--radius-glass);
+  box-shadow:
+    var(--cz-glass-shadow),
+    inset 0 1px 1.5px rgba(255, 255, 255, 0.45);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transform: perspective(1000px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg)) translateZ(0);
+  transition: transform 0.26s cubic-bezier(0.2, 0.9, 0.3, 1.2), border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Living Cursor Spotlight Pseudo-element */
+.glass-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(420px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 255, 255, 0.24), rgba(242, 198, 255, 0.08) 45%, transparent 72%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  z-index: 1;
+}
+
+.glass-card:hover::before {
+  opacity: 1;
+}
+
+/* Shared Typography */
+.slide-kicker {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cz-pink-bar);
+  margin-bottom: 0.5rem;
+}
+
+.cazora-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(1.9rem, 3.2vw, 2.75rem);
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--cz-white);
+}
+
+.cazora-title-bar {
+  display: block;
+  width: 64px;
+  height: 3.5px;
+  border-radius: var(--radius-pill);
+  background: var(--cz-white);
+  margin: 0.85rem 0 1.25rem;
+}
+
+.cazora-desc {
+  font-size: 0.98rem;
+  color: var(--cz-lavender-text);
+  max-width: 68ch;
+}
+
+.solution-centered-head {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 2.25rem;
+}
+
+.solution-centered-head .cazora-title-bar {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.solution-centered-head .cazora-desc {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==========================================================================
+   SLIDE 01: HERO CENTERPIECE & 4-PILLAR WORKBENCH
+   ========================================================================== */
+
+.cazora-hero-stage {
+  position: relative;
+  z-index: 2;
+  padding: 4rem 2rem 4.5rem;
+  margin-bottom: 2.75rem;
+  border-radius: 26px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 22% 24%, rgba(168, 114, 255, 0.36) 0%, transparent 46%),
+    radial-gradient(circle at 78% 76%, rgba(242, 198, 255, 0.25) 0%, transparent 48%),
+    linear-gradient(135deg, #27136E 0%, #19094F 58%, #12053B 100%);
+  border: 1.5px solid rgba(255, 255, 255, 0.24);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-sphere {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.sphere-tl {
+  width: 220px;
+  height: 220px;
+  bottom: 18px;
+  left: 14%;
+  background: radial-gradient(circle at 30% 28%, rgba(238, 210, 255, 0.9) 0%, rgba(142, 98, 228, 0.65) 48%, rgba(44, 19, 112, 0.2) 100%);
+  box-shadow: 0 24px 55px rgba(18, 6, 56, 0.55);
+}
+
+.sphere-br {
+  width: 175px;
+  height: 175px;
+  top: 22px;
+  right: 16%;
+  background: radial-gradient(circle at 30% 28%, rgba(242, 218, 255, 0.85) 0%, rgba(135, 90, 222, 0.58) 52%, rgba(38, 16, 100, 0.18) 100%);
+  box-shadow: 0 20px 50px rgba(18, 6, 56, 0.5);
+}
+
+.sphere-sm {
+  width: 74px;
+  height: 74px;
+  bottom: 36px;
+  left: 31%;
+  background: radial-gradient(circle at 30% 28%, #FFFFFF 0%, #D8B8FF 52%, #6838C4 100%);
+  box-shadow: 0 12px 28px rgba(18, 6, 56, 0.45);
+}
+
+.hero-glass-centerpiece {
+  position: relative;
+  z-index: 2;
+  max-width: 820px;
+  width: 100%;
+  padding: 3rem 3.25rem;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.08) 100%);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border: 1.5px solid rgba(255, 255, 255, 0.45);
+  border-radius: 26px;
+  box-shadow:
+    0 32px 72px rgba(8, 3, 28, 0.55),
+    inset 0 1px 2px rgba(255, 255, 255, 0.6);
+}
+
+.hero-kicker {
+  font-size: 0.76rem;
+  letter-spacing: 0.16em;
+  color: var(--cz-pink-bar);
+  margin-bottom: 1.15rem;
+}
+
+.hero-logo-row {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.65rem;
+}
+
+.hero-monogram-box {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--cz-white);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.08) 100%);
+  border: 2.5px solid var(--cz-white);
+  box-shadow: 0 12px 28px rgba(12, 5, 42, 0.4);
+}
+
+.hero-display-name {
+  font-family: var(--font-heading);
+  font-size: clamp(2.15rem, 4.8vw, 3.65rem);
+  font-weight: 300;
+  letter-spacing: 0.16em;
+  line-height: 1.08;
+  color: var(--cz-white);
+}
+
+.hero-subname {
+  font-family: var(--font-heading);
+  font-size: 1.02rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--cz-pink-bar);
+  margin-bottom: 1.15rem;
+}
+
+.hero-manifesto {
+  font-size: 0.98rem;
+  color: var(--cz-lavender-text);
+  max-width: 64ch;
+  margin: 0 auto;
+}
+
+.hero-floating-pill {
+  position: relative;
+  z-index: 3;
+  margin-top: -1.35rem;
+  margin-left: auto;
+  margin-right: 12%;
+  padding: 0.7rem 2rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.32) 0%, rgba(238, 204, 255, 0.16) 100%);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  border: 1.5px solid var(--cz-glass-stroke-bright);
+  font-family: var(--font-heading);
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--cz-white);
+  box-shadow: 0 16px 36px rgba(7, 3, 25, 0.5);
+}
+
+/* "What Our Service is" Iridescent 3D Wave Ribbon Banner */
+.domain-workbench {
+  position: relative;
+  z-index: 2;
+}
+
+.iridescent-wave-banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-glass);
+  padding: 2.25rem;
+  margin-bottom: 1.5rem;
+  background:
+    radial-gradient(circle at 18% 30%, rgba(92, 225, 230, 0.45) 0%, transparent 45%),
+    radial-gradient(circle at 52% 50%, rgba(218, 82, 255, 0.48) 0%, transparent 50%),
+    radial-gradient(circle at 85% 70%, rgba(164, 128, 255, 0.45) 0%, transparent 52%),
+    linear-gradient(125deg, #3A228A 0%, #6A35B8 48%, #28146E 100%);
+  border: 1.5px solid rgba(255, 255, 255, 0.34);
+  box-shadow: 0 22px 50px rgba(9, 3, 32, 0.48);
+}
+
+.wave-mesh {
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      -35deg,
+      rgba(255, 255, 255, 0.08) 0px,
+      rgba(255, 255, 255, 0.08) 8px,
+      rgba(92, 225, 230, 0.12) 8px,
+      rgba(229, 152, 255, 0.18) 22px
+    );
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.wave-sphere {
+  position: absolute;
+  width: 145px;
+  height: 145px;
+  right: 36%;
+  bottom: -42px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #FFFFFF 0%, #DFB8FF 48%, #6D37C7 100%);
+  box-shadow: 0 16px 36px rgba(19, 6, 58, 0.5);
+  pointer-events: none;
+}
+
+.wave-banner-row {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.wave-floating-glass {
+  padding: 1.4rem 1.75rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.1) 100%);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  border: 1.5px solid rgba(255, 255, 255, 0.45);
+  color: var(--cz-white);
+  font-size: 0.95rem;
+  box-shadow: 0 18px 40px rgba(12, 4, 38, 0.45);
+}
+
+/* 4-Pillar Glass Selector Tabs */
+.domain-selector {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.domain-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 1.35rem 1.25rem;
+  text-align: left;
+  border-radius: var(--radius-glass);
+  background: var(--cz-glass-surface-soft);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1.2px solid rgba(255, 255, 255, 0.24);
+  transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease, box-shadow 0.22s ease;
+}
+
+.domain-tab:hover {
+  transform: translateY(-3px);
+  border-color: var(--cz-glass-stroke-bright);
+  background: var(--cz-glass-surface);
+}
+
+.domain-tab.is-active {
+  background: var(--cz-glass-surface-strong);
+  border-color: var(--cz-white);
+  box-shadow:
+    0 20px 44px rgba(9, 3, 30, 0.55),
+    inset 0 1px 2px rgba(255, 255, 255, 0.55);
+}
+
+.tab-glass-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.28) 0%, rgba(242, 198, 255, 0.1) 100%);
+  border: 1.2px solid rgba(255, 255, 255, 0.42);
+  color: var(--cz-white);
+}
+
+.domain-tab.is-active .tab-glass-icon {
+  background: var(--cz-white);
+  color: #1D0C5B;
+}
+
+.tab-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.domain-tab-index {
+  font-size: 0.72rem;
+  color: var(--cz-pink-bar);
+  text-transform: uppercase;
+}
+
+.domain-tab-name {
+  font-family: var(--font-heading);
+  font-size: 1.04rem;
+  font-weight: 600;
+  color: var(--cz-white);
+  line-height: 1.3;
+}
+
+.domain-tab-meta {
+  font-size: 0.78rem;
+  color: var(--cz-lavender-dim);
+}
+
+/* Active Pillar Stage Panel */
+.domain-stage {
+  padding: 2.25rem;
+  transition: opacity 0.16s ease;
+}
+
+.stage-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 2.25rem;
+  align-items: start;
+}
+
+.stage-pill-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.9rem;
+}
+
+.stage-pillar-tag {
+  padding: 0.32rem 0.9rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.76rem;
+  font-weight: 600;
+  background: rgba(242, 198, 255, 0.24);
+  border: 1px solid rgba(242, 198, 255, 0.55);
+  color: var(--cz-white);
+}
+
+.stage-course-ref {
+  font-size: 0.76rem;
+  color: var(--cz-lavender-dim);
+}
+
+.stage-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 0.85rem;
+  color: var(--cz-white);
+}
+
+.stage-description {
+  color: var(--cz-lavender-text);
+  font-size: 0.95rem;
+  margin-bottom: 1.35rem;
+}
+
+.stage-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.highlight-row {
+  display: grid;
+  grid-template-columns: 145px 1fr;
+  gap: 0.85rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-sm);
+  background: rgba(18, 7, 56, 0.48);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 0.88rem;
+}
+
+.highlight-key {
+  font-family: var(--font-code);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--cz-pink-bar);
+  text-transform: uppercase;
+}
+
+.highlight-val {
+  color: var(--cz-lavender-text);
+}
+
+.highlight-val code {
+  font-family: var(--font-code);
+  font-size: 0.82em;
+  padding: 0.1rem 0.4rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.16);
+  color: var(--cz-white);
+}
+
+.stage-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.72rem 1.4rem;
+  border-radius: var(--radius-pill);
+  background: var(--cz-white);
+  color: #1B0B54;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.88rem;
+  box-shadow: 0 10px 24px rgba(255, 255, 255, 0.25);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.stage-filter-btn:hover {
+  transform: translateY(-2px);
+  background: var(--cz-pink-bar);
+}
+
+.stage-blueprint {
+  padding: 1.5rem;
+  border-radius: var(--radius-glass);
+  background: rgba(16, 6, 52, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.blueprint-caption {
+  font-family: var(--font-code);
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--cz-pink-bar);
+  margin-bottom: 1.1rem;
+}
+
+.blueprint-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+}
+
+.blueprint-steps li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.22rem;
+  padding: 0.9rem 1rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 3px solid var(--cz-pink-bar);
+}
+
+.bp-step-code {
+  font-family: var(--font-code);
+  font-size: 0.72rem;
+  color: var(--cz-cyan-accent);
+}
+
+.blueprint-steps strong {
+  font-family: var(--font-heading);
+  font-size: 0.96rem;
+  color: var(--cz-white);
+}
+
+.blueprint-steps span:last-child {
+  font-size: 0.84rem;
+  color: var(--cz-lavender-text);
+}
+
+/* ==========================================================================
+   SLIDE 02: CAZORA COLUMN CHART & LABORATORIUM STUDI SEMESTER 5
+   ========================================================================== */
+
+.cazora-chart-showcase {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.08fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.cazora-numbered-checks {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.cazora-numbered-checks li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.95rem;
+  padding: 0.9rem 1.05rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.num-box {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.28) 0%, rgba(242, 198, 255, 0.12) 100%);
+  border: 1px solid var(--cz-glass-stroke-bright);
+  color: var(--cz-white);
+}
+
+.cazora-numbered-checks strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.96rem;
+  color: var(--cz-white);
+  margin-bottom: 0.15rem;
+}
+
+.cazora-numbered-checks span:last-child {
+  font-size: 0.84rem;
+  color: var(--cz-lavender-text);
+}
+
+.chart-glass-col {
+  position: relative;
+}
+
+.chart-orb-decor {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  bottom: -35px;
+  left: -30px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #FFFFFF 0%, #DFB8FF 48%, #6D37C7 100%);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.cazora-column-card {
+  position: relative;
+  z-index: 1;
+  padding: 1.85rem;
+}
+
+.col-chart-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.74rem;
+  color: var(--cz-lavender-text);
+}
+
+.col-chart-legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-size: 0.75rem;
+}
+
+.col-chart-legend i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  margin-right: 0.3rem;
+}
+
+.leg-white {
+  background: var(--cz-white);
+}
+
+.leg-pink {
+  background: var(--cz-pink-bar);
+}
+
+.cazora-bars-stage {
+  height: 230px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  align-items: end;
+  padding: 1rem 0.75rem 0;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.3);
+  background:
+    repeating-linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.08) 0px,
+      rgba(255, 255, 255, 0.08) 1px,
+      transparent 1px,
+      transparent 44px
+    );
+}
+
+.bar-group {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.bar-pair {
+  width: 100%;
+  height: 175px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.45rem;
+}
+
+.bar-col {
+  width: 22px;
+  border-radius: 6px 6px 2px 2px;
+  transition: transform 0.25s ease;
+}
+
+.bar-col:hover {
+  transform: scaleY(1.04);
+}
+
+.bar-white {
+  background: var(--cz-white);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.26);
+}
+
+.bar-pink {
+  background: linear-gradient(180deg, #F6D2FF 0%, #D99BFF 100%);
+  box-shadow: 0 8px 20px rgba(217, 155, 255, 0.35);
+}
+
+.bar-label {
+  font-size: 0.72rem;
+  color: var(--cz-white);
+  padding-bottom: 0.55rem;
+}
+
+/* Filter Toolbar for Semester 5 Studies */
+.cluster-bar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-bottom: 1.5rem;
+}
+
+.cluster-chip {
+  padding: 0.55rem 1.15rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--cz-lavender-text);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  transition: all 0.2s ease;
+}
+
+.cluster-chip:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--cz-white);
+}
+
+.cluster-chip.is-selected {
+  background: var(--cz-white);
+  color: #1B0B54;
+  border-color: var(--cz-white);
+  font-weight: 700;
+}
+
+.study-radar-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.study-card {
+  padding: 1.65rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.study-card[hidden] {
+  display: none !important;
+}
+
+.study-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.course-code {
+  font-size: 0.76rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.16);
+  color: var(--cz-white);
+}
+
+.study-domain-badge,
+.cred-domain-tag {
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid transparent;
+}
+
+.badge-data {
+  background: rgba(92, 225, 230, 0.2);
+  border-color: rgba(92, 225, 230, 0.5);
+  color: #C2FAFD;
+}
+
+.badge-gov {
+  background: rgba(242, 198, 255, 0.22);
+  border-color: rgba(242, 198, 255, 0.52);
+  color: var(--cz-white);
+}
+
+.badge-spk {
+  background: rgba(186, 148, 255, 0.25);
+  border-color: rgba(214, 188, 255, 0.52);
+  color: #F0E6FF;
+}
+
+.badge-web {
+  background: rgba(107, 242, 193, 0.2);
+  border-color: rgba(107, 242, 193, 0.48);
+  color: #C5FDE8;
+}
+
+.study-title {
+  font-family: var(--font-heading);
+  font-size: 1.22rem;
+  font-weight: 600;
+  color: var(--cz-white);
+}
+
+.study-summary {
+  font-size: 0.9rem;
+  color: var(--cz-lavender-text);
+}
+
+.study-summary code {
+  font-family: var(--font-code);
+  font-size: 0.84em;
+  color: var(--cz-pink-bar);
+}
+
+.study-curriculum-box {
+  margin-top: auto;
+  padding: 1rem 1.15rem;
+  border-radius: var(--radius-sm);
+  background: rgba(16, 6, 52, 0.52);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.curriculum-label {
+  font-family: var(--font-code);
+  font-size: 0.73rem;
+  text-transform: uppercase;
+  color: var(--cz-pink-bar);
+  margin-bottom: 0.55rem;
+}
+
+.curriculum-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  font-size: 0.85rem;
+  color: var(--cz-lavender-text);
+}
+
+.curriculum-list li {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.curriculum-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--cz-pink-bar);
+}
+
+.curriculum-list strong {
+  color: var(--cz-white);
+}
+
+/* ==========================================================================
+   SLIDE 03: REKAYASA SISTEM & ARSIP KARYA ("The Solution" Glass Cards)
+   ========================================================================== */
+
+.work-filter-bar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.65rem;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.work-filter-btn {
+  padding: 0.55rem 1.15rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--cz-lavender-text);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  transition: all 0.2s ease;
+}
+
+.work-filter-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--cz-white);
+}
+
+.work-filter-btn.is-active {
+  background: var(--cz-white);
+  color: #1B0B54;
+  border-color: var(--cz-white);
+  font-weight: 700;
+}
+
+.work-count-indicator {
+  font-size: 0.78rem;
+  color: var(--cz-pink-bar);
+}
+
+.case-study-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.35rem;
+}
+
+.case-card {
+  padding: 1.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.case-card[hidden] {
+  display: none !important;
+}
+
+.case-featured {
+  background: var(--cz-glass-surface-strong);
+  border-color: rgba(255, 255, 255, 0.42);
+}
+
+.case-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.case-index {
+  font-size: 0.74rem;
+  color: var(--cz-lavender-dim);
+}
+
+.case-pillar-pill {
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.74rem;
+  font-weight: 600;
+}
+
+.pill-web {
+  background: rgba(92, 225, 230, 0.22);
+  border: 1px solid rgba(92, 225, 230, 0.5);
+  color: #C5FCFF;
+}
+
+.pill-ux {
+  background: rgba(242, 198, 255, 0.24);
+  border: 1px solid rgba(242, 198, 255, 0.52);
+  color: var(--cz-white);
+}
+
+.pill-gov {
+  background: rgba(186, 148, 255, 0.25);
+  border: 1px solid rgba(212, 184, 255, 0.52);
+  color: #F2E8FF;
+}
+
+.case-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.32;
+  color: var(--cz-white);
+}
+
+.case-context {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--cz-pink-bar);
+}
+
+.case-excerpt {
+  font-size: 0.9rem;
+  color: var(--cz-lavender-text);
+}
+
+.case-excerpt code {
+  font-family: var(--font-code);
+  font-size: 0.84em;
+  padding: 0.1rem 0.35rem;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.16);
+  color: var(--cz-white);
+}
+
+.case-spec-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.25rem;
+}
+
+.case-spec-tags li {
+  font-family: var(--font-code);
+  font-size: 0.73rem;
+  padding: 0.28rem 0.65rem;
+  border-radius: 8px;
+  background: rgba(16, 6, 52, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--cz-lavender-text);
+}
+
+.case-card-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.inspect-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.58rem 1.1rem;
+  border-radius: var(--radius-pill);
+  background: var(--cz-white);
+  color: #1B0B54;
+  font-family: var(--font-heading);
+  font-size: 0.83rem;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(255, 255, 255, 0.25);
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inspect-trigger:hover {
+  transform: translateX(2px);
+  background: var(--cz-pink-bar);
+  box-shadow: 0 6px 20px rgba(242, 198, 255, 0.4);
+}
+
+.case-external-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.ext-repo-link {
+  font-family: var(--font-code);
+  font-size: 0.76rem;
+  padding: 0.44rem 0.85rem;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--cz-white);
+  transition: background 0.2s ease;
+}
+
+.ext-repo-link:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+/* ==========================================================================
+   SLIDE 04: PUBLIKASI ILMIAH JOINS ("Target Market Chart" Perfect Donut & 3D Art)
+   ========================================================================== */
+
+.cazora-donut-showcase {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.donut-cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.donut-glass-card {
+  padding: 1.65rem 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Donut Gauge Box with Centered Metrics Cluster */
+.donut-gauge-box {
+  position: relative;
+  width: 104px;
+  height: 104px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donut-svg {
+  width: 104px;
+  height: 104px;
+  transform: rotate(-90deg);
+  overflow: visible;
+}
+
+.donut-track {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.14);
+  stroke-width: 9;
+}
+
+.donut-fill {
+  fill: none;
+  stroke-width: 9.5;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.6s cubic-bezier(0.2, 0.9, 0.3, 1.2);
+}
+
+.donut-center-stack {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.donut-val {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--cz-white);
+  letter-spacing: -0.02em;
+}
+
+.donut-unit {
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: var(--cz-lavender-dim);
+  margin-top: 1px;
+}
+
+.donut-badge {
+  font-size: 0.58rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(242, 198, 255, 0.25);
+  border: 1px solid rgba(242, 198, 255, 0.5);
+  color: var(--cz-white);
+  margin-top: 3px;
+  letter-spacing: 0.04em;
+}
+
+.donut-badge.badge-cyan {
+  background: rgba(92, 225, 230, 0.25);
+  border-color: rgba(92, 225, 230, 0.55);
+  color: #C5FCFF;
+}
+
+.donut-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.donut-kicker-row {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.donut-kicker {
+  font-size: 0.72rem;
+  color: var(--cz-pink-bar);
+}
+
+.donut-pill-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  color: var(--cz-white);
+}
+
+.donut-pill-tag.tag-cyan {
+  background: rgba(92, 225, 230, 0.2);
+  border-color: rgba(92, 225, 230, 0.45);
+  color: #C5FCFF;
+}
+
+.donut-title {
+  font-family: var(--font-heading);
+  font-size: 1.08rem;
+  color: var(--cz-white);
+  line-height: 1.3;
+}
+
+.donut-desc {
+  font-size: 0.86rem;
+  color: var(--cz-lavender-text);
+}
+
+/* Right Glass 3D Art Stage (Matching "Target Market Chart" Presentation Stage) */
+.donut-visual-stage {
+  position: relative;
+  overflow: hidden;
+  padding: 1.85rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background:
+    radial-gradient(circle at 75% 25%, rgba(92, 225, 230, 0.35) 0%, transparent 48%),
+    radial-gradient(circle at 25% 75%, rgba(218, 82, 255, 0.4) 0%, transparent 52%),
+    linear-gradient(135deg, #371D82 0%, #200D58 60%, #150644 100%);
+  border: 1.5px solid rgba(255, 255, 255, 0.34);
+}
+
+.stage-3d-backdrop {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.stage-mesh-svg {
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  width: 110%;
+  height: 85%;
+  opacity: 0.85;
+}
+
+/* 3D Glossy Spheres Sitting Organically on Pedestal */
+.stage-sculpture-orb {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.stage-sculpture-orb.orb-primary {
+  width: 92px;
+  height: 92px;
+  top: 36px;
+  right: 18%;
+  background: radial-gradient(circle at 30% 28%, #FFFFFF 0%, #ECCBFF 42%, #9554F7 78%, #3A1280 100%);
+  box-shadow:
+    0 18px 36px rgba(18, 5, 52, 0.65),
+    0 0 24px rgba(242, 198, 255, 0.4);
+}
+
+.stage-sculpture-orb.orb-secondary {
+  width: 58px;
+  height: 58px;
+  top: 104px;
+  right: 45%;
+  background: radial-gradient(circle at 30% 28%, #E4FAFF 0%, #A5F3FC 48%, #5CE1E6 82%, #1C485A 100%);
+  box-shadow: 0 12px 28px rgba(12, 4, 38, 0.55);
+}
+
+.stage-sculpture-orb.orb-accent {
+  width: 38px;
+  height: 38px;
+  top: 52px;
+  right: 58%;
+  background: radial-gradient(circle at 32% 28%, #FFFFFF 0%, #E8D6FF 55%, #7B3FE4 100%);
+  box-shadow: 0 8px 18px rgba(12, 4, 38, 0.5);
+}
+
+.visual-stage-caption {
+  position: relative;
+  z-index: 2;
+  padding: 1.35rem 1.45rem;
+  border-radius: var(--radius-sm);
+  background: rgba(20, 8, 62, 0.72);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1.5px solid rgba(255, 255, 255, 0.32);
+  box-shadow: 0 16px 40px rgba(10, 3, 35, 0.55);
+}
+
+.caption-badge-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem;
+  margin-bottom: 0.5rem;
+}
+
+.caption-kicker {
+  font-size: 0.7rem;
+  color: var(--cz-pink-bar);
+  letter-spacing: 0.1em;
+}
+
+.caption-pill {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: var(--cz-white);
+}
+
+.caption-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--cz-white);
+  line-height: 1.3;
+  margin-bottom: 0.45rem;
+}
+
+.caption-desc {
+  font-size: 0.84rem;
+  color: var(--cz-lavender-text);
+  margin-bottom: 0.85rem;
+}
+
+.caption-tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.caption-tags-row span {
+  font-size: 0.72rem;
+  padding: 0.22rem 0.6rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--cz-white);
+}
+
+/* Journal Manuscript Dossiers */
+.journal-dossier-list {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.journal-card {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 2rem;
+}
+
+.journal-meta-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-right: 1.5rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.journal-id {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--cz-pink-bar);
+}
+
+.journal-date {
+  font-size: 0.85rem;
+  color: var(--cz-lavender-dim);
+}
+
+.journal-role-badge {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 0.25rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  color: var(--cz-white);
+}
+
+.journal-metrics-stack {
+  margin-top: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.j-metric {
+  padding: 0.7rem 0.85rem;
+  border-radius: var(--radius-sm);
+  background: rgba(16, 6, 52, 0.52);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.j-metric-val {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--cz-pink-bar);
+}
+
+.j-metric-lbl {
+  font-size: 0.76rem;
+  color: var(--cz-lavender-text);
+}
+
+.journal-venue {
+  font-family: var(--font-code);
+  font-size: 0.76rem;
+  color: var(--cz-cyan-accent);
+  text-transform: uppercase;
+  margin-bottom: 0.45rem;
+}
+
+.journal-title {
+  font-family: var(--font-heading);
+  font-size: 1.28rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--cz-white);
+  margin-bottom: 0.55rem;
+}
+
+.journal-authors {
+  font-size: 0.88rem;
+  color: var(--cz-pink-bar);
+  margin-bottom: 0.9rem;
+}
+
+.journal-abstract {
+  font-size: 0.9rem;
+  color: var(--cz-lavender-text);
+  margin-bottom: 1.15rem;
+}
+
+.journal-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.journal-keywords span {
+  font-family: var(--font-code);
+  font-size: 0.73rem;
+  padding: 0.26rem 0.65rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  color: var(--cz-white);
+}
+
+/* ==========================================================================
+   SLIDE 05: MATRIKS KEAHLIAN & 17 SERTIFIKASI COURSERA
+   ========================================================================== */
+
+.competency-ledger {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.ledger-row {
+  padding: 1.85rem;
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.ledger-domain-col {
+  padding-right: 1.25rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.track-num {
+  font-size: 0.75rem;
+  color: var(--cz-pink-bar);
+}
+
+.track-name {
+  font-family: var(--font-heading);
+  font-size: 1.22rem;
+  font-weight: 600;
+  color: var(--cz-white);
+  margin: 0.3rem 0 0.5rem;
+}
+
+.track-note {
+  font-size: 0.85rem;
+  color: var(--cz-lavender-text);
+}
+
+.ledger-items-col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
+.skill-spec-item {
+  padding: 1rem 1.15rem;
+  border-radius: var(--radius-sm);
+  background: rgba(16, 6, 52, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.skill-spec-item strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.96rem;
+  color: var(--cz-white);
+  margin-bottom: 0.35rem;
+}
+
+.skill-spec-item p {
+  font-size: 0.83rem;
+  color: var(--cz-lavender-text);
+}
+
+.skill-spec-item code {
+  font-family: var(--font-code);
+  font-size: 0.82em;
+  color: var(--cz-pink-bar);
+}
+
+/* Coursera 17-Certificate Registry */
+.credential-registry {
+  padding: 2.25rem;
+}
+
+.registry-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.registry-banner-text {
+  max-width: 66ch;
+}
+
+.registry-kicker {
+  font-size: 0.74rem;
+  color: var(--cz-pink-bar);
+}
+
+.registry-heading {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--cz-white);
+  margin: 0.25rem 0 0.45rem;
+}
+
+.registry-sub {
+  font-size: 0.9rem;
+  color: var(--cz-lavender-text);
+}
+
+.registry-stats-box {
+  display: flex;
+  gap: 0.85rem;
+}
+
+.reg-stat {
+  padding: 0.85rem 1.25rem;
+  border-radius: var(--radius-sm);
+  background: rgba(16, 6, 52, 0.58);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  text-align: center;
+}
+
+.reg-stat strong {
+  display: block;
+  font-size: 1.45rem;
+  color: var(--cz-pink-bar);
+}
+
+.reg-stat span {
+  font-size: 0.76rem;
+  color: var(--cz-lavender-text);
+}
+
+.registry-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.35rem;
+}
+
+.reg-tab-btn {
+  padding: 0.5rem 1.05rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--cz-lavender-text);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  transition: all 0.2s ease;
+}
+
+.reg-tab-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--cz-white);
+}
+
+.reg-tab-btn.is-selected {
+  background: var(--cz-white);
+  color: #1B0B54;
+  border-color: var(--cz-white);
+  font-weight: 700;
+}
+
+.credential-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+/* Beautiful Balanced Grid for Coursera Rows */
+.cred-row {
+  display: grid;
+  grid-template-columns: 42px minmax(280px, 1.8fr) auto 120px minmax(230px, auto);
+  gap: 1.25rem;
+  align-items: center;
+  padding: 1rem 1.35rem;
+  border-radius: var(--radius-sm);
+  background: rgba(18, 7, 56, 0.48);
+  border: 1.2px solid rgba(255, 255, 255, 0.16);
+  transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cred-row:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 24px rgba(10, 3, 35, 0.4);
+}
+
+.cred-row[hidden] {
+  display: none !important;
+}
+
+.cred-row-verified {
+  background: linear-gradient(90deg, rgba(242, 198, 255, 0.2) 0%, rgba(22, 9, 68, 0.65) 100%);
+  border-color: rgba(242, 198, 255, 0.48);
+  box-shadow: 0 6px 20px rgba(220, 160, 255, 0.18);
+}
+
+.cred-idx {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--cz-pink-bar);
+}
+
+.cred-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.cred-course-title {
+  font-family: var(--font-heading);
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--cz-white);
+  line-height: 1.35;
+}
+
+.cred-issuer {
+  font-size: 0.82rem;
+  color: var(--cz-lavender-dim);
+}
+
+.cred-date {
+  font-size: 0.8rem;
+  color: var(--cz-lavender-text);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.cred-action {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Sleek Single-Line Frosted Glass Verification Pill */
+.cred-verify-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.52rem 1.15rem;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-code);
+  font-size: 0.76rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap !important;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.28) 0%, rgba(242, 198, 255, 0.16) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1.5px solid rgba(255, 255, 255, 0.65);
+  color: var(--cz-white);
+  box-shadow:
+    0 4px 16px rgba(220, 160, 255, 0.35),
+    inset 0 1px 1.5px rgba(255, 255, 255, 0.7);
+  transition: all 0.25s cubic-bezier(0.2, 0.9, 0.3, 1.2);
+}
+
+.cred-verify-pill:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.45) 0%, rgba(242, 198, 255, 0.3) 100%);
+  border-color: #FFFFFF;
+  box-shadow:
+    0 8px 24px rgba(230, 180, 255, 0.55),
+    inset 0 1px 2px #FFFFFF;
+}
+
+.verify-check-icon {
+  color: #B4FBE0;
+  flex-shrink: 0;
+}
+
+.verify-ext-arrow {
+  color: var(--cz-pink-bar);
+  flex-shrink: 0;
+}
+
+/* Matching Status Badge for Completed Credentials */
+.cred-completed-stamp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.44rem 0.95rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--cz-lavender-text);
+}
+
+.cred-completed-stamp svg {
+  color: var(--cz-cyan-accent);
+}
+
+/* ==========================================================================
+   SLIDE 06: CAZORA BUSINESS TIMELINE & PT. LAMI COFFEE
+   ========================================================================== */
+
+.cazora-timeline-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 0.95fr 1.15fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.lami-showcase-card {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  margin-top: 1.5rem;
+}
+
+.lami-orb {
+  position: absolute;
+  width: 145px;
+  height: 145px;
+  top: -35px;
+  right: -35px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #FFFFFF 0%, #F2C6FF 45%, #7334DB 100%);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.milestone-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-bottom: 0.85rem;
+}
+
+.milestone-period {
+  font-size: 0.75rem;
+  color: var(--cz-pink-bar);
+}
+
+.milestone-tag {
+  padding: 0.28rem 0.75rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.74rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  color: var(--cz-white);
+}
+
+.milestone-title {
+  font-family: var(--font-heading);
+  font-size: 1.28rem;
+  font-weight: 600;
+  color: var(--cz-white);
+  line-height: 1.32;
+  margin-bottom: 0.4rem;
+}
+
+.milestone-org {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--cz-cyan-accent);
+  margin-bottom: 0.85rem;
+}
+
+.milestone-desc {
+  font-size: 0.9rem;
+  color: var(--cz-lavender-text);
+  margin-bottom: 1.35rem;
+}
+
+.lami-highlights-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.85rem;
+}
+
+.lami-mini-stat {
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-sm);
+  background: rgba(16, 6, 52, 0.54);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.lami-mini-stat strong {
+  display: block;
+  font-size: 1.15rem;
+  color: var(--cz-pink-bar);
+}
+
+.lami-mini-stat span {
+  font-size: 0.78rem;
+  color: var(--cz-lavender-text);
+}
+
+/* Right Column: CAZORA "Business Timeline" with Rounded-Square Glass Icon Nodes */
+.cazora-node-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.cazora-node-timeline::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  bottom: 28px;
+  left: 28px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--cz-white) 0%, var(--cz-pink-bar) 55%, rgba(255, 255, 255, 0.2) 100%);
+}
+
+.cazora-tl-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 1.15rem;
+  align-items: start;
+}
+
+.tl-glass-icon {
+  position: relative;
+  z-index: 2;
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.30) 0%, rgba(242, 198, 255, 0.12) 100%);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1.5px solid var(--cz-glass-stroke-bright);
+  color: var(--cz-white);
+  box-shadow: 0 12px 28px rgba(8, 3, 28, 0.5);
+}
+
+.cazora-tl-item.is-active-node .tl-glass-icon {
+  background: var(--cz-white);
+  color: #1B0B54;
+  box-shadow: 0 0 24px rgba(242, 198, 255, 0.65);
+}
+
+.tl-node-body {
+  padding: 1.25rem 1.45rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.sem-code {
+  font-size: 0.74rem;
+  color: var(--cz-pink-bar);
+}
+
+.tl-node-body strong {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  color: var(--cz-white);
+}
+
+.tl-node-body p {
+  font-size: 0.86rem;
+  color: var(--cz-lavender-text);
+}
+
+/* ==========================================================================
+   SLIDE 07: CONTACT PANEL & COLOPHON FOOTER
+   ========================================================================== */
+
+.contact-panel {
+  padding: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.contact-text {
+  font-size: 0.96rem;
+  color: var(--cz-lavender-text);
+}
+
+.contact-directory {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.directory-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-sm);
+  background: rgba(16, 6, 52, 0.52);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dir-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.dir-label {
+  font-size: 0.76rem;
+  color: var(--cz-lavender-dim);
+}
+
+.dir-value {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--cz-white);
+}
+
+.dir-action-btn {
+  padding: 0.48rem 1.05rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: var(--cz-white);
+  color: #1B0B54;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.25);
+  transition: all 0.2s ease;
+}
+
+.dir-action-btn:hover {
+  background: var(--cz-pink-bar);
+  box-shadow: 0 6px 18px rgba(242, 198, 255, 0.4);
+}
+
+.dir-action-btn.is-copied {
+  background: #6BF2C1;
+  color: #0E3524;
+}
+
+.monograph-colophon {
+  padding: 1.5rem 2rem;
+  border-radius: var(--radius-glass);
+  background: rgba(24, 11, 74, 0.78);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: var(--cz-lavender-text);
+}
+
+.colophon-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.colophon-left strong {
+  font-family: var(--font-heading);
+  color: var(--cz-white);
+  font-size: 0.98rem;
+}
+
+/* ==========================================================================
+   GLASS SPECIFICATION DRAWER MODAL
+   ========================================================================== */
+
+.spec-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(8, 3, 26, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.spec-drawer-backdrop[hidden] {
+  display: none !important;
+}
+
+.spec-drawer {
+  width: min(680px, 100%);
+  height: 100%;
+  background: linear-gradient(160deg, #2B1674 0%, #160846 100%);
+  border-left: 1.5px solid var(--cz-glass-stroke-bright);
+  box-shadow: -24px 0 60px rgba(5, 2, 20, 0.75);
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer-topbar {
+  padding: 1.25rem 1.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.drawer-kicker {
+  font-size: 0.75rem;
+  color: var(--cz-pink-bar);
+}
+
+.drawer-close-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.95rem;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  font-size: 0.8rem;
+  color: var(--cz-white);
+  transition: all 0.2s ease;
+}
+
+.drawer-close-btn:hover {
+  background: var(--cz-white);
+  color: #1B0B54;
+}
+
+.drawer-scroll-area {
+  padding: 2rem 1.75rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.drawer-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--cz-white);
+  line-height: 1.3;
+}
+
+.drawer-meta {
+  font-size: 0.85rem;
+  color: var(--cz-pink-bar);
+}
+
+.drawer-summary {
+  font-size: 0.94rem;
+  color: var(--cz-lavender-text);
+}
+
+.drawer-section {
+  padding: 1.25rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.drawer-subhead {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--cz-white);
+  margin-bottom: 0.85rem;
+}
+
+.drawer-architecture-list,
+.drawer-deliverables-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  font-size: 0.88rem;
+  color: var(--cz-lavender-text);
+}
+
+.drawer-architecture-list li,
+.drawer-deliverables-list li {
+  padding-left: 1rem;
+  position: relative;
+}
+
+.drawer-architecture-list li::before,
+.drawer-deliverables-list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--cz-pink-bar);
+}
+
+.drawer-tech-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.drawer-tech-pills span {
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--cz-white);
+}
+
+.drawer-links-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.drawer-ext-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.65rem 1.2rem;
+  border-radius: var(--radius-pill);
+  background: var(--cz-white);
+  color: #1B0B54;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.drawer-ext-btn:hover {
+  background: var(--cz-pink-bar);
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+
+@media (max-width: 1080px) {
+  .cazora-slide {
+    padding: 2.25rem 1.75rem;
+  }
+
+  .domain-selector {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stage-grid,
+  .cazora-chart-showcase,
+  .cazora-donut-showcase,
+  .cazora-timeline-grid,
+  .contact-panel,
+  .wave-banner-row {
+    grid-template-columns: 1fr;
+  }
+
+  .journal-card,
+  .ledger-row {
+    grid-template-columns: 1fr;
+  }
+
+  .journal-meta-col,
+  .ledger-domain-col {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    padding-right: 0;
+    padding-bottom: 1rem;
+  }
+
+  .cred-row {
+    grid-template-columns: 36px 1fr;
+    gap: 0.5rem;
+  }
+
+  .cred-domain-tag,
+  .cred-date,
+  .cred-action {
+    grid-column: 2;
+    justify-self: start;
+    text-align: left;
+  }
+}
+
+@media (max-width: 760px) {
+  .cazora-dock {
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .dock-brand {
+    justify-content: space-between;
+  }
+
+  .dock-pill-cta {
+    justify-content: center;
+  }
+
+  .domain-selector,
+  .study-radar-grid,
+  .case-study-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-glass-centerpiece {
+    padding: 2rem 1.35rem;
+  }
+
+  .hero-floating-pill {
+    margin-right: auto;
+  }
+
+  .highlight-row {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  .donut-glass-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <a class="bypass-link" href="#lembar-utama">Lewati ke konten utama</a>
+
+  <!-- Ambient Background Spheres -->
+  <div class="ambient-cosmos" aria-hidden="true">
+    <div class="cosmos-orb orb-alpha"></div>
+    <div class="cosmos-orb orb-beta"></div>
+    <div class="cosmos-orb orb-gamma"></div>
+    <div class="cosmos-orb orb-delta"></div>
+  </div>
+
+  <!-- Floating Glass Navigation Dock -->
+  <header class="cazora-dock-wrap">
+    <div class="cazora-dock">
+      <a href="#fokus-bidang" class="dock-brand">
+        <span class="dock-monogram">AN</span>
+        <span class="dock-brand-text">AUDREY NABILLA</span>
+      </a>
+
+      <nav class="dock-links" aria-label="Navigasi Bab Portofolio">
+        <span class="dock-liquid-pill" aria-hidden="true"></span>
+        <a href="#fokus-bidang" class="chapter-link is-current" data-chapter="fokus-bidang">Bidang</a>
+        <a href="#studi-aktif" class="chapter-link" data-chapter="studi-aktif">Studi Semester 5</a>
+        <a href="#arsip-karya" class="chapter-link" data-chapter="arsip-karya">Karya &amp; Sistem</a>
+        <a href="#publikasi-riset" class="chapter-link" data-chapter="publikasi-riset">Jurnal JOINS</a>
+        <a href="#matriks-keahlian" class="chapter-link" data-chapter="matriks-keahlian">Keahlian &amp; Sertifikasi</a>
+        <a href="#jejak-pengalaman" class="chapter-link" data-chapter="jejak-pengalaman">Lini Masa</a>
+        <a href="#saluran-kontak" class="chapter-link" data-chapter="saluran-kontak">Kontak</a>
+      </nav>
+
+      <a href="https://github.com/audreynabilla" target="_blank" rel="noopener noreferrer" class="dock-pill-cta">
+        <span>GitHub</span>
+        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M4.5 11.5L11.5 4.5M11.5 4.5H5.5M11.5 4.5V10.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="lembar-utama" class="cazora-deck">
+
+    <!-- =====================================================================
+         SLIDE 01: CAZORA HERO CENTERPIECE & EMPAT PILAR BIDANG KEAHLIAN
+         ("CAZORA Cover" + "The Solution We Offers" + "What Our Service is")
+         ===================================================================== -->
+    <article id="fokus-bidang" class="chapter-block cazora-slide">
+      <div class="slide-corner-stamp" aria-hidden="true">
+        <div class="slide-step-dots">
+          <span class="is-lit">01</span>
+          <span>02</span>
+          <span>03</span>
+          <span>04</span>
+        </div>
+        <span class="slide-watermark">AN · PORTOFOLIO</span>
+      </div>
+
+      <!-- CAZORA Centerpiece Glass Hero -->
+      <div class="cazora-hero-stage">
+        <div class="hero-sphere sphere-tl" aria-hidden="true"></div>
+        <div class="hero-sphere sphere-br" aria-hidden="true"></div>
+        <div class="hero-sphere sphere-sm" aria-hidden="true"></div>
+
+        <div class="hero-glass-centerpiece">
+          <p class="hero-kicker mono-code">NIM A12.2024.07171 · S1 SISTEM INFORMASI UDINUS SEMARANG</p>
+          <div class="hero-logo-row">
+            <span class="hero-monogram-box">AN</span>
+            <h1 class="hero-display-name">AUDREY NABILLA</h1>
+          </div>
+          <p class="hero-subname">Audrey Nabilla Laksono · Semester 5 Aktif · Kelas Unggulan</p>
+          <p class="hero-manifesto">
+            Menyelaraskan kebutuhan manusia, proses bisnis, dan rekayasa kode ke dalam aplikasi web berarsitektur MVC, riset UI/UX tervalidasi statistik, tata kelola enterprise, serta analitika data.
+          </p>
+        </div>
+
+        <div class="hero-floating-pill">
+          <span>Portofolio Akademik &amp; Rekayasa Sistem</span>
+        </div>
+      </div>
+
+      <!-- "What Our Service is" + "The Solution We Offers" 4-Pillar Workbench -->
+      <div class="domain-workbench" aria-label="Penjelajah Empat Bidang Utama">
+        <div class="iridescent-wave-banner">
+          <div class="wave-mesh" aria-hidden="true"></div>
+          <div class="wave-sphere" aria-hidden="true"></div>
+          <div class="wave-banner-row">
+            <div class="wave-title-block">
+              <h2 class="cazora-heading">Empat Pilar Bidang Keahlian</h2>
+              <span class="cazora-title-bar" aria-hidden="true"></span>
+            </div>
+            <div class="wave-floating-glass">
+              <p>
+                Pilih salah satu pilar di bawah ini untuk meninjau metodologi, arsitektur teknis, serta artefak nyata yang telah saya kerjakan selama Semester 1 hingga Semester 5.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Glass Pillar Selector Tabs (with rounded-circle icons like "The Solution We Offers") -->
+        <div class="domain-selector" role="tablist" aria-label="Pilar Bidang Sistem Informasi">
+          <button type="button" role="tab" id="tab-domain-web" aria-selected="true" aria-controls="panel-domain-stage" class="domain-tab is-active" data-domain="web">
+            <span class="tab-glass-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="4" width="18" height="16" rx="3" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M3 9H21M9 14L7 16L9 18M15 14L17 16L15 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <div class="tab-copy">
+              <span class="domain-tab-index mono-code">Pilar 01</span>
+              <strong class="domain-tab-name">Rekayasa Web MVC &amp; Basis Data</strong>
+              <span class="domain-tab-meta">PHP OOP · PDO · REST API · MySQL</span>
+            </div>
+          </button>
+
+          <button type="button" role="tab" id="tab-domain-ux" aria-selected="false" aria-controls="panel-domain-stage" class="domain-tab" data-domain="ux">
+            <span class="tab-glass-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <div class="tab-copy">
+              <span class="domain-tab-index mono-code">Pilar 02</span>
+              <strong class="domain-tab-name">Analisis Sistem &amp; Riset UI/UX</strong>
+              <span class="domain-tab-meta">UML · BPMN · UCD · Heuristic &amp; SUS</span>
+            </div>
+          </button>
+
+          <button type="button" role="tab" id="tab-domain-gov" aria-selected="false" aria-controls="panel-domain-stage" class="domain-tab" data-domain="gov">
+            <span class="tab-glass-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 3L4 7V12C4 16.5 7.5 20.5 12 21.5C16.5 20.5 20 16.5 20 12V7L12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <div class="tab-copy">
+              <span class="domain-tab-index mono-code">Pilar 03</span>
+              <strong class="domain-tab-name">Tata Kelola, Strategi &amp; Audit TI</strong>
+              <span class="domain-tab-meta">ITIL · COBIT 5 · Ward &amp; Peppard · ERP</span>
+            </div>
+          </button>
+
+          <button type="button" role="tab" id="tab-domain-data" aria-selected="false" aria-controls="panel-domain-stage" class="domain-tab" data-domain="data">
+            <span class="tab-glass-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M4 19H20M7 16V10M12 16V6M17 16V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <div class="tab-copy">
+              <span class="domain-tab-index mono-code">Pilar 04</span>
+              <strong class="domain-tab-name">Sains Data, AI &amp; Keputusan (SPK)</strong>
+              <span class="domain-tab-meta">Python Colab · SMOTE · K-Means · AHP/SAW</span>
+            </div>
+          </button>
+        </div>
+
+        <!-- Active Pillar Stage Panel -->
+        <div id="panel-domain-stage" class="domain-stage glass-card" role="tabpanel" aria-labelledby="tab-domain-web" aria-live="polite">
+          <div class="stage-grid">
+            <div class="stage-main">
+              <div class="stage-pill-row">
+                <span class="stage-pillar-tag" id="stage-tag">Pilar 01 — Pengembangan Perangkat Lunak</span>
+                <span class="stage-course-ref mono-code" id="stage-courses">PWD · PWL · Konsep Basis Data · CRM</span>
+              </div>
+              <h3 class="stage-heading" id="stage-title">Membangun Aplikasi Web Transaksional dengan Arsitektur MVC &amp; REST API</h3>
+              <p class="stage-description" id="stage-desc">
+                Merancang dan mengimplementasikan aplikasi web dari perancangan skema relasional MySQL hingga lapisan antarmuka pengguna. Menggunakan PHP Native berorientasi objek (OOP) dengan pemisahan Model-View-Controller (MVC), abstraksi basis data PDO untuk mencegah injeksi SQL, autentikasi sesi menggunakan hashing kata sandi, serta penyediaan endpoint JSON RESTful API.
+              </p>
+              <div class="stage-highlights" id="stage-points">
+                <div class="highlight-row">
+                  <span class="highlight-key">Arsitektur Kode</span>
+                  <span class="highlight-val">Pemisahan Front Controller (<code>public/index.php</code>), Controller spesifik modul, Model berbasis PDO, dan helper keamanan sanitasi input.</span>
+                </div>
+                <div class="highlight-row">
+                  <span class="highlight-key">Fitur Produksi</span>
+                  <span class="highlight-val">Multi-peran (Admin &amp; Pelanggan), keranjang transaksi POS, manajemen poin loyalitas CRM, unggah bukti pembayaran, dan CRUD REST API (GET, POST, PUT, DELETE).</span>
+                </div>
+                <div class="highlight-row">
+                  <span class="highlight-key">Artefak Utama</span>
+                  <span class="highlight-val">PawSpa Pet Grooming Booking, Sistem Inventaris MVC + REST API, Aplikasi Web POS &amp; CRM Djuara Coffee (4 cabang), serta Sistem Penjualan Multi-Modul.</span>
+                </div>
+              </div>
+              <div class="stage-cta-row">
+                <button type="button" class="stage-filter-btn" id="stage-jump-btn" data-target-filter="web">
+                  Tampilkan Karya di Bidang Ini
+                </button>
+              </div>
+            </div>
+
+            <div class="stage-blueprint" aria-label="Skema Arsitektur Bidang">
+              <p class="blueprint-caption" id="stage-bp-title">Alur Arsitektur Sistem yang Diterapkan</p>
+              <ol class="blueprint-steps" id="stage-bp-steps">
+                <li>
+                  <span class="bp-step-code">01 / Skema Data</span>
+                  <strong>Pemodelan ERD &amp; Normalisasi MySQL</strong>
+                  <span>Merancang relasi tabel (pengguna, produk, reservasi/transaksi, member) beserta constraint kunci asing.</span>
+                </li>
+                <li>
+                  <span class="bp-step-code">02 / Lapisan Logika</span>
+                  <strong>Model PDO &amp; Controller OOP</strong>
+                  <span>Menangani query parameter terikat (prepared statements), validasi input, dan manajemen sesi login.</span>
+                </li>
+                <li>
+                  <span class="bp-step-code">03 / Antarmuka &amp; API</span>
+                  <strong>Tampilan Responsif &amp; Endpoint JSON</strong>
+                  <span>Menyajikan dasbor operasional bagi admin/pelanggan sekaligus layanan REST API untuk pertukaran data.</span>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- =====================================================================
+         SLIDE 02: LABORATORIUM STUDI AKTIF SEMESTER 5
+         ("Cazora Column Chart" Layout + 8 Active Semester 5 Glass Cards)
+         ===================================================================== -->
+    <article id="studi-aktif" class="chapter-block cazora-slide">
+      <div class="slide-corner-stamp" aria-hidden="true">
+        <div class="slide-step-dots">
+          <span>01</span>
+          <span class="is-lit">02</span>
+          <span>03</span>
+          <span>04</span>
+        </div>
+        <span class="slide-watermark">AN · SEMESTER 5</span>
+      </div>
+
+      <!-- CAZORA Column Chart Header Showcase -->
+      <div class="cazora-chart-showcase">
+        <div class="chart-copy-col">
+          <span class="slide-kicker mono-code">APA YANG SEDANG DIPELAJARI · SEMESTER 5 (A12.6501)</span>
+          <h2 class="cazora-heading">Laboratorium Studi Aktif</h2>
+          <span class="cazora-title-bar" aria-hidden="true"></span>
+          <p class="cazora-desc">
+            Di Semester 5 saat ini, saya mendalami delapan mata kuliah inti yang berfokus pada ekstraksi pola data, penanganan ketimpangan kelas (*imbalanced learning*), pemodelan keputusan multikriteria, serta pengujian dan audit sistem informasi.
+          </p>
+
+          <ul class="cazora-numbered-checks">
+            <li>
+              <span class="num-box mono-code">01</span>
+              <div>
+                <strong>Sains Data &amp; Kecerdasan Buatan (3 Mata Kuliah)</strong>
+                <span>Penambangan Data (Google Colab), Analitika Data (SMOTE &amp; ADASYN), dan Kecerdasan Buatan (PEAS &amp; Search).</span>
+              </div>
+            </li>
+            <li>
+              <span class="num-box mono-code">02</span>
+              <div>
+                <strong>Audit, Pengujian &amp; Keamanan TI (3 Mata Kuliah)</strong>
+                <span>Audit Sistem Informasi (Studi Kasus PDAM Tirta Moedal), Pengujian White-Box, dan Keamanan Sistem Informasi.</span>
+              </div>
+            </li>
+            <li>
+              <span class="num-box mono-code">03</span>
+              <div>
+                <strong>Sistem Pendukung Keputusan &amp; SIA (2 Mata Kuliah)</strong>
+                <span>Pemodelan multikriteria AHP, SAW, WP, Tabel Keputusan DBD, serta Siklus Sistem Informasi Akuntansi.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- CAZORA Glass Column Chart Panel -->
+        <div class="chart-glass-col">
+          <div class="chart-orb-decor" aria-hidden="true"></div>
+          <div class="cazora-column-card glass-card">
+            <div class="col-chart-top">
+              <span class="mono-code">DISTRIBUSI FOKUS &amp; MODUL SEMESTER 5</span>
+              <span class="col-chart-legend">
+                <i class="leg-white"></i> Cakupan Teori
+                <i class="leg-pink"></i> Eksperimen &amp; Studi Kasus
+              </span>
+            </div>
+            <div class="cazora-bars-stage" role="img" aria-label="Grafik batang proporsi fokus studi Semester 5: Sains Data & AI 95%, Audit & Keamanan 88%, SPK & SIA 84%, Pengujian Sistem 82%">
+              <div class="bar-group">
+                <div class="bar-pair">
+                  <div class="bar-col bar-white" style="height: 92%;" title="Penambangan & Analitika Data: 92%"></div>
+                  <div class="bar-col bar-pink" style="height: 96%;" title="Eksperimen Colab & SMOTE: 96%"></div>
+                </div>
+                <span class="bar-label mono-code">Data &amp; AI</span>
+              </div>
+
+              <div class="bar-group">
+                <div class="bar-pair">
+                  <div class="bar-col bar-white" style="height: 86%;" title="Audit & Tata Kelola SI: 86%"></div>
+                  <div class="bar-col bar-pink" style="height: 82%;" title="Studi Kasus Audit PDAM: 82%"></div>
+                </div>
+                <span class="bar-label mono-code">Audit &amp; Sec</span>
+              </div>
+
+              <div class="bar-group">
+                <div class="bar-pair">
+                  <div class="bar-col bar-white" style="height: 84%;" title="Sistem Pendukung Keputusan: 84%"></div>
+                  <div class="bar-col bar-pink" style="height: 78%;" title="Pemodelan AHP/SAW/WP: 78%"></div>
+                </div>
+                <span class="bar-label mono-code">SPK &amp; SIA</span>
+              </div>
+
+              <div class="bar-group">
+                <div class="bar-pair">
+                  <div class="bar-col bar-white" style="height: 76%;" title="Implementasi Sistem: 76%"></div>
+                  <div class="bar-col bar-pink" style="height: 88%;" title="Pengujian White-Box: 88%"></div>
+                </div>
+                <span class="bar-label mono-code">QA &amp; Test</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filter Cluster for Current Semester -->
+      <div class="cluster-bar" role="toolbar" aria-label="Kelompok Studi Semester 5">
+        <button type="button" class="cluster-chip is-selected" data-study-filter="all">Semua Mata Kuliah (8)</button>
+        <button type="button" class="cluster-chip" data-study-filter="data-ai">Sains Data &amp; Kecerdasan Buatan (3)</button>
+        <button type="button" class="cluster-chip" data-study-filter="audit-qa">Audit, Pengujian &amp; Keamanan TI (3)</button>
+        <button type="button" class="cluster-chip" data-study-filter="enterprise-spk">Sistem Keputusan &amp; Akuntansi (2)</button>
+      </div>
+
+      <div class="study-radar-grid" id="study-grid">
+        <!-- 1. Penambangan Data -->
+        <section class="study-card glass-card" data-study-group="data-ai">
+          <div class="study-card-top">
+            <span class="course-code mono-code">A12.76504</span>
+            <span class="study-domain-badge badge-data">Sains Data &amp; Machine Learning</span>
+          </div>
+          <h3 class="study-title">Penambangan Data (Data Mining)</h3>
+          <p class="study-summary">
+            Mempelajari ekstraksi pola dari dataset berskala besar menggunakan Python di Google Colab (<code>.ipynb</code>), mulai dari pembersihan data hingga pemodelan prediktif dan asosiatif.
+          </p>
+          <div class="study-curriculum-box">
+            <p class="curriculum-label">Topik &amp; Praktikum yang Sedang Dikerjakan:</p>
+            <ul class="curriculum-list">
+              <li><strong>Prapemrosesan &amp; Regresi:</strong> Penanganan <em>missing values</em>, normalisasi fitur, serta pemodelan Regresi Linear Sederhana dan Berganda.</li>
+              <li><strong>Klasifikasi Komparatif:</strong> Implementasi dan evaluasi performa algoritma <em>Decision Tree</em> dibandingkan dengan <em>K-Nearest Neighbors (KNN)</em>.</li>
+              <li><strong>Klasterisasi &amp; Segmentasi:</strong> Pengelompokan profil pelanggan menggunakan algoritma <em>K-Means Clustering</em>.</li>
+              <li><strong>Market Basket Analysis:</strong> Penemuan aturan asosiasi pola belanja menggunakan algoritma <em>Apriori</em> dan <em>FP-Growth</em>.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 2. Analitika Data -->
+        <section class="study-card glass-card" data-study-group="data-ai">
+          <div class="study-card-top">
+            <span class="course-code mono-code">A12.76701</span>
+            <span class="study-domain-badge badge-data">Analitika &amp; Imbalanced Learning</span>
+          </div>
+          <h3 class="study-title">Analitika Data</h3>
+          <p class="study-summary">
+            Berfokus pada teknik penanganan ketimpangan kelas data (<em>class imbalance</em>) dan optimasi parameter model klasifikasi statistik maupun pembelajaran mesin.
+          </p>
+          <div class="study-curriculum-box">
+            <p class="curriculum-label">Eksperimen &amp; Metode yang Dipelajari:</p>
+            <ul class="curriculum-list">
+              <li><strong>Teknik Resampling Data:</strong> Penerapan <em>Synthetic Minority Over-sampling Technique</em> (<strong>SMOTE</strong>), <strong>SMOTE-Tomek</strong>, dan <strong>ADASYN</strong> pada <em>Adult Income Dataset</em>.</li>
+              <li><strong>Optimasi &amp; Benchmarking:</strong> Pencarian parameter terbaik dengan <em>GridSearchCV</em> untuk membandingkan kinerja <em>Decision Tree</em> dan <em>Logistic Regression</em>.</li>
+              <li><strong>Metrik Evaluasi Ketat:</strong> Analisis komprehensif menggunakan <em>Confusion Matrix</em>, <em>Accuracy</em>, <em>Precision</em>, <em>Recall</em>, dan <em>F1-Score</em>.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 3. Audit Sistem Informasi -->
+        <section class="study-card glass-card" data-study-group="audit-qa">
+          <div class="study-card-top">
+            <span class="course-code mono-code">A12.76501</span>
+            <span class="study-domain-badge badge-gov">Tata Kelola &amp; Audit TI</span>
+          </div>
+          <h3 class="study-title">Audit Sistem Informasi</h3>
+          <p class="study-summary">
+            Mempelajari prosedur evaluasi tata kelola TI, struktur pengendalian internal, manajemen risiko sistem, serta penyusunan instrumen dan laporan audit sistem informasi.
+          </p>
+          <div class="study-curriculum-box">
+            <p class="curriculum-label">Studi Kasus &amp; Proyek Aktif:</p>
+            <ul class="curriculum-list">
+              <li><strong>Perencanaan Audit Berbasis Risiko:</strong> Penyusunan ruang lingkup audit, pemetaan risiko aplikasi layanan publik, dan penentuan kontrol standar.</li>
+              <li><strong>Studi Kasus PDAM Tirta Moedal Semarang:</strong> Menyusun profil perusahaan dan proposal audit sistem informasi layanan pelanggan dan operasional pada Perumda Air Minum Tirta Moedal Kota Semarang.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 4. Sistem Pendukung Keputusan -->
+        <section class="study-card glass-card" data-study-group="enterprise-spk">
+          <div class="study-card-top">
+            <span class="course-code mono-code">A12.76506</span>
+            <span class="study-domain-badge badge-spk">Pemodelan Keputusan (DSS)</span>
+          </div>
+          <h3 class="study-title">Sistem Pendukung Keputusan (SPK)</h3>
+          <p class="study-summary">
+            Mempelajari perancangan sistem interaktif yang membantu manajemen mengambil keputusan semi-terstruktur menggunakan pemodelan logika dan pembobotan multikriteria (MCDM).
+          </p>
+          <div class="study-curriculum-box">
+            <p class="curriculum-label">Metode &amp; Pemodelan yang Dipelajari:</p>
+            <ul class="curriculum-list">
+              <li><strong>Tabel Keputusan (Decision Table):</strong> Penyusunan aturan keputusan untuk klasifikasi status epidemiologi wilayah Demam Berdarah Dengue (<em>Endemis, Sporadis, Potensial, Bebas</em>).</li>
+              <li><strong>Metode Multikriteria (MCDM):</strong> Perhitungan bobot prioritas dan pemeringkatan alternatif menggunakan <strong>AHP (Analytical Hierarchy Process)</strong>, <strong>SAW (Simple Additive Weighting)</strong>, dan <strong>WP (Weighted Product)</strong>.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 5. Implementasi dan Pengujian Sistem -->
+        <section class="study-card glass-card" data-study-group="audit-qa">
+          <div class="study-card-top">
+            <span class="course-code mono-code">A12.76502</span>
+            <span class="study-domain-badge badge-web">Rekayasa &amp; Kualitas Perangkat Lunak</span>
+          </div>
+          <h3 class="study-title">Implementasi dan Pengujian Sistem</h3>
+          <p class="study-summary">
+            Mendalami tahapan konversi desain sistem menjadi sistem siap pakai, strategi migrasi, serta metode verifikasi dan validasi mutu perangkat lunak.
+          </p>
+          <div class="study-curriculum-box">
+            <p class="curriculum-label">Fokus Pembelajaran Saat Ini:</p>
+            <ul class="curriculum-list">
+              <li><strong>Pengujian White-Box:</strong> Analisis struktur internal kode program, pemetaan <em>flow graph</em>, perhitungan <em>cyclomatic complexity</em>, dan pengujian jalur independen (<em>basis path testing</em>).</li>
+              <li><strong>Pengujian Black-Box &amp; Integrasi:</strong> Verifikasi fungsionalitas antarmuka, penanganan batas input (<em>boundary value analysis</em>), dan kesiapan deployment.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 6. Kecerdasan Buatan -->
+        <section class="study-card glass-card" data-study-group="data-ai">
+          <div class="study-card-top">
+            <span class="course-code mono-code">A12.76503</span>
+            <span class="study-domain-badge badge-data">Kecerdasan Buatan (AI)</span>
+          </div>
+          <h3 class="study-title">Kecerdasan Buatan (Artificial Intelligence)</h3>
+          <p class="study-summary">
+            Mempelajari fondasi komputasi cerdas, perancangan agen rasional, representasi pengetahuan, serta strategi pencarian solusi dalam ruang masalah.
+          </p>
+          <div class="study-curriculum-box">
+            <p class="curriculum-label">Konsep Inti yang Dipelajari:</p>
+            <ul class="curriculum-list">
+              <li><strong>Representasi Masalah &amp; Lingkungan Agen:</strong> Pemodelan <em>Performance, Environment, Actuators, Sensors</em> (PEAS) serta klasifikasi karakteristik lingkungan kerja agen cerdas.</li>
+              <li><strong>Pencarian &amp; Penalaran:</strong> Formulasi <em>state space</em>, algoritma pencarian buta (<em>uninformed search</em>) dan heuristik (<em>informed search</em>).</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 7. Sistem Informasi Akuntansi -->
+        <section class="study-card glass-card" data-study-group="enterprise-spk">
+          <div class="study-card-top">
+            <span class="course-code mono-code">A12.76505</span>
+            <span class="study-domain-badge badge-spk">Proses Bisnis &amp; Keuangan</span>
+          </div>
+          <h3 class="study-title">Sistem Informasi Akuntansi (SIA)</h3>
+          <p class="study-summary">
+            Mempelajari bagaimana data keuangan dan transaksi operasional dikumpulkan, dicatat, dikodekan, dan dilaporkan secara akurat dalam sistem informasi perusahaan.
+          </p>
+          <div class="study-curriculum-box">
+            <p class="curriculum-label">Siklus &amp; Teknik yang Dipelajari:</p>
+            <ul class="curriculum-list">
+              <li><strong>Siklus Akuntansi &amp; Pengodean:</strong> Persamaan dasar akuntansi, penjurnalan transaksi pada Jurnal Umum, perancangan struktur Kode Rekening (<em>Chart of Accounts</em>), dan posting Buku Besar.</li>
+              <li><strong>Dokumentasi &amp; Pengendalian:</strong> Pemodelan alur dokumen siklus pendapatan/pengeluaran serta pengendalian internal transaksi.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 8. Keamanan Sistem Informasi -->
+        <section class="study-card glass-card" data-study-group="audit-qa">
+          <div class="study-card-top">
+            <span class="course-code mono-code">A12.76703</span>
+            <span class="study-domain-badge badge-gov">Keamanan Siber &amp; Tata Kelola</span>
+          </div>
+          <h3 class="study-title">Keamanan Sistem Informasi</h3>
+          <p class="study-summary">
+            Mempelajari perlindungan aset informasi organisasi dari ancaman siber melalui pendekatan teknis, administratif, dan kebijakan keamanan.
+          </p>
+          <div class="study-curriculum-box">
+            <p class="curriculum-label">Cakupan Materi:</p>
+            <ul class="curriculum-list">
+              <li><strong>Prinsip CIA Triad &amp; Manajemen Risiko:</strong> Menjamin kerahasiaan (<em>confidentiality</em>), integritas (<em>integrity</em>), dan ketersediaan (<em>availability</em>) layanan informasi.</li>
+              <li><strong>Keamanan Aplikasi &amp; Kontrol Akses:</strong> Mitigasi celah keamanan web, autentikasi berlapis, kriptografi dasar, dan audit kepatuhan keamanan.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <!-- =====================================================================
+         SLIDE 03: REKAYASA SISTEM & ARSIP KARYA
+         ("The Solution" + "Our Offering Service" Glass Cards)
+         ===================================================================== -->
+    <article id="arsip-karya" class="chapter-block cazora-slide">
+      <div class="slide-corner-stamp" aria-hidden="true">
+        <div class="slide-step-dots">
+          <span>01</span>
+          <span>02</span>
+          <span class="is-lit">03</span>
+          <span>04</span>
+        </div>
+        <span class="slide-watermark">AN · ARSIP KARYA</span>
+      </div>
+
+      <div class="solution-centered-head">
+        <span class="slide-kicker mono-code">REKAYASA PERANGKAT LUNAK, PEMODELAN &amp; KAJIAN ENTERPRISE</span>
+        <h2 class="cazora-heading">Arsip Karya &amp; Studi Kasus Sistem</h2>
+        <span class="cazora-title-bar" aria-hidden="true"></span>
+        <p class="cazora-desc">
+          Delapan karya terpilih yang mewakili perjalanan teknis saya dari pengembangan aplikasi web berarsitektur <strong>PHP OOP MVC &amp; REST API</strong>, perancangan <strong>UML/BPMN</strong> perusahaan distribusi alat kesehatan, hingga tata kelola <strong>ITIL &amp; perencanaan strategis</strong>.
+        </p>
+      </div>
+
+      <!-- Category Filter Bar -->
+      <div class="work-filter-bar" role="toolbar" aria-label="Saring Karya berdasarkan Bidang">
+        <div class="filter-buttons">
+          <button type="button" class="work-filter-btn is-active" data-work-filter="all">Semua Karya (8)</button>
+          <button type="button" class="work-filter-btn" data-work-filter="web">Aplikasi Web &amp; REST API (4)</button>
+          <button type="button" class="work-filter-btn" data-work-filter="ux">Analisis UML/BPMN &amp; UI/UX (2)</button>
+          <button type="button" class="work-filter-btn" data-work-filter="gov">Tata Kelola, Strategi &amp; Inovasi TI (2)</button>
+        </div>
+        <p class="work-count-indicator mono-code" id="work-count-label">Menampilkan 8 dari 8 karya</p>
+      </div>
+
+      <!-- Glass Case Study Grid -->
+      <div class="case-study-grid" id="case-study-grid">
+
+        <!-- Project 1: PawSpa MVC (Only UAS-kelompok-7) -->
+        <article class="case-card glass-card case-featured" data-work-category="web">
+          <div class="case-card-header">
+            <span class="case-index mono-code">KARYA 01 · REPOSITORI GITHUB</span>
+            <span class="case-pillar-pill pill-web">Full-Stack PHP MVC</span>
+          </div>
+          <h3 class="case-title">PawSpa — Sistem Reservasi &amp; Manajemen Layanan Grooming Hewan</h3>
+          <p class="case-context">Pemrograman Web Lanjut (Semester 4) · Proyek Akhir Kelompok 7</p>
+          <p class="case-excerpt">
+            Aplikasi web reservasi perawatan hewan peliharaan (anjing dan kucing) yang dibangun dari nol menggunakan arsitektur <strong>Model-View-Controller (MVC)</strong> dengan PHP Native OOP dan MySQL. Mendukung alur lengkap dua peran: pelanggan dapat memilih paket layanan, mengunggah foto hewan serta bukti pembayaran, dan memantau status antrean; sedangkan administrator mengelola katalog layanan, memverifikasi pembayaran, dan memantau statistik harian.
+          </p>
+          <ul class="case-spec-tags" aria-label="Teknologi PawSpa">
+            <li>PHP 7.4+ OOP</li>
+            <li>Custom MVC</li>
+            <li>MySQL / MariaDB</li>
+            <li>Apache .htaccess Routing</li>
+            <li>Multi-Role Auth</li>
+          </ul>
+          <div class="case-card-footer">
+            <button type="button" class="inspect-trigger" data-project-id="pawspa">
+              <span>Bedah Arsitektur &amp; Detail</span>
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="case-external-links">
+              <a href="https://github.com/audreynabilla/UAS-kelompok-7" target="_blank" rel="noopener noreferrer" class="ext-repo-link">GitHub UAS-kelompok-7 ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Sistem Inventaris MVC + REST API -->
+        <article class="case-card glass-card case-featured" data-work-category="web">
+          <div class="case-card-header">
+            <span class="case-index mono-code">KARYA 02 · REPOSITORI GITHUB</span>
+            <span class="case-pillar-pill pill-web">MVC · PDO · REST API</span>
+          </div>
+          <h3 class="case-title">Sistem Manajemen Inventaris Berbasis MVC &amp; Layanan RESTful JSON API</h3>
+          <p class="case-context">Pemrograman Web Lanjut (Semester 4) · Proyek Individu (A12.2024.07171)</p>
+          <p class="case-excerpt">
+            Sistem pengelolaan stok produk dengan pemisahan struktur <code>app/controllers</code>, <code>app/models</code>, <code>app/views</code>, dan <code>SecurityHelper</code>. Dilengkapi autentikasi pengguna berbasis <code>password_hash()</code>, abstraksi basis data <strong>PHP PDO</strong>, fitur unggah gambar produk tervalidasi, serta modul <strong>RESTful API mandiri</strong> (<code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code>) berformat JSON untuk integrasi lintas layanan.
+          </p>
+          <ul class="case-spec-tags" aria-label="Teknologi Sistem Inventaris">
+            <li>PHP PDO</li>
+            <li>Arsitektur MVC</li>
+            <li>RESTful JSON API</li>
+            <li>SecurityHelper</li>
+            <li>Password Hashing</li>
+          </ul>
+          <div class="case-card-footer">
+            <button type="button" class="inspect-trigger" data-project-id="inventaris-mvc">
+              <span>Bedah Arsitektur &amp; Detail</span>
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="case-external-links">
+              <a href="https://github.com/audreynabilla/pwl-crud-07171" target="_blank" rel="noopener noreferrer" class="ext-repo-link">GitHub pwl-crud-07171 ↗</a>
+              <a href="https://youtu.be/afBZMuH899g" target="_blank" rel="noopener noreferrer" class="ext-repo-link">Video Demo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: CRM & POS Djuara Coffee -->
+        <article class="case-card glass-card" data-work-category="web">
+          <div class="case-card-header">
+            <span class="case-index mono-code">KARYA 03 · SISTEM ENTERPRISE RITEL</span>
+            <span class="case-pillar-pill pill-web">CRM &amp; Point of Sale</span>
+          </div>
+          <h3 class="case-title">Sistem Informasi CRM &amp; Kasir Multi-Cabang pada Djuara Coffee</h3>
+          <p class="case-context">Pengelolaan Hubungan Pelanggan / CRM (Semester 3 — Kelas Unggulan)</p>
+          <p class="case-excerpt">
+            Perancangan dan pembangunan aplikasi web terintegrasi untuk operasional 4 cabang Djuara Coffee. Menggabungkan modul kasir (<em>Point of Sale</em>), manajemen produk dan <em>modifier</em> minuman, pencetakan struk transaksi, verifikasi keanggotaan pelanggan, pengumpulan poin otomatis, penukaran katalog <em>reward</em> loyalitas, hingga pelaporan performa penjualan harian per cabang.
+          </p>
+          <ul class="case-spec-tags">
+            <li>PHP Native &amp; MySQL</li>
+            <li>Multi-Branch POS</li>
+            <li>Loyalty Points Engine</li>
+            <li>ERD &amp; Sequence Diagram</li>
+          </ul>
+          <div class="case-card-footer">
+            <button type="button" class="inspect-trigger" data-project-id="crm-djuara">
+              <span>Bedah Arsitektur &amp; Detail</span>
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 4: Penjualan 7171 Multi-Modul -->
+        <article class="case-card glass-card" data-work-category="web">
+          <div class="case-card-header">
+            <span class="case-index mono-code">KARYA 04 · APLIKASI WEB OPERASIONAL</span>
+            <span class="case-pillar-pill pill-web">CRUD Multi-Entitas</span>
+          </div>
+          <h3 class="case-title">Aplikasi Web Manajemen Penjualan, Pegawai, Kategori &amp; Supplier</h3>
+          <p class="case-context">Pemrograman Web Dasar (Semester 3) · Proyek Individu (penjualan_7171baru)</p>
+          <p class="case-excerpt">
+            Sistem informasi manajemen toko berbasis PHP dan MySQL yang dilengkapi autentikasi registrasi/login, dasbor ringkasan, serta empat modul CRUD relasional penuh untuk mengelola data barang, direktori pegawai, kategori produk, dan mitra pemasok (<em>supplier</em>), ditambah portofolio antarmuka web interaktif berbasis Bootstrap 5 dan JavaScript DOM.
+          </p>
+          <ul class="case-spec-tags">
+            <li>PHP &amp; MySQL</li>
+            <li>4 Modul CRUD Relasional</li>
+            <li>HTML5 / CSS3 / JS DOM</li>
+            <li>Bootstrap 5</li>
+          </ul>
+          <div class="case-card-footer">
+            <button type="button" class="inspect-trigger" data-project-id="penjualan-web">
+              <span>Bedah Arsitektur &amp; Detail</span>
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 5: Analisis Sistem PT Bina Givensa (APST & APSIO) -->
+        <article class="case-card glass-card" data-work-category="ux">
+          <div class="case-card-header">
+            <span class="case-index mono-code">KARYA 05 · REKAYASA KEBUTUHAN SISTEM</span>
+            <span class="case-pillar-pill pill-ux">UML · BPMN · DFD</span>
+          </div>
+          <h3 class="case-title">Analisis &amp; Perancangan Sistem Informasi Jual Beli Alat Kesehatan pada PT. Bina Givensa</h3>
+          <p class="case-context">APST (Semester 2) &amp; APSIO (Semester 3 — Kelas Unggulan)</p>
+          <p class="case-excerpt">
+            Kajian analisis sistem dua tahap (terstruktur dan berorientasi objek) pada perusahaan distributor alat kesehatan di Semarang. Mencakup identifikasi masalah dengan kerangka <strong>PIECES</strong>, pemodelan proses bisnis <strong>BPMN (As-Is &amp; To-Be)</strong>, <em>Flow of Document</em> (FOD), DFD Level 0–1, serta spesifikasi <strong>UML lengkap</strong> (Use Case, Activity, Sequence via PlantUML, Class Diagram) dan rancangan antarmuka bagi Kepala Sarana RS, Supplier, dan Direktur.
+          </p>
+          <ul class="case-spec-tags">
+            <li>UML (Use Case, Sequence, Class)</li>
+            <li>BPMN As-Is &amp; To-Be</li>
+            <li>DFD &amp; FOD</li>
+            <li>PIECES Analysis</li>
+            <li>PlantUML &amp; Draw.io</li>
+          </ul>
+          <div class="case-card-footer">
+            <button type="button" class="inspect-trigger" data-project-id="bina-givensa">
+              <span>Bedah Arsitektur &amp; Detail</span>
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 6: Redesain UI/UX DPM-KM & Marketplace Pujasera -->
+        <article class="case-card glass-card" data-work-category="ux">
+          <div class="case-card-header">
+            <span class="case-index mono-code">KARYA 06 · RISET UI/UX &amp; VALIDASI STATISTIK</span>
+            <span class="case-pillar-pill pill-ux">Heuristic · UCD · SUS</span>
+          </div>
+          <h3 class="case-title">Redesain UI/UX Situs Web DPM-KM UDINUS &amp; Rancang Bangun Marketplace Pujasera</h3>
+          <p class="case-context">Interaksi Manusia &amp; Komputer (Semester 4) &amp; Literasi Informasi (Semester 2)</p>
+          <p class="case-excerpt">
+            Evaluasi ketergunaan situs lembaga legislatif mahasiswa DPM-KM UDINUS menggunakan <strong>10 Heuristic Evaluation Nielsen</strong>, diuji validitas (<em>Pearson Correlation</em>) dan reliabilitasnya (α = 0,716) di <strong>IBM SPSS</strong> pada 33 responden awal. Solusi prototipe dirancang dengan pendekatan <em>User-Centered Design</em> (UCD) dan menghasilkan skor akhir <strong>System Usability Scale (SUS) sebesar 78,9 (Grade B / Excellent)</strong> pada 37 responden.
+          </p>
+          <ul class="case-spec-tags">
+            <li>10 Nielsen Heuristics</li>
+            <li>User-Centered Design (UCD)</li>
+            <li>System Usability Scale (78.9)</li>
+            <li>IBM SPSS (α = 0.716)</li>
+          </ul>
+          <div class="case-card-footer">
+            <button type="button" class="inspect-trigger" data-project-id="imk-dpmkm">
+              <span>Bedah Arsitektur &amp; Detail</span>
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 7: Tata Kelola ITIL & Audit PDAM + ERP Odoo Batik Semarang 16 -->
+        <article class="case-card glass-card" data-work-category="gov">
+          <div class="case-card-header">
+            <span class="case-index mono-code">KARYA 07 · TATA KELOLA &amp; AUDIT LAYANAN TI</span>
+            <span class="case-pillar-pill pill-gov">ITIL · COBIT 5 · ERP Odoo</span>
+          </div>
+          <h3 class="case-title">Tata Kelola ITIL &amp; Audit Layanan TI pada PDAM Tirta Moedal serta ERP Odoo PT Batik Semarang 16</h3>
+          <p class="case-context">Tata Kelola Manajemen Layanan TI (Semester 4) &amp; Audit SI (Semester 5)</p>
+          <p class="case-excerpt">
+            Penyusunan dokumen <strong>Katalog Layanan TI</strong> (Aplikasi Mobile <em>Si Agan</em>, GIS Jaringan Perpipaan, SCADA Monitoring IPA, PPOB), <em>Business Case</em>, <em>Request for Change</em> (RFC), dan proposal Audit Sistem Informasi pada Perumda Air Minum Tirta Moedal Kota Semarang. Mencakup pula perancangan <em>ITIL 4P Service Strategy</em> dan tata kelola <strong>COBIT 5 (APO, DSS, MEA)</strong> untuk integrasi modul SCM/CRM <strong>ERP Odoo</strong> pada PT Batik Semarang 16.
+          </p>
+          <ul class="case-spec-tags">
+            <li>ITIL Service Strategy &amp; Catalogue</li>
+            <li>COBIT 5 (APO, DSS, MEA)</li>
+            <li>ERP Odoo SCM/CRM</li>
+            <li>RFC &amp; SLA Management</li>
+          </ul>
+          <div class="case-card-footer">
+            <button type="button" class="inspect-trigger" data-project-id="itil-pdam">
+              <span>Bedah Arsitektur &amp; Detail</span>
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 8: PSSI Ward & Peppard + Transformasi Digital Posyandu IoT -->
+        <article class="case-card glass-card" data-work-category="gov">
+          <div class="case-card-header">
+            <span class="case-index mono-code">KARYA 08 · STRATEGI SI &amp; INOVASI DIGITAL</span>
+            <span class="case-pillar-pill pill-gov">Ward &amp; Peppard · IoT · AI</span>
+          </div>
+          <h3 class="case-title">Perencanaan Strategis SI (Shopee &amp; Bukalapak) serta Transformasi Digital Posyandu IoT</h3>
+          <p class="case-context">Perencanaan Strategis SI &amp; Transformasi Digital (Semester 4)</p>
+          <p class="case-excerpt">
+            Perumusan cetak biru strategis SI/TI menggunakan metode <strong>Ward &amp; Peppard</strong> (analisis lingkungan bisnis internal/eksternal via SWOT, <em>Value Chain</em>, <em>Porter's Five Forces</em>, <em>Balanced Scorecard Strategic Map</em>, dan portofolio aplikasi <em>McFarlan Strategic Grid</em>) pada PT Shopee Internasional Indonesia dan PT Bukalapak.com Tbk, disertai rancangan ekosistem <strong>Posyandu Pintar berbasis sensor IoT</strong> untuk deteksi dini stunting dan <strong>Smart Village AI Chatbot</strong>.
+          </p>
+          <ul class="case-spec-tags">
+            <li>Ward &amp; Peppard Framework</li>
+            <li>Balanced Scorecard &amp; McFarlan Grid</li>
+            <li>BPMN Bizagi</li>
+            <li>Arsitektur IoT &amp; Cloud Chatbot</li>
+          </ul>
+          <div class="case-card-footer">
+            <button type="button" class="inspect-trigger" data-project-id="pssi-transdig">
+              <span>Bedah Arsitektur &amp; Detail</span>
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </article>
+
+    <!-- =====================================================================
+         SLIDE 04: PUBLIKASI ILMIAH & RISET (JOINS UDINUS)
+         ("Target Market Chart" Donut Ring Layout)
+         ===================================================================== -->
+    <article id="publikasi-riset" class="chapter-block cazora-slide">
+      <div class="slide-corner-stamp" aria-hidden="true">
+        <div class="slide-step-dots">
+          <span>01</span>
+          <span>02</span>
+          <span>03</span>
+          <span class="is-lit">04</span>
+        </div>
+        <span class="slide-watermark">AN · JURNAL JOINS</span>
+      </div>
+
+      <div class="solution-centered-head">
+        <span class="slide-kicker mono-code">KONTRIBUSI AKADEMIK · PENULIS PERTAMA &amp; KORESPONDENSI</span>
+        <h2 class="cazora-heading">Naskah Publikasi di Jurnal JOINS UDINUS</h2>
+        <span class="cazora-title-bar" aria-hidden="true"></span>
+        <p class="cazora-desc">
+          Dua naskah penelitian ilmiah yang telah disusun dan disubmit ke <strong>JOINS (Journal of Information System)</strong> Universitas Dian Nuswantoro pada bidang Interaksi Manusia-Komputer dan Manajemen Rantai Pasok.
+        </p>
+      </div>
+
+      <!-- CAZORA "Target Market Chart" Donut Ring Grid -->
+      <div class="cazora-donut-showcase">
+        <div class="donut-cards-stack">
+          <!-- Donut Card 1: SUS 78.9 -->
+          <div class="donut-glass-card glass-card">
+            <div class="donut-gauge-box" aria-label="Skor SUS 78.9 dari 100">
+              <svg viewBox="0 0 100 100" class="donut-svg" aria-hidden="true">
+                <defs>
+                  <linearGradient id="gradSUS" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#FFFFFF"/>
+                    <stop offset="50%" stop-color="#F5CAFF"/>
+                    <stop offset="100%" stop-color="#C585FF"/>
+                  </linearGradient>
+                  <filter id="glowSUS" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="3" result="blur"/>
+                    <feMerge>
+                      <feMergeNode in="blur"/>
+                      <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                  </filter>
+                </defs>
+                <circle cx="50" cy="50" r="37" class="donut-track"/>
+                <circle cx="50" cy="50" r="37" class="donut-fill" stroke="url(#gradSUS)" filter="url(#glowSUS)" stroke-dasharray="183.4 232.5"/>
+              </svg>
+              <div class="donut-center-stack">
+                <span class="donut-val mono-code">78.9</span>
+                <span class="donut-unit mono-code">/100</span>
+                <span class="donut-badge mono-code">GRADE B</span>
+              </div>
+            </div>
+            <div class="donut-copy">
+              <div class="donut-kicker-row">
+                <span class="donut-kicker mono-code">JOINS SUBMISSION #16835 · JUNI 2026</span>
+                <span class="donut-pill-tag">Acceptable / Excellent</span>
+              </div>
+              <strong class="donut-title">Skor Akhir System Usability Scale (SUS)</strong>
+              <p class="donut-desc">Validasi empiris pasca-redesain UCD terhadap 37 responden mahasiswa dengan instrumen kuesioner yang telah tervalidasi SPSS (Cronbach's Alpha α = 0,716, N = 33).</p>
+            </div>
+          </div>
+
+          <!-- Donut Card 2: PRISMA 294 -->
+          <div class="donut-glass-card glass-card">
+            <div class="donut-gauge-box" aria-label="294 Publikasi Ilmiah Disaring via PRISMA">
+              <svg viewBox="0 0 100 100" class="donut-svg" aria-hidden="true">
+                <defs>
+                  <linearGradient id="gradPRISMA" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#FFFFFF"/>
+                    <stop offset="50%" stop-color="#A5F3FC"/>
+                    <stop offset="100%" stop-color="#5CE1E6"/>
+                  </linearGradient>
+                  <filter id="glowPRISMA" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="3" result="blur"/>
+                    <feMerge>
+                      <feMergeNode in="blur"/>
+                      <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                  </filter>
+                </defs>
+                <circle cx="50" cy="50" r="37" class="donut-track"/>
+                <circle cx="50" cy="50" r="37" class="donut-fill" stroke="url(#gradPRISMA)" filter="url(#glowPRISMA)" stroke-dasharray="190.6 232.5"/>
+              </svg>
+              <div class="donut-center-stack">
+                <span class="donut-val mono-code">294</span>
+                <span class="donut-unit mono-code">PAPERS</span>
+                <span class="donut-badge badge-cyan mono-code">PRISMA</span>
+              </div>
+            </div>
+            <div class="donut-copy">
+              <div class="donut-kicker-row">
+                <span class="donut-kicker mono-code">JOINS SUBMISSION #15526 · JANUARI 2026</span>
+                <span class="donut-pill-tag tag-cyan">4 Metode Industri</span>
+              </div>
+              <strong class="donut-title">Sintesis Literatur Sistematis PRISMA</strong>
+              <p class="donut-desc">Penyaringan ketat 294 artikel akademik menjadi kajian komparatif 4 strategi rantai pasok (SCOR, MRP, EOQ/POQ, dan Just-In-Time) untuk efisiensi persediaan bahan baku.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Glass Art Showcase (Authentic CAZORA Presentation Stage) -->
+        <div class="donut-visual-stage glass-card">
+          <div class="stage-3d-backdrop" aria-hidden="true">
+            <svg class="stage-mesh-svg" viewBox="0 0 400 300" fill="none" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <linearGradient id="meshGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+                  <stop offset="35%" stop-color="#F2C6FF" stop-opacity="0.55"/>
+                  <stop offset="70%" stop-color="#A855F7" stop-opacity="0.4"/>
+                  <stop offset="100%" stop-color="#3B1782" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="meshGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#5CE1E6" stop-opacity="0.6"/>
+                  <stop offset="50%" stop-color="#C084FC" stop-opacity="0.45"/>
+                  <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path d="M-20,180 C80,80 180,240 280,120 C340,50 420,100 440,80" stroke="url(#meshGrad1)" stroke-width="2.5" fill="none"/>
+              <path d="M-20,200 C80,100 180,260 280,140 C340,70 420,120 440,100" stroke="url(#meshGrad1)" stroke-width="2" stroke-opacity="0.7" fill="none"/>
+              <path d="M-20,220 C80,120 180,280 280,160 C340,90 420,140 440,120" stroke="url(#meshGrad1)" stroke-width="1.5" stroke-opacity="0.5" fill="none"/>
+              <path d="M-20,150 C90,220 200,90 300,210 C360,270 430,190 450,220" stroke="url(#meshGrad2)" stroke-width="2" fill="none"/>
+              <path d="M-20,170 C90,240 200,110 300,230 C360,290 430,210 450,240" stroke="url(#meshGrad2)" stroke-width="1.5" stroke-opacity="0.6" fill="none"/>
+            </svg>
+            <div class="stage-sculpture-orb orb-primary"></div>
+            <div class="stage-sculpture-orb orb-secondary"></div>
+            <div class="stage-sculpture-orb orb-accent"></div>
+          </div>
+
+          <div class="visual-stage-caption">
+            <div class="caption-badge-row">
+              <span class="mono-code caption-kicker">METODOLOGI RISET TERUJI</span>
+              <span class="caption-pill mono-code">SPSS &amp; PRISMA</span>
+            </div>
+            <h3 class="caption-title">Kombinasi Pengujian Statistik Empiris &amp; Kajian Rantai Pasok Sistematis</h3>
+            <p class="caption-desc">Mengintegrasikan evaluasi heuristik dan validasi skala SUS pada responden nyata dengan sintesis literatur multi-metode pengendalian persediaan.</p>
+            <div class="caption-tags-row">
+              <span class="mono-code">Cronbach's Alpha α = 0.716</span>
+              <span class="mono-code">Pearson Correlation Valid</span>
+              <span class="mono-code">Grade B / Excellent</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full Manuscript Dossiers -->
+      <div class="journal-dossier-list">
+        <section class="journal-card glass-card">
+          <div class="journal-meta-col">
+            <span class="journal-id mono-code">SUBMISSION #16835</span>
+            <span class="journal-date">26 Juni 2026</span>
+            <span class="journal-role-badge">Penulis Pertama &amp; Korespondensi</span>
+            <div class="journal-metrics-stack">
+              <div class="j-metric">
+                <span class="j-metric-val mono-code">78.9</span>
+                <span class="j-metric-lbl">Skor Akhir SUS (Grade B / Excellent)</span>
+              </div>
+              <div class="j-metric">
+                <span class="j-metric-val mono-code">0.716</span>
+                <span class="j-metric-lbl">Reliabilitas Cronbach's Alpha (SPSS)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="journal-body-col">
+            <p class="journal-venue">JOINS (Journal of Information System) · Universitas Dian Nuswantoro</p>
+            <h3 class="journal-title">
+              Redesign of the DPM-KM Website Interface Based on Heuristic Evaluation Using a User-Centered Design Approach and Validation via the System Usability Scale
+            </h3>
+            <p class="journal-authors">
+              <strong>Audrey Nabilla Laksono</strong>, Siti Muamalia, Kezia Levi Yonanda Sari, MY Teguh Sulistyono
+            </p>
+            <p class="journal-abstract">
+              Penelitian ini mengevaluasi permasalahan ketergunaan (<em>usability</em>) pada situs web Dewan Perwakilan Mahasiswa Keluarga Mahasiswa (DPM-KM) UDINUS menggunakan 10 prinsip <em>Heuristic Evaluation</em> dari Jakob Nielsen pada 33 responden valid awal. Instrumen kuesioner diuji secara statistik menggunakan <em>Pearson Product-Moment Correlation</em> dan uji reliabilitas <em>Cronbach's Alpha</em> (α = 0,716) di IBM SPSS. Berdasarkan temuan masalah utama pada aspek visibilitas status sistem, konsistensi tata letak, dan pencegahan kesalahan, dilakukan perancangan ulang prototipe antarmuka dengan metode <em>User-Centered Design</em> (UCD). Evaluasi akhir menggunakan <em>System Usability Scale</em> (SUS) terhadap 37 responden membuktikan peningkatan ketergunaan yang signifikan dengan skor rata-rata <strong>78,9</strong> (kategori <em>Acceptable</em> / peringkat <em>Excellent</em>).
+            </p>
+            <div class="journal-keywords">
+              <span>Heuristic Evaluation</span>
+              <span>User-Centered Design</span>
+              <span>System Usability Scale</span>
+              <span>IBM SPSS</span>
+              <span>UI/UX Redesign</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="journal-card glass-card">
+          <div class="journal-meta-col">
+            <span class="journal-id mono-code">SUBMISSION #15526</span>
+            <span class="journal-date">9 Januari 2026</span>
+            <span class="journal-role-badge">Penulis Pertama</span>
+            <div class="journal-metrics-stack">
+              <div class="j-metric">
+                <span class="j-metric-val mono-code">n = 294</span>
+                <span class="j-metric-lbl">Artikel Awal Disaring via PRISMA</span>
+              </div>
+              <div class="j-metric">
+                <span class="j-metric-val mono-code">4 Metode</span>
+                <span class="j-metric-lbl">Komparasi SCOR, MRP, EOQ/POQ &amp; JIT</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="journal-body-col">
+            <p class="journal-venue">JOINS (Journal of Information System) · Universitas Dian Nuswantoro</p>
+            <h3 class="journal-title">
+              Analisis Strategi Pengendalian Persediaan Bahan Baku Berbasis Kerangka SCOR dan Optimasi Metodologis untuk Keunggulan Kompetitif Industri
+            </h3>
+            <p class="journal-authors">
+              <strong>Audrey Nabilla Laksono</strong>, Septya Angelina, Siti Muamalia, Kezia Levi Yonanda Sari
+            </p>
+            <p class="journal-abstract">
+              Kajian literatur sistematis menggunakan protokol <strong>PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses)</strong> yang menyaring 294 publikasi akademik menjadi sintesis komparatif mendalam mengenai strategi pengendalian persediaan bahan baku lintas skala industri (UMKM hingga manufaktur korporasi). Memetakan kesesuaian implementasi kerangka kerja <em>Supply Chain Operations Reference</em> (SCOR), <em>Material Requirements Planning</em> (MRP), optimasi kuantitas pesanan ekonomis (EOQ &amp; POQ), serta sistem kendali tepat waktu (<em>Just-In-Time</em> / JIT) dalam menekan biaya penyimpanan dan mencegah risiko <em>stockout</em>.
+            </p>
+            <div class="journal-keywords">
+              <span>Supply Chain Management</span>
+              <span>SCOR Framework</span>
+              <span>PRISMA Protocol</span>
+              <span>EOQ &amp; MRP</span>
+              <span>Just-In-Time (JIT)</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <!-- =====================================================================
+         SLIDE 05: MATRIKS KEAHLIAN & 17 SERTIFIKASI INTERNASIONAL COURSERA
+         ===================================================================== -->
+    <article id="matriks-keahlian" class="chapter-block cazora-slide">
+      <div class="slide-corner-stamp" aria-hidden="true">
+        <div class="slide-step-dots">
+          <span class="is-lit">01</span>
+          <span>02</span>
+          <span>03</span>
+          <span>04</span>
+        </div>
+        <span class="slide-watermark">AN · KOMPETENSI &amp; LISENSI</span>
+      </div>
+
+      <div class="solution-centered-head">
+        <span class="slide-kicker mono-code">KOMPETENSI TEKNIS, METODE ANALISIS &amp; LISENSI INTERNASIONAL</span>
+        <h2 class="cazora-heading">Matriks Keahlian &amp; Sertifikasi Coursera</h2>
+        <span class="cazora-title-bar" aria-hidden="true"></span>
+        <p class="cazora-desc">
+          Kombinasi keahlian praktis yang dipetakan dari artefak perkuliahan Semester 1–5 beserta <strong>17 sertifikasi internasional Coursera</strong> dari institusi global (Google, University of Illinois Urbana-Champaign, University of Minnesota, Infosec, Packt, SkillUp, dan EDUCBA).
+        </p>
+      </div>
+
+      <div class="competency-ledger">
+        <!-- Track 1 -->
+        <div class="ledger-row glass-card">
+          <div class="ledger-domain-col">
+            <span class="track-num mono-code">TRACK 01</span>
+            <h3 class="track-name">Pemrograman &amp; Pengembangan Web</h3>
+            <p class="track-note">Konstruksi aplikasi web full-stack, struktur data, dan layanan API.</p>
+          </div>
+          <div class="ledger-items-col">
+            <div class="skill-spec-item">
+              <strong>PHP Native (OOP &amp; MVC)</strong>
+              <p>Pembuatan sistem berarsitektur Model-View-Controller, routing <code>.htaccess</code>, manajemen sesi, autentikasi <code>password_hash()</code>, dan unggah berkas aman.</p>
+            </div>
+            <div class="skill-spec-item">
+              <strong>MySQL / MariaDB &amp; PHP PDO</strong>
+              <p>Perancangan skema relasional ternormalisasi, query agregasi laporan transaksi, dan penggunaan <em>prepared statements</em> PDO.</p>
+            </div>
+            <div class="skill-spec-item">
+              <strong>RESTful JSON API</strong>
+              <p>Penyusunan endpoint mandiri (<code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code>) dengan respons JSON terstandar untuk pertukaran data inventaris.</p>
+            </div>
+            <div class="skill-spec-item">
+              <strong>HTML5, CSS3, Bootstrap 5 &amp; JavaScript</strong>
+              <p>Perancangan tata letak responsif, manipulasi DOM interaktif, kalkulator logika bisnis, dan validasi formulir sisi klien.</p>
+            </div>
+            <div class="skill-spec-item">
+              <strong>Algoritma &amp; Struktur Data C / C++</strong>
+              <p>Implementasi <em>Pointer</em>, <em>Struct</em>, <em>Singly &amp; Doubly Linked List</em> (Circular/Non-Circular), konversi <em>Stack Infix-to-Postfix</em>, dan <em>Queue</em>.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Track 2 -->
+        <div class="ledger-row glass-card">
+          <div class="ledger-domain-col">
+            <span class="track-num mono-code">TRACK 02</span>
+            <h3 class="track-name">Rekayasa Sistem, Proses Bisnis &amp; UI/UX</h3>
+            <p class="track-note">Pemodelan visual sistem informasi dan riset pengalaman pengguna kuantitatif.</p>
+          </div>
+          <div class="ledger-items-col">
+            <div class="skill-spec-item">
+              <strong>Pemodelan Berorientasi Objek (UML)</strong>
+              <p>Penyusunan <em>Use Case Diagram</em>, skenario naratif, <em>Activity Diagram</em>, <em>Sequence Diagram</em> (Draw.io &amp; PlantUML), dan <em>Class Diagram</em>.</p>
+            </div>
+            <div class="skill-spec-item">
+              <strong>Pemodelan Proses Bisnis (BPMN) &amp; Terstruktur</strong>
+              <p>Rekayasa proses bisnis <em>As-Is</em> dan <em>To-Be</em> dengan Bizagi Modeler, <em>Flow of Document</em> (FOD), <em>Context Diagram</em>, dan DFD berjenjang.</p>
+            </div>
+            <div class="skill-spec-item">
+              <strong>Riset UI/UX (UCD, Heuristic Evaluation, SUS)</strong>
+              <p>Audit antarmuka dengan 10 Heuristik Nielsen, perancangan prototipe <em>User-Centered Design</em>, serta pengukuran ketergunaan dengan <em>System Usability Scale</em>.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Track 3 -->
+        <div class="ledger-row glass-card">
+          <div class="ledger-domain-col">
+            <span class="track-num mono-code">TRACK 03</span>
+            <h3 class="track-name">Sains Data, Statistika &amp; Riset Operasi</h3>
+            <p class="track-note">Pengolahan data di Python Colab, pengujian statistik SPSS, dan pemodelan kuantitatif.</p>
+          </div>
+          <div class="ledger-items-col">
+            <div class="skill-spec-item">
+              <strong>Python Data Mining (Google Colab)</strong>
+              <p>Regresi Linear/Berganda, klasifikasi <em>Decision Tree</em> &amp; <em>KNN</em>, klasterisasi <em>K-Means</em>, asosiasi <em>Apriori</em> &amp; <em>FP-Growth</em>, serta penanganan kelas timpang (<em>SMOTE</em>, <em>SMOTE-Tomek</em>, <em>ADASYN</em>).</p>
+            </div>
+            <div class="skill-spec-item">
+              <strong>IBM SPSS Statistics</strong>
+              <p>Uji validitas instrumen (<em>Pearson Correlation</em>), uji reliabilitas (<em>Cronbach's Alpha</em>), analisis regresi, dan statistik deskriptif/inferensial.</p>
+            </div>
+            <div class="skill-spec-item">
+              <strong>Sistem Pendukung Keputusan &amp; Riset Operasi</strong>
+              <p>Pemodelan multikriteria (<strong>AHP, SAW, WP</strong>), Tabel Keputusan, Pemrograman Linear <em>Simplex</em>, metode transportasi <em>MODI</em>, dan peramalan <em>Moving Average</em>.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Track 4 -->
+        <div class="ledger-row glass-card">
+          <div class="ledger-domain-col">
+            <span class="track-num mono-code">TRACK 04</span>
+            <h3 class="track-name">Tata Kelola TI, Strategi &amp; Sistem Enterprise</h3>
+            <p class="track-note">Kerangka standar manajemen layanan TI, perencanaan strategis, dan audit.</p>
+          </div>
+          <div class="ledger-items-col">
+            <div class="skill-spec-item">
+              <strong>ITIL v3/v4 &amp; COBIT 5</strong>
+              <p>Penyusunan <em>Service Strategy (4P)</em>, <em>IT Service Catalogue</em>, <em>Business Case</em>, <em>Request for Change (RFC)</em>, serta pemetaan domain COBIT 5 (APO, DSS, MEA) dan maturitas penyelarasan Luftman SAMM.</p>
+            </div>
+            <div class="skill-spec-item">
+              <strong>Perencanaan Strategis SI (Ward &amp; Peppard)</strong>
+              <p>Analisis SWOT, <em>Value Chain</em>, <em>Porter's Five Forces</em>, <em>Balanced Scorecard Strategic Map</em>, dan portofolio aplikasi <em>McFarlan Strategic Grid</em>.</p>
+            </div>
+            <div class="skill-spec-item">
+              <strong>Konsep ERP (Odoo), SCM, CRM &amp; Audit SI</strong>
+              <p>Integrasi alur <em>Order-to-Cash</em>, konfigurasi fungsional modul SCM/CRM ERP Odoo, pemodelan keuangan <em>Profit &amp; Loss (P&amp;L)</em>, serta penyusunan proposal Audit Sistem Informasi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUBSECTION: REGISTRI SERTIFIKASI & LISENSI COURSERA (17 KREDENSIAL) -->
+      <div class="credential-registry glass-card" id="sertifikasi-coursera">
+        <div class="registry-banner">
+          <div class="registry-banner-text">
+            <span class="registry-kicker mono-code">ARSIP LISENSI &amp; KREDENSIAL PROFESIONAL</span>
+            <h3 class="registry-heading">Sertifikasi Internasional Coursera (2026)</h3>
+            <p class="registry-sub">
+              17 sertifikat penyelesaian kursus yang memperkuat landasan teoritis dan praktis pada bidang Sains Data, Desain Pengalaman Pengguna (UX), Arsitektur &amp; Audit TI, serta Keamanan Sistem Informasi (CISSP Domain 1–8).
+            </p>
+          </div>
+          <div class="registry-stats-box">
+            <div class="reg-stat">
+              <strong class="mono-code">17</strong>
+              <span>Sertifikat Lulus</span>
+            </div>
+            <div class="reg-stat">
+              <strong class="mono-code">7</strong>
+              <span>Institusi Global</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="registry-controls" role="toolbar" aria-label="Saring Sertifikasi Coursera">
+          <button type="button" class="reg-tab-btn is-selected" data-cred-group="all">Semua Sertifikasi (17)</button>
+          <button type="button" class="reg-tab-btn" data-cred-group="data-ux">Sains Data, Arsitektur Data &amp; UX (5)</button>
+          <button type="button" class="reg-tab-btn" data-cred-group="gov-ent">Tata Kelola, Audit TI &amp; Enterprise (4)</button>
+          <button type="button" class="reg-tab-btn" data-cred-group="cissp-sec">Keamanan Sistem &amp; CISSP Domain 1–8 (8)</button>
+        </div>
+
+        <div class="credential-table" role="region" aria-label="Daftar Sertifikasi Coursera">
+          <div class="cred-row cred-row-verified" data-cred-cat="data-ux">
+            <span class="cred-idx mono-code">01</span>
+            <div class="cred-main">
+              <strong class="cred-course-title">Data Integration, Data Storage, &amp; Data Migration</strong>
+              <span class="cred-issuer">SkillUp · Coursera</span>
+            </div>
+            <span class="cred-domain-tag badge-data">Arsitektur &amp; Integrasi Data</span>
+            <span class="cred-date mono-code">April 2026</span>
+            <div class="cred-action">
+              <a href="https://coursera.org/verify/MI8X78N3INB9" target="_blank" rel="noopener noreferrer" class="cred-verify-pill" title="Verifikasi Sertifikat Resmi Coursera">
+                <svg width="13" height="13" viewBox="0 0 16 16" fill="none" class="verify-check-icon" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Verifikasi (MI8X78N3INB9)</span>
+                <svg width="11" height="11" viewBox="0 0 16 16" fill="none" class="verify-ext-arrow" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="cred-row" data-cred-cat="data-ux">
+            <span class="cred-idx mono-code">02</span>
+            <div class="cred-main">
+              <strong class="cred-course-title">Foundations of User Experience (UX) Design</strong>
+              <span class="cred-issuer">Google · Coursera</span>
+            </div>
+            <span class="cred-domain-tag badge-web">Riset &amp; Desain UI/UX</span>
+            <span class="cred-date mono-code">Mei 2026</span>
+            <div class="cred-action">
+              <span class="cred-completed-stamp mono-code"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></span>
+            </div>
+          </div>
+
+          <div class="cred-row" data-cred-cat="data-ux">
+            <span class="cred-idx mono-code">03</span>
+            <div class="cred-main">
+              <strong class="cred-course-title">Cluster Analysis in Data Mining</strong>
+              <span class="cred-issuer">University of Illinois Urbana-Champaign · Coursera</span>
+            </div>
+            <span class="cred-domain-tag badge-data">Penambangan Data</span>
+            <span class="cred-date mono-code">Oktober 2026</span>
+            <div class="cred-action">
+              <span class="cred-completed-stamp mono-code"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></span>
+            </div>
+          </div>
+
+          <div class="cred-row" data-cred-cat="data-ux">
+            <span class="cred-idx mono-code">04</span>
+            <div class="cred-main">
+              <strong class="cred-course-title">Pattern Discovery in Data Mining</strong>
+              <span class="cred-issuer">University of Illinois Urbana-Champaign · Coursera</span>
+            </div>
+            <span class="cred-domain-tag badge-data">Penambangan Data</span>
+            <span class="cred-date mono-code">September 2026</span>
+            <div class="cred-action">
+              <span class="cred-completed-stamp mono-code"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></span>
+            </div>
+          </div>
+
+          <div class="cred-row" data-cred-cat="data-ux">
+            <span class="cred-idx mono-code">05</span>
+            <div class="cred-main">
+              <strong class="cred-course-title">Data Visualization</strong>
+              <span class="cred-issuer">University of Illinois Urbana-Champaign · Coursera</span>
+            </div>
+            <span class="cred-domain-tag badge-data">Visualisasi &amp; Analitika</span>
+            <span class="cred-date mono-code">September 2026</span>
+            <div class="cred-action">
+              <span class="cred-completed-stamp mono-code"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></span>
+            </div>
+          </div>
+
+          <div class="cred-row" data-cred-cat="gov-ent">
+            <span class="cred-idx mono-code">06</span>
+            <div class="cred-main">
+              <strong class="cred-course-title">Governance and Management of IT</strong>
+              <span class="cred-issuer">Packt · Coursera</span>
+            </div>
+            <span class="cred-domain-tag badge-gov">Tata Kelola TI</span>
+            <span class="cred-date mono-code">Oktober 2026</span>
+            <div class="cred-action">
+              <span class="cred-completed-stamp mono-code"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></span>
+            </div>
+          </div>
+
+          <div class="cred-row" data-cred-cat="gov-ent">
+            <span class="cred-idx mono-code">07</span>
+            <div class="cred-main">
+              <strong class="cred-course-title">Information Systems Auditing and Governance</strong>
+              <span class="cred-issuer">Packt · Coursera</span>
+            </div>
+            <span class="cred-domain-tag badge-gov">Audit Sistem Informasi</span>
+            <span class="cred-date mono-code">Oktober 2026</span>
+            <div class="cred-action">
+              <span class="cred-completed-stamp mono-code"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></span>
+            </div>
+          </div>
+
+          <div class="cred-row" data-cred-cat="gov-ent">
+            <span class="cred-idx mono-code">08</span>
+            <div class="cred-main">
+              <strong class="cred-course-title">TOGAF 10 Foundation</strong>
+              <span class="cred-issuer">EDUCBA · Coursera</span>
+            </div>
+            <span class="cred-domain-tag badge-gov">Arsitektur Enterprise</span>
+            <span class="cred-date mono-code">April 2026</span>
+            <div class="cred-action">
+              <span class="cred-completed-stamp mono-code"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></span>
+            </div>
+          </div>
+
+          <div class="cred-row" data-cred-cat="gov-ent">
+            <span class="cred-idx mono-code">09</span>
+            <div class="cred-main">
+              <strong class="cred-course-title">Enterprise Systems</strong>
+              <span class="cred-issuer">University of Minnesota · Coursera</span>
+            </div>
+            <span class="cred-domain-tag badge-gov">Sistem Enterprise (ERP)</span>
+            <span class="cred-date mono-code">April 2026</span>
+            <div class="cred-action">
+              <span class="cred-completed-stamp mono-code"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></span>
+            </div>
+          </div>
+
+          <div class="cred-row" data-cred-cat="cissp-sec">
+            <span class="cred-idx mono-code">10</span>
+            <div class="cred-main">
+              <strong class="cred-course-title">CISSP Domain 1: Security and Risk Management</strong>
+              <span class="cred-issuer">Infosec · Coursera</span>
+            </div>
+            <span class="cred-domain-tag badge-spk">Keamanan &amp; Risiko SI</span>
+            <span class="cred-date mono-code">Oktober 2026</span>
+            <div class="cred-action">
+              <span class="cred-completed-stamp mono-code"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></span>
+            </div>
+          </div>
+
+          <div class="cred-row" data-cred-cat="cissp-sec">
+            <span class="cred-idx mono-code">11</span>
+            <div class="cred-main">
+              <strong class="cred-course-title">CISSP Domain 2: Asset Security</strong>
+              <span class="cred-issuer">Infosec · Coursera</span>
+            </div>
+            <span class="cred-domain-tag badge-spk">Keamanan Aset Data</span>
+            <span class="cred-date mono-code">Oktober 2026</span>
+            <div class="cred-action">
+              <span class="cred-completed-stamp mono-code"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></span>
+            </div>
+          </div>
+
+          <div class="cred-row" data-cred-cat="cissp-sec">
+            <span class="cred-idx mono-code">12</span>
+            <div class="cred-main">
+              <strong class="cred-course-title">CISSP Domain 3: Security Architecture and Engineering</strong>
+              <span class="cred-issuer">Infosec · Coursera</span>
+            </div>
+            <span class="cred-domain-tag badge-spk">Arsitektur Keamanan</span>
+            <span class="cred-date mono-code">Oktober 2026</span>
+            <div class="cred-action">
+              <span class="cred-completed-stamp mono-code"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></span>
+            </div>
+          </div>
+
+          <div class="cred-row" data-cred-cat="cissp-sec">
+            <span class="cred-idx mono-code">13</span>
+            <div class="cred-main">
+              <strong class="cred-course-title">CISSP Domain 4: Communication and Network Security</strong>
+              <span class="cred-issuer">Infosec · Coursera</span>
+            </div>
+            <span class="cred-domain-tag badge-spk">Keamanan Jaringan</span>
+            <span class="cred-date mono-code">Oktober 2026</span>
+            <div class="cred-action">
+              <span class="cred-completed-stamp mono-code"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></span>
+            </div>
+          </div>
+
+          <div class="cred-row" data-cred-cat="cissp-sec">
+            <span class="cred-idx mono-code">14</span>
+            <div class="cred-main">
+              <strong class="cred-course-title">CISSP Domain 5: Identity and Access Management (IAM)</strong>
+              <span class="cred-issuer">Infosec · Coursera</span>
+            </div>
+            <span class="cred-domain-tag badge-spk">Manajemen Identitas (IAM)</span>
+            <span class="cred-date mono-code">Oktober 2026</span>
+            <div class="cred-action">
+              <span class="cred-completed-stamp mono-code"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></span>
+            </div>
+          </div>
+
+          <div class="cred-row" data-cred-cat="cissp-sec">
+            <span class="cred-idx mono-code">15</span>
+            <div class="cred-main">
+              <strong class="cred-course-title">CISSP Domain 6: Security Assessment and Testing</strong>
+              <span class="cred-issuer">Infosec · Coursera</span>
+            </div>
+            <span class="cred-domain-tag badge-spk">Pengujian Keamanan</span>
+            <span class="cred-date mono-code">Oktober 2026</span>
+            <div class="cred-action">
+              <span class="cred-completed-stamp mono-code"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></span>
+            </div>
+          </div>
+
+          <div class="cred-row" data-cred-cat="cissp-sec">
+            <span class="cred-idx mono-code">16</span>
+            <div class="cred-main">
+              <strong class="cred-course-title">CISSP Domain 7: Security Operations</strong>
+              <span class="cred-issuer">Infosec · Coursera</span>
+            </div>
+            <span class="cred-domain-tag badge-spk">Operasional Keamanan</span>
+            <span class="cred-date mono-code">Oktober 2026</span>
+            <div class="cred-action">
+              <span class="cred-completed-stamp mono-code"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></span>
+            </div>
+          </div>
+
+          <div class="cred-row" data-cred-cat="cissp-sec">
+            <span class="cred-idx mono-code">17</span>
+            <div class="cred-main">
+              <strong class="cred-course-title">CISSP Domain 8: Software Development Security</strong>
+              <span class="cred-issuer">Infosec · Coursera</span>
+            </div>
+            <span class="cred-domain-tag badge-spk">Keamanan Perangkat Lunak</span>
+            <span class="cred-date mono-code">Oktober 2026</span>
+            <div class="cred-action">
+              <span class="cred-completed-stamp mono-code"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- =====================================================================
+         SLIDE 06: PENGALAMAN DESAIN WIRAUSAHA & LINI MASA AKADEMIK
+         ("CAZORA Business Timeline" Layout with Rounded-Square Glass Icon Nodes)
+         ===================================================================== -->
+    <article id="jejak-pengalaman" class="chapter-block cazora-slide">
+      <div class="slide-corner-stamp" aria-hidden="true">
+        <div class="slide-step-dots">
+          <span>01</span>
+          <span class="is-lit">02</span>
+          <span>03</span>
+          <span>04</span>
+        </div>
+        <span class="slide-watermark">AN · LINI MASA</span>
+      </div>
+
+      <div class="cazora-timeline-grid">
+        <!-- Left Column: Business Timeline Title + PT. LAMI Coffee Feature Card -->
+        <div class="timeline-left-col">
+          <span class="slide-kicker mono-code">PENGALAMAN PROYEK &amp; REKAM AKADEMIK</span>
+          <h2 class="cazora-heading">Lini Masa &amp; Pengalaman</h2>
+          <span class="cazora-title-bar" aria-hidden="true"></span>
+
+          <!-- Featured Venture Experience: PT. LAMI Coffee -->
+          <section class="lami-showcase-card glass-card">
+            <div class="lami-orb" aria-hidden="true"></div>
+            <div class="milestone-header">
+              <span class="milestone-period mono-code">Semester 3 (2025) · Wadhwani Foundation</span>
+              <span class="milestone-tag">Product &amp; UI/UX Designer</span>
+            </div>
+            <h3 class="milestone-title">Perancang Desain Produk, Kemasan &amp; Antarmuka Web — PT. LAMI Coffee</h3>
+            <p class="milestone-org">Program Technopreneurship · Inovasi Kopi Cold Brew Rendah Asam (GERD-Friendly)</p>
+            <p class="milestone-desc">
+              Bertanggung jawab sebagai <strong>Design Lead</strong> dalam tim rintisan <em>LAMI Coffee</em> ("Grace in Every Cup"), produk kopi siap saji rendah asam dengan ekstraksi <em>cold brew</em> dan optimasi pH yang aman bagi lambung. Merancang identitas merek, kemasan aseptik ramah lingkungan, materi poster komersial, serta prototipe antarmuka web pemesanan B2C/B2B yang memperoleh <strong>80% respons positif</strong> pada uji validasi pengguna.
+            </p>
+            <div class="lami-highlights-row">
+              <div class="lami-mini-stat">
+                <strong class="mono-code">80%</strong>
+                <span>Validasi Positif UI/UX</span>
+              </div>
+              <div class="lami-mini-stat">
+                <strong class="mono-code">B2C &amp; B2B</strong>
+                <span>Model E-Commerce</span>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Right Column: CAZORA "Business Timeline" with Rounded-Square Glass Icon Nodes -->
+        <div class="timeline-right-col">
+          <ol class="cazora-node-timeline">
+            <!-- Node 1: Semester 5 -->
+            <li class="cazora-tl-item is-active-node">
+              <div class="tl-glass-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3L4 7L12 11L20 7L12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M4 12L12 16L20 12M4 17L12 21L20 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="tl-node-body glass-card">
+                <span class="sem-code mono-code">Semester 5 · Kelas A12.6501 (Sedang Berjalan)</span>
+                <strong>Spesialisasi Sains Data, Kecerdasan Buatan, SPK &amp; Audit SI</strong>
+                <p>Mendalami Penambangan Data (Colab), Analitika Data (SMOTE/ADASYN), Kecerdasan Buatan, Sistem Pendukung Keputusan (AHP/SAW/WP), Audit SI (PDAM Tirta Moedal), Pengujian White-Box, SIA, dan Keamanan SI.</p>
+              </div>
+            </li>
+
+            <!-- Node 2: Semester 4 -->
+            <li class="cazora-tl-item">
+              <div class="tl-glass-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/>
+                  <path d="M8 21H16M12 18V21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="tl-node-body glass-card">
+                <span class="sem-code mono-code">Semester 4 · Kelas A12.6401</span>
+                <strong>Rekayasa Web MVC, Tata Kelola ITIL/COBIT 5 &amp; Publikasi IMK</strong>
+                <p>Membangun aplikasi <em>PawSpa</em> dan <em>Inventaris MVC + REST API</em>, menyusun PSSI Ward &amp; Peppard (Shopee &amp; Bukalapak), menerapkan ITIL/COBIT 5 (PDAM &amp; Batik Semarang 16), serta mengirimkan naskah riset UI/UX DPM-KM ke jurnal JOINS (#16835).</p>
+              </div>
+            </li>
+
+            <!-- Node 3: Semester 3 (Kelas Unggulan) -->
+            <li class="cazora-tl-item">
+              <div class="tl-glass-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2L14.8 8.5L22 9.3L16.5 14L18.2 21L12 17.3L5.8 21L7.5 14L2 9.3L9.2 8.5L12 2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="tl-node-body glass-card">
+                <span class="sem-code mono-code">Semester 3 · Kelas Unggulan</span>
+                <strong>Kelas Unggulan, Pemodelan Objek UML/BPMN, CRM &amp; LAMI Coffee</strong>
+                <p>Terpilih dalam Kelas Unggulan S1 Sistem Informasi. Membangun aplikasi web <em>CRM &amp; POS Djuara Coffee</em>, merancang UML/BPMN PT. Bina Givensa, menjadi Product &amp; UI/UX Designer <em>PT. LAMI Coffee</em>, serta mengirimkan naskah kajian SCM SCOR/PRISMA ke jurnal JOINS (#15526).</p>
+              </div>
+            </li>
+
+            <!-- Node 4: Semester 1 & 2 -->
+            <li class="cazora-tl-item">
+              <div class="tl-glass-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <ellipse cx="12" cy="6" rx="8" ry="3" stroke="currentColor" stroke-width="1.8"/>
+                  <path d="M4 6V12C4 13.66 7.58 15 12 15C16.42 15 20 13.66 20 12V6M4 12V18C4 19.66 7.58 21 12 21C16.42 21 20 19.66 20 18V12" stroke="currentColor" stroke-width="1.8"/>
+                </svg>
+              </div>
+              <div class="tl-node-body glass-card">
+                <span class="sem-code mono-code">Semester 1 &amp; 2 · Kelas A12.6101 &amp; A12.6201</span>
+                <strong>Fondasi Algoritma C++, Basis Data Relasional &amp; Analisis Terstruktur</strong>
+                <p>Menguasai struktur data C/C++ (Linked List, Stack, Queue), perancangan basis data SQL &amp; Microsoft Access, analisis sistem terstruktur (FOD &amp; DFD), manajemen proses bisnis (Tropicool &amp; Qoo10), serta statistika probabilitas.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </article>
+
+    <!-- =====================================================================
+         SLIDE 07: SALURAN KORESPONDENSI & KONTAK
+         ===================================================================== -->
+    <article id="saluran-kontak" class="chapter-block cazora-slide contact-block">
+      <div class="slide-corner-stamp" aria-hidden="true">
+        <div class="slide-step-dots">
+          <span>01</span>
+          <span>02</span>
+          <span>03</span>
+          <span class="is-lit">04</span>
+        </div>
+        <span class="slide-watermark">AN · KONTAK</span>
+      </div>
+
+      <div class="contact-panel glass-card">
+        <div class="contact-copy">
+          <span class="slide-kicker mono-code">KORESPONDENSI AKADEMIK &amp; KOLABORASI</span>
+          <h2 class="cazora-heading">Mari Berdiskusi &amp; Berkolaborasi</h2>
+          <span class="cazora-title-bar" aria-hidden="true"></span>
+          <p class="contact-text">
+            Saya terbuka untuk kesempatan magang (<em>internship</em>), kolaborasi riset sistem informasi, pengembangan aplikasi web, maupun proyek desain UI/UX, analisis proses bisnis, dan audit TI.
+          </p>
+        </div>
+
+        <div class="contact-directory">
+          <div class="directory-row">
+            <div class="dir-info">
+              <span class="dir-label">Repositori Kode &amp; Proyek</span>
+              <a href="https://github.com/audreynabilla" target="_blank" rel="noopener noreferrer" class="dir-value mono-code">github.com/audreynabilla</a>
+            </div>
+            <a href="https://github.com/audreynabilla" target="_blank" rel="noopener noreferrer" class="dir-action-btn">Buka Profil ↗</a>
+          </div>
+
+          <div class="directory-row">
+            <div class="dir-info">
+              <span class="dir-label">Surel Akademik (UDINUS)</span>
+              <a href="mailto:112202407171@mhs.dinus.ac.id" class="dir-value mono-code" id="academic-email">112202407171@mhs.dinus.ac.id</a>
+            </div>
+            <button type="button" class="dir-action-btn copy-email-btn" data-copy="112202407171@mhs.dinus.ac.id">Salin Alamat</button>
+          </div>
+
+          <div class="directory-row">
+            <div class="dir-info">
+              <span class="dir-label">Surel Pribadi</span>
+              <a href="mailto:audreynabilla06@gmail.com" class="dir-value mono-code">audreynabilla06@gmail.com</a>
+            </div>
+            <button type="button" class="dir-action-btn copy-email-btn" data-copy="audreynabilla06@gmail.com">Salin Alamat</button>
+          </div>
+
+          <div class="directory-row">
+            <div class="dir-info">
+              <span class="dir-label">Media Sosial</span>
+              <a href="https://www.instagram.com/audrey.nabilla" target="_blank" rel="noopener noreferrer" class="dir-value mono-code">@audrey.nabilla</a>
+            </div>
+            <a href="https://www.instagram.com/audrey.nabilla" target="_blank" rel="noopener noreferrer" class="dir-action-btn">Instagram ↗</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Colophon Footer -->
+    <footer class="monograph-colophon">
+      <div class="colophon-left">
+        <strong>Audrey Nabilla Laksono</strong>
+        <span>Program Studi S1 Sistem Informasi · Fakultas Ilmu Komputer · Universitas Dian Nuswantoro Semarang</span>
+      </div>
+      <div class="colophon-right mono-code">
+        <span>A12.2024.07171 · Edisi 2026</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Interactive Architecture & Specification Drawer Modal -->
+  <div class="spec-drawer-backdrop" id="spec-drawer-backdrop" hidden aria-hidden="true">
+    <div class="spec-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-project-title">
+      <div class="drawer-topbar">
+        <span class="drawer-kicker mono-code" id="drawer-project-kicker">SPESIFIKASI TEKNIS &amp; ARSITEKTUR</span>
+        <button type="button" class="drawer-close-btn" id="drawer-close-btn" aria-label="Tutup lembar spesifikasi">
+          <span>Tutup</span>
+          <span class="mono-code">[ESC]</span>
+        </button>
+      </div>
+
+      <div class="drawer-scroll-area">
+        <h2 class="drawer-title" id="drawer-project-title">Judul Karya</h2>
+        <p class="drawer-meta" id="drawer-project-meta">Konteks Mata Kuliah</p>
+        <p class="drawer-summary" id="drawer-project-summary"></p>
+
+        <div class="drawer-section">
+          <h3 class="drawer-subhead">Arsitektur &amp; Tahapan Rekayasa</h3>
+          <ol class="drawer-architecture-list" id="drawer-arch-list"></ol>
+        </div>
+
+        <div class="drawer-section">
+          <h3 class="drawer-subhead">Spesifikasi Modul &amp; Capaian Utama</h3>
+          <ul class="drawer-deliverables-list" id="drawer-deliverables-list"></ul>
+        </div>
+
+        <div class="drawer-section">
+          <h3 class="drawer-subhead">Teknologi, Kerangka Kerja &amp; Metode</h3>
+          <ul class="drawer-stack-chips" id="drawer-stack-chips"></ul>
+        </div>
+
+        <div class="drawer-links-bar" id="drawer-links-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="interactive.js?v=cazora-liquid-v6"></script>
+</body>
+</html>
