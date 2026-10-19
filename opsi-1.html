@@ -398,7 +398,7 @@
     }
   
     /* ==== 4 PINK-ACCENT PALETTES ==== */
-    :root, [data-theme="rose-gold"] {
+    :root, [data-theme="sakura-cream"] {
       --bg: #FAF7F5; --card-bg: #FFFFFF;
       --ink: #1C1917; --ink-muted: #57534E; --ink-light: #78716C;
       --border: #EAE3DE; --border-dark: #D4C9C2;
@@ -426,31 +426,6 @@
       --accent: #C026D3; --accent-hover: #A21CAF;
       --accent-soft: #FAE8FF; --accent-border: #F0ABFC;
     }
-
-    /* ==== PALETTE BAR ==== */
-    .palette-bar {
-      position: sticky; top: 0; z-index: 999;
-      background: rgba(255,255,255,0.94);
-      backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--border);
-      padding: 0.48rem 1.25rem;
-      display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;
-    }
-    .palette-bar-label {
-      font-family: "JetBrains Mono", monospace; font-weight: 700;
-      font-size: 0.72rem; letter-spacing: 0.06em; color: var(--accent);
-    }
-    .palette-swatches { display: flex; gap: 0.35rem; flex-wrap: wrap; }
-    .pal-btn {
-      display: inline-flex; align-items: center; gap: 0.32rem;
-      padding: 0.26rem 0.68rem; border-radius: 999px;
-      font-size: 0.73rem; font-weight: 600;
-      background: transparent; border: 1px solid var(--border-dark);
-      color: var(--ink-muted); cursor: pointer; transition: all 0.15s;
-    }
-    .pal-btn:hover { border-color: var(--accent); color: var(--accent); }
-    .pal-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
-    .pal-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 
     /* ==== COURSERA REGISTRY ==== */
     .registry-banner {
@@ -543,18 +518,61 @@
       .cred-action { text-align: left; }
     }
 
+    
+    /* ==== COURSERA MOBILE RESPONSIVE ==== */
+    @media (max-width: 720px) {
+      .registry-banner { flex-direction: column; }
+      .registry-stats-box {
+        border-left: none; padding-left: 0;
+        border-top: 1px solid var(--border); padding-top: 0.85rem;
+        width: 100%; justify-content: flex-start;
+      }
+      .registry-controls-row { flex-direction: column; }
+      .reg-search-input { width: 100%; min-width: 0; }
+
+      /* Card layout on mobile: stacked 2-line design */
+      .cred-row {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 0.25rem;
+        padding: 0.85rem 1rem;
+        position: relative;
+      }
+      .cred-idx {
+        position: absolute; top: 0.85rem; left: 1rem;
+        font-size: 0.72rem;
+      }
+      .cred-main {
+        padding-left: 1.8rem;
+      }
+      .cred-course-title { font-size: 0.88rem; }
+      .cred-issuer { font-size: 0.72rem; }
+      .cred-domain-tag {
+        margin-left: 1.8rem; max-width: fit-content;
+        font-size: 0.68rem;
+      }
+      .cred-date {
+        margin-left: 1.8rem; font-size: 0.7rem;
+        display: inline-block;
+      }
+      .cred-action {
+        text-align: left;
+        margin-left: 1.8rem;
+        margin-top: 0.15rem;
+      }
+      .cred-verify-pill {
+        font-size: 0.7rem; padding: 0.25rem 0.6rem;
+        display: inline-flex; width: auto;
+      }
+      .cred-completed-stamp {
+        font-size: 0.69rem;
+      }
+    }
+
     </style>
 </head>
 <body data-theme="rose-gold">
-  <div class="palette-bar">
-    <span class="palette-bar-label">✶ PALET WARNA:</span>
-    <div class="palette-swatches">
-      <button type="button" class="pal-btn active" data-theme="rose-gold"><span class="pal-dot" style="background:#D9467A"></span>Rose Gold</button>
-      <button type="button" class="pal-btn" data-theme="dusty-blush"><span class="pal-dot" style="background:#BE185D"></span>Dusty Blush</button>
-      <button type="button" class="pal-btn" data-theme="sakura-cream"><span class="pal-dot" style="background:#E11D48"></span>Sakura Cream</button>
-      <button type="button" class="pal-btn" data-theme="mauve-velvet"><span class="pal-dot" style="background:#C026D3"></span>Mauve Velvet</button>
-    </div>
-  </div>
+</div>
 
   
     <aside id="sw-bar" aria-label="Pemilih Opsi Desain">
@@ -1114,19 +1132,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <script>
-(function(){
-  var saved = localStorage.getItem('aud_theme') || 'rose-gold';
-  document.body.setAttribute('data-theme', saved);
-  document.querySelectorAll('.pal-btn').forEach(function(btn){
-    btn.classList.toggle('active', btn.getAttribute('data-theme') === saved);
-    btn.addEventListener('click', function(){
-      var t = btn.getAttribute('data-theme');
-      document.body.setAttribute('data-theme', t);
-      localStorage.setItem('aud_theme', t);
-      document.querySelectorAll('.pal-btn').forEach(function(b){ b.classList.toggle('active', b === btn); });
-    });
-  });
-})();
+// theme: sakura-cream (fixed)
 (function(){
   var tabs = document.querySelectorAll('.reg-tab-btn');
   var rows = document.querySelectorAll('.cred-row');
