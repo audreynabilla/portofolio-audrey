@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audrey Nabilla Laksono — Swiss International Style Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FFFFFF;
+      --ink: #000000;
+      --muted: #4B5563;
+      --dim: #9CA3AF;
+      --border: #000000;
+      --border-light: #E5E7EB;
+      --vermilion: #EA580C;
+      --font-sans: "Plus Jakarta Sans", Helvetica, Arial, sans-serif;
+      --font-mono: "JetBrains Mono", monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      line-height: 1.5;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--ink); text-decoration: underline; }
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 6rem;
+    }
+    .sw-hero {
+      border-top: 6px solid var(--ink);
+      border-bottom: 2px solid var(--ink);
+      padding: 2.5rem 0 3rem;
+      margin-bottom: 4rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 3rem;
+    }
+    .sw-top-meta {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+      color: var(--vermilion);
+    }
+    h1.sw-name {
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      font-weight: 900;
+      letter-spacing: -0.05em;
+      line-height: 0.95;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+    }
+    .sw-lead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      line-height: 1.55;
+      font-weight: 500;
+    }
+    .sw-hero-side {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      gap: 0.75rem;
+      border-left: 1px solid var(--border-light);
+      padding-left: 2rem;
+    }
+    .sw-hero-side a {
+      font-weight: 700;
+      color: var(--vermilion);
+      text-decoration: none;
+    }
+    .sw-hero-side a:hover { text-decoration: underline; }
+    section.sw-section {
+      margin-bottom: 4.5rem;
+    }
+    .sw-sec-header {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 2rem;
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 0.75rem;
+      margin-bottom: 2.5rem;
+    }
+    .sw-sec-num {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--vermilion);
+    }
+    .sw-sec-header h2 {
+      font-size: 1.8rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+    }
+    .sw-pillar-row {
+      display: grid;
+      grid-template-columns: 80px 300px 1fr;
+      gap: 2rem;
+      padding: 1.75rem 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .sw-pillar-idx {
+      font-size: 2.5rem;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -0.05em;
+    }
+    .sw-pillar-mid h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-top: 0.25rem;
+    }
+    .sw-mono-sub {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--dim);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .sw-pillar-desc p {
+      color: var(--muted);
+      margin-bottom: 0.85rem;
+      line-height: 1.55;
+    }
+    .sw-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+    .sw-tag {
+      border: 1px solid var(--ink);
+      padding: 0.15rem 0.45rem;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 600;
+      border-radius: 0;
+    }
+    .sw-filter-strip {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    .cat-btn, .cred-btn {
+      background: transparent;
+      border: 1px solid var(--ink);
+      padding: 0.4rem 0.85rem;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 0;
+      transition: all 0.1s ease;
+    }
+    .cat-btn:hover, .cred-btn:hover {
+      background: var(--ink);
+      color: #fff;
+    }
+    .cat-btn.active, .cred-btn.active {
+      background: var(--vermilion);
+      border-color: var(--vermilion);
+      color: #fff;
+    }
+    .sw-projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    .sw-project-box {
+      border: 1px solid var(--ink);
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .sw-project-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.85rem;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 0.5rem;
+    }
+    .sw-num { font-weight: 800; color: var(--vermilion); }
+    .sw-cat { font-weight: 700; text-transform: uppercase; }
+    .sw-context { color: var(--dim); }
+    .sw-project-title {
+      font-size: 1.3rem;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    .sw-project-desc {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.55;
+      margin-bottom: 1.25rem;
+      flex-grow: 1;
+    }
+    .sw-project-links {
+      margin-top: 1.25rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--ink);
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    .sw-project-links a {
+      color: var(--vermilion);
+      text-decoration: none;
+    }
+    .sw-project-links a:hover { text-decoration: underline; }
+    .sw-papers-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    .sw-paper-card {
+      border: 1px solid var(--ink);
+      padding: 1.75rem;
+      border-left: 8px solid var(--vermilion);
+    }
+    .sw-paper-card h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      margin: 0.5rem 0;
+      line-height: 1.3;
+    }
+    .sw-paper-field {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--dim);
+      margin-bottom: 0.75rem;
+      font-weight: 700;
+    }
+    .sw-paper-card p {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.55;
+    }
+    .sw-course-line {
+      display: grid;
+      grid-template-columns: 120px 280px 1fr;
+      gap: 1.5rem;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid var(--border-light);
+      align-items: baseline;
+    }
+    .sw-code {
+      font-family: var(--font-mono);
+      font-weight: 700;
+      font-size: 0.82rem;
+      color: var(--vermilion);
+    }
+    .sw-course-line strong {
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+    .sw-course-line span:last-child {
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    .sw-cred-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .sw-search-input {
+      border: 1px solid var(--ink);
+      padding: 0.45rem 0.85rem;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      min-width: 260px;
+      outline: none;
+    }
+    .sw-cred-row {
+      display: grid;
+      grid-template-columns: 40px 1.5fr 180px 120px 140px;
+      gap: 1rem;
+      align-items: center;
+      padding: 0.8rem 0;
+      border-bottom: 1px solid var(--border-light);
+      font-size: 0.88rem;
+    }
+    .sw-cred-idx {
+      font-family: var(--font-mono);
+      font-weight: 800;
+      color: var(--vermilion);
+    }
+    .sw-cred-main strong {
+      display: block;
+      line-height: 1.35;
+      font-weight: 700;
+    }
+    .sw-cred-main span {
+      font-size: 0.78rem;
+      color: var(--dim);
+    }
+    .sw-cred-dom {
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      color: var(--muted);
+    }
+    .sw-cred-date {
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      color: var(--dim);
+    }
+    .sw-cred-act {
+      text-align: right;
+    }
+    .sw-verify {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: var(--vermilion);
+      text-decoration: none;
+    }
+    .sw-verify:hover { text-decoration: underline; }
+    .sw-done {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--dim);
+    }
+    .sw-exp-box {
+      border: 1px solid var(--ink);
+      padding: 2rem;
+      background: var(--ink);
+      color: #fff;
+    }
+    .sw-exp-box h3 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 0.35rem;
+    }
+    .sw-exp-period {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--vermilion);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .sw-exp-box p {
+      color: #E5E7EB;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    footer.sw-footer {
+      margin-top: 5rem;
+      padding-top: 2rem;
+      border-top: 2px solid var(--ink);
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      font-weight: 700;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    @media (max-width: 840px) {
+      .sw-hero { grid-template-columns: 1fr; gap: 1.5rem; }
+      .sw-hero-side { border-left: none; padding-left: 0; border-top: 1px solid var(--border-light); padding-top: 1rem; }
+      .sw-pillar-row { grid-template-columns: 1fr; gap: 0.5rem; }
+      .sw-projects-grid, .sw-papers-grid { grid-template-columns: 1fr; }
+      .sw-course-line { grid-template-columns: 1fr; gap: 0.25rem; }
+      .sw-cred-row { grid-template-columns: 1fr; gap: 0.35rem; }
+      .sw-cred-act { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  
+    <aside id="sw-bar" aria-label="Pemilih Opsi Desain">
+      <div class="sw-inner">
+        <div class="sw-title">
+          <span class="sw-dot"></span>
+          <strong>PILIH OPSI DESAIN:</strong>
+          <span>Klik tombol untuk membandingkan 5 gaya UI/UX</span>
+        </div>
+        <nav class="sw-nav">
+          <a href="opsi-1.html" class="sw-btn ">1. Editorial Warm</a><a href="opsi-2.html" class="sw-btn ">2. Dark Precision</a><a href="opsi-3.html" class="sw-btn ">3. Bento Workspace</a><a href="opsi-4.html" class="sw-btn active">4. Swiss Modern</a><a href="opsi-5.html" class="sw-btn ">5. Cyber-Academic</a>
+        </nav>
+      </div>
+    </aside>
+    <style>
+      #sw-bar {
+        position: sticky;
+        top: 0;
+        z-index: 10000;
+        background: rgba(15, 23, 42, 0.94);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        padding: 0.5rem 1rem;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 0.8rem;
+        color: #f8fafc;
+      }
+      .sw-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+      }
+      .sw-title {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.78rem;
+      }
+      .sw-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #38bdf8;
+        box-shadow: 0 0 8px #38bdf8;
+      }
+      .sw-title strong {
+        color: #38bdf8;
+        letter-spacing: 0.03em;
+      }
+      .sw-title span {
+        color: #94a3b8;
+      }
+      .sw-nav {
+        display: flex;
+        align-items: center;
+        gap: 0.35rem;
+        flex-wrap: wrap;
+      }
+      .sw-btn {
+        padding: 0.28rem 0.65rem;
+        border-radius: 6px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: #cbd5e1;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        transition: all 0.15s ease;
+      }
+      .sw-btn:hover {
+        background: rgba(255, 255, 255, 0.15);
+        color: #fff;
+        border-color: #38bdf8;
+      }
+      .sw-btn.active {
+        background: #0284c7;
+        color: #ffffff;
+        border-color: #38bdf8;
+      }
+      @media (max-width: 768px) {
+        .sw-inner {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.4rem;
+        }
+      }
+    </style>
+    
+  <div class="container">
+    <header class="sw-hero">
+      <div>
+        <div class="sw-top-meta">S1 SISTEM INFORMASI · UDINUS · NIM A12.2024.07171</div>
+        <h1 class="sw-name">Audrey<br>Nabilla<br>Laksono</h1>
+        <p class="sw-lead">Menyelaraskan kebutuhan manusia, proses bisnis, dan rekayasa kode ke dalam aplikasi web berarsitektur MVC, riset UI/UX tervalidasi statistik, tata kelola enterprise, serta analitika data.</p>
+      </div>
+      <div class="sw-hero-side">
+        <div>STATUS: Semester 5 Aktif · Kelas Unggulan</div>
+        <div>LOKASI: Semarang, Jawa Tengah, Indonesia</div>
+        <div><a href="mailto:112202407171@mhs.dinus.ac.id">✉ 112202407171@mhs.dinus.ac.id</a></div>
+        <div><a href="https://github.com/audreynabilla" target="_blank" rel="noopener">↗ github.com/audreynabilla</a></div>
+      </div>
+    </header>
+
+    <section class="sw-section" id="pillars">
+      <div class="sw-sec-header">
+        <span class="sw-sec-num">01 / PILAR</span>
+        <h2>Empat Pilar Keahlian Sistem</h2>
+      </div>
+      <div class="sw-pillars-list">
+        
+        <div class="sw-pillar-row">
+          <div class="sw-pillar-idx">01</div>
+          <div class="sw-pillar-mid">
+            <span class="sw-mono-sub">PWD · PWL · Konsep Basis Data · CRM</span>
+            <h3>Rekayasa Perangkat Lunak Web</h3>
+          </div>
+          <div class="sw-pillar-desc">
+            <p>Merancang dan mengimplementasikan aplikasi web dari skema relasional MySQL hingga antarmuka pengguna. Berbasis PHP Native OOP dengan pemisahan Model-View-Controller (MVC), abstraksi basis data PDO, autentikasi sesi dengan hashing kata sandi, serta penyediaan endpoint JSON RESTful API.</p>
+            <div class="sw-tags"><span class="sw-tag">PHP 7.4+ OOP</span><span class="sw-tag">Custom MVC</span><span class="sw-tag">MySQL / MariaDB PDO</span><span class="sw-tag">RESTful JSON API</span><span class="sw-tag">Apache .htaccess</span></div>
+          </div>
+        </div>
+        
+        <div class="sw-pillar-row">
+          <div class="sw-pillar-idx">02</div>
+          <div class="sw-pillar-mid">
+            <span class="sw-mono-sub">APST · APSIO · IMK · Literasi Informasi</span>
+            <h3>Analisis Sistem, Proses Bisnis & UI/UX</h3>
+          </div>
+          <div class="sw-pillar-desc">
+            <p>Menganalisis kebutuhan fungsional dan operasional organisasi, memodelkan alur kerja sistem menggunakan BPMN 2.0 dan UML komprehensif, serta merancang antarmuka berbasis User-Centered Design (UCD) yang divalidasi statistik dengan System Usability Scale (SUS) dan 10 Heuristik Nielsen.</p>
+            <div class="sw-tags"><span class="sw-tag">BPMN 2.0 (Bizagi)</span><span class="sw-tag">UML Suite</span><span class="sw-tag">UCD Framework</span><span class="sw-tag">Heuristic Evaluation</span><span class="sw-tag">SUS Testing</span><span class="sw-tag">IBM SPSS</span></div>
+          </div>
+        </div>
+        
+        <div class="sw-pillar-row">
+          <div class="sw-pillar-idx">03</div>
+          <div class="sw-pillar-mid">
+            <span class="sw-mono-sub">Statistika Bisnis · Riset Operasi · Analitika Data · Data Mining</span>
+            <h3>Sains Data, Statistika & Riset Operasi</h3>
+          </div>
+          <div class="sw-pillar-desc">
+            <p>Mengolah dataset bisnis dan operasional melalui teknik clustering, klasifikasi, optimasi alokasi sumber daya dengan Linear Programming (Simplex), serta pemodelan rantai pasok berbasis SCOR. Menerjemahkan data mentah menjadi keputusan terukur.</p>
+            <div class="sw-tags"><span class="sw-tag">Data Mining</span><span class="sw-tag">Cluster Analysis</span><span class="sw-tag">Linear Programming</span><span class="sw-tag">SCOR Framework</span><span class="sw-tag">Statistika Inferensial</span></div>
+          </div>
+        </div>
+        
+        <div class="sw-pillar-row">
+          <div class="sw-pillar-idx">04</div>
+          <div class="sw-pillar-mid">
+            <span class="sw-mono-sub">IT Governance · Audit SI · TKMLTI · Manajemen Inovasi</span>
+            <h3>Tata Kelola TI, Audit & Enterprise</h3>
+          </div>
+          <div class="sw-pillar-desc">
+            <p>Mengevaluasi keselarasan strategi bisnis dan TI menggunakan kerangka kerja COBIT 2019, merancang katalog layanan dan Service Level Agreement berbasis ITIL v4, serta menilai kepatuhan dan risiko keamanan informasi merujuk pada standar ISO/IEC 27001 dan COSO.</p>
+            <div class="sw-tags"><span class="sw-tag">COBIT 2019</span><span class="sw-tag">ITIL v4</span><span class="sw-tag">ISO/IEC 27001</span><span class="sw-tag">COSO Internal Control</span><span class="sw-tag">ERP Odoo</span><span class="sw-tag">Ward & Peppard</span></div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="sw-section" id="projects">
+      <div class="sw-sec-header">
+        <span class="sw-sec-num">02 / KARYA</span>
+        <h2>Arsip Rekayasa & Kasus Sistem</h2>
+      </div>
+      <div class="sw-filter-strip">
+        <button type="button" class="cat-btn active" data-cat="all">Semua Karya (8)</button>
+        <button type="button" class="cat-btn" data-cat="web">Web & REST API (4)</button>
+        <button type="button" class="cat-btn" data-cat="ux">Analisis & UI/UX (2)</button>
+        <button type="button" class="cat-btn" data-cat="gov">Tata Kelola & Audit (2)</button>
+      </div>
+      <div class="sw-projects-grid">
+        
+        <article class="project-item sw-project-box" data-cat="web">
+          <div class="sw-project-meta">
+            <span class="sw-num">01</span>
+            <span class="sw-cat">Aplikasi Web & REST API</span>
+            <span class="sw-context">Pemrograman Web Lanjut (Semester 4) · Proyek Akhir Kelompok 7</span>
+          </div>
+          <h3 class="sw-project-title">PawSpa — Sistem Reservasi & Manajemen Layanan Grooming Hewan</h3>
+          <p class="sw-project-desc">Aplikasi web reservasi perawatan hewan peliharaan (anjing dan kucing) yang dibangun menggunakan arsitektur Model-View-Controller (MVC) dengan PHP Native OOP dan MySQL. Mendukung alur lengkap dua peran: pelanggan dapat memilih paket layanan, mengunggah foto hewan serta bukti transfer pembayaran, dan memantau status reservasi secara real-time; administrator mengelola katalog paket, memverifikasi bukti transaksi, dan memantau laporan layanan.</p>
+          <div class="sw-tags"><span class="sw-tag">PHP 7.4+ OOP</span><span class="sw-tag">Custom MVC</span><span class="sw-tag">MySQL / MariaDB</span><span class="sw-tag">Apache .htaccess Rewrite</span><span class="sw-tag">Multi-Role Auth</span></div>
+          <div class="sw-project-links"><a href="https://github.com/audreynabilla/UAS-kelompok-7" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </article>
+        
+        <article class="project-item sw-project-box" data-cat="web">
+          <div class="sw-project-meta">
+            <span class="sw-num">02</span>
+            <span class="sw-cat">Aplikasi Web & REST API</span>
+            <span class="sw-context">Pemrograman Web Lanjut (Semester 4) · Proyek Individu (A12.2024.07171)</span>
+          </div>
+          <h3 class="sw-project-title">Sistem Manajemen Inventaris Berbasis MVC & Layanan RESTful JSON API</h3>
+          <p class="sw-project-desc">Sistem inventaris terstruktur dengan arsitektur MVC murni berbasis PHP PDO. Mengintegrasikan lapisan RESTful API JSON lengkap (GET, POST, PUT, DELETE) untuk interoperabilitas antar-aplikasi, SecurityHelper untuk sanitasi XSS/CSRF, serta hashing password menggunakan algoritma BCRYPT.</p>
+          <div class="sw-tags"><span class="sw-tag">PHP PDO</span><span class="sw-tag">Arsitektur MVC</span><span class="sw-tag">RESTful JSON API</span><span class="sw-tag">SecurityHelper Sanitizer</span><span class="sw-tag">Bcrypt Hashing</span></div>
+          <div class="sw-project-links"><a href="https://github.com/audreynabilla/pwl-crud-07171" target="_blank" rel="noopener">GitHub ↗</a> · <a href="https://youtu.be/afBZMuH899g" target="_blank" rel="noopener">Video Demo ↗</a></div>
+        </article>
+        
+        <article class="project-item sw-project-box" data-cat="web">
+          <div class="sw-project-meta">
+            <span class="sw-num">03</span>
+            <span class="sw-cat">Aplikasi Web & REST API</span>
+            <span class="sw-context">Pengelolaan Hubungan Pelanggan / CRM (Semester 3 — Kelas Unggulan)</span>
+          </div>
+          <h3 class="sw-project-title">Sistem Informasi CRM & Kasir Multi-Cabang pada Djuara Coffee</h3>
+          <p class="sw-project-desc">Rancang bangun sistem CRM dan Point of Sale (POS) untuk jaringan kedai kopi dengan 4 outlet cabang. Mengelola database pelanggan terpusat, engine perhitungan poin loyalitas otomatis berdasarkan tier pembelanjaan, pencatatan transaksi kasir harian, serta perancangan skema relasional ERD dan sequence diagram alur transaksi.</p>
+          <div class="sw-tags"><span class="sw-tag">PHP Native</span><span class="sw-tag">MySQL Relational</span><span class="sw-tag">Multi-Branch POS</span><span class="sw-tag">Loyalty Points Engine</span><span class="sw-tag">ERD & Sequence Modeling</span></div>
+          
+        </article>
+        
+        <article class="project-item sw-project-box" data-cat="web">
+          <div class="sw-project-meta">
+            <span class="sw-num">04</span>
+            <span class="sw-cat">Aplikasi Web & REST API</span>
+            <span class="sw-context">Pemrograman Web Dasar (Semester 3) · Proyek Individu (penjualan_7171baru)</span>
+          </div>
+          <h3 class="sw-project-title">Aplikasi Web Manajemen Penjualan, Pegawai, Kategori & Supplier</h3>
+          <p class="sw-project-desc">Aplikasi web operasional ritel berbasis PHP dan MySQL yang menghubungkan 4 modul CRUD relasional yang saling berelasi: transaksi penjualan kasir, master data supplier, manajemen pegawai, dan kategori produk. Dilengkapi validasi form sisi server dan antarmuka responsif.</p>
+          <div class="sw-tags"><span class="sw-tag">PHP & MySQL</span><span class="sw-tag">4 Modul CRUD Relasional</span><span class="sw-tag">HTML5 / CSS3 / Vanilla JS</span><span class="sw-tag">Bootstrap 5 Components</span></div>
+          
+        </article>
+        
+        <article class="project-item sw-project-box" data-cat="ux">
+          <div class="sw-project-meta">
+            <span class="sw-num">05</span>
+            <span class="sw-cat">Analisis UML/BPMN & UI/UX</span>
+            <span class="sw-context">APST (Semester 2) & APSIO (Semester 3 — Kelas Unggulan)</span>
+          </div>
+          <h3 class="sw-project-title">Analisis & Perancangan Sistem Informasi Jual Beli Alat Kesehatan pada PT. Bina Givensa</h3>
+          <p class="sw-project-desc">Kajian komprehensif analisis sistem rantai distribusi alat kesehatan medis. Memodelkan proses bisnis As-Is dan To-Be dengan standar notasi BPMN 2.0, menyusun spesifikasi kebutuhan sistem berbasis kerangka PIECES, serta merancang artefak diagram UML lengkap (Use Case, Activity, Sequence, dan Class Diagram).</p>
+          <div class="sw-tags"><span class="sw-tag">BPMN 2.0 (Bizagi)</span><span class="sw-tag">UML (Use Case, Sequence, Class)</span><span class="sw-tag">PIECES Analysis</span><span class="sw-tag">Data Flow Diagram (DFD)</span></div>
+          
+        </article>
+        
+        <article class="project-item sw-project-box" data-cat="ux">
+          <div class="sw-project-meta">
+            <span class="sw-num">06</span>
+            <span class="sw-cat">Analisis UML/BPMN & UI/UX</span>
+            <span class="sw-context">Interaksi Manusia & Komputer (Semester 4) & Riset Publikasi Ilmiah</span>
+          </div>
+          <h3 class="sw-project-title">Redesain UI/UX Situs Web DPM-KM UDINUS & Marketplace Pujasera</h3>
+          <p class="sw-project-desc">Riset antarmuka pengguna berbasis metode User-Centered Design (UCD). Melakukan evaluasi heuristik terhadap 10 prinsip Nielsen-Norman, merancang prototipe antarmuka wireframe hingga high-fidelity di Figma, serta menguji penerimaan pengguna melalui kuesioner System Usability Scale (SUS) dengan skor akhir 78.9 (Kategori Good / Grade B).</p>
+          <div class="sw-tags"><span class="sw-tag">10 Nielsen Heuristics</span><span class="sw-tag">User-Centered Design (UCD)</span><span class="sw-tag">System Usability Scale (SUS: 78.9)</span><span class="sw-tag">Figma Hi-Fi Prototype</span><span class="sw-tag">IBM SPSS Statistics</span></div>
+          
+        </article>
+        
+        <article class="project-item sw-project-box" data-cat="gov">
+          <div class="sw-project-meta">
+            <span class="sw-num">07</span>
+            <span class="sw-cat">Tata Kelola & Audit TI</span>
+            <span class="sw-context">Tata Kelola Manajemen Layanan TI (Semester 4) & Audit SI (Semester 5)</span>
+          </div>
+          <h3 class="sw-project-title">Tata Kelola ITIL & Audit Layanan TI PDAM Tirta Moedal serta ERP Odoo PT Batik Semarang 16</h3>
+          <p class="sw-project-desc">Perancangan Service Strategy dan Service Catalogue berbasis ITIL v4 pada unit PDAM Tirta Moedal Kota Semarang, mencakup manajemen insiden, Service Level Agreement (SLA), dan Request for Change (RFC). Dilanjutkan dengan simulasi implementasi modul Supply Chain dan CRM pada open-source ERP Odoo.</p>
+          <div class="sw-tags"><span class="sw-tag">ITIL v4 Framework</span><span class="sw-tag">COBIT 5 Governance</span><span class="sw-tag">ERP Odoo Open-Source</span><span class="sw-tag">SLA & Incident Design</span><span class="sw-tag">RFC Workflow</span></div>
+          
+        </article>
+        
+        <article class="project-item sw-project-box" data-cat="gov">
+          <div class="sw-project-meta">
+            <span class="sw-num">08</span>
+            <span class="sw-cat">Tata Kelola & Audit TI</span>
+            <span class="sw-context">Perencanaan Strategis SI & Transformasi Digital (Semester 4)</span>
+          </div>
+          <h3 class="sw-project-title">Perencanaan Strategis SI (Shopee & Bukalapak) serta Transformasi Digital Posyandu IoT</h3>
+          <p class="sw-project-desc">Penyusunan blueprint perencanaan strategis sistem informasi menggunakan metodologi Ward & Peppard, analisis kompetitif pasar e-commerce dengan Balanced Scorecard dan McFarlan Strategic Grid, serta perancangan konseptual integrasi perangkat IoT timbangan digital dengan sistem rekam medik Posyandu.</p>
+          <div class="sw-tags"><span class="sw-tag">Ward & Peppard Metodologi</span><span class="sw-tag">Balanced Scorecard</span><span class="sw-tag">McFarlan Strategic Grid</span><span class="sw-tag">Arsitektur IoT & Cloud</span><span class="sw-tag">Analisis Value Chain Porter</span></div>
+          
+        </article>
+        
+      </div>
+    </section>
+
+    <section class="sw-section" id="papers">
+      <div class="sw-sec-header">
+        <span class="sw-sec-num">03 / RISET</span>
+        <h2>Naskah Publikasi Ilmiah JOINS</h2>
+      </div>
+      <div class="sw-papers-grid">
+        
+        <div class="sw-paper-card">
+          <div class="sw-mono-sub">Jurnal JOINS (Journal of Information System) · UDINUS</div>
+          <h3>Redesign of the DPM-KM Website Interface Based on Heuristic Evaluation Using a User-Centered Design Approach and Validation via the System Usability Scale</h3>
+          <div class="sw-paper-field">Interaksi Manusia & Komputer (HCI) · Metodologi UCD & Evaluasi Heuristik</div>
+          <p>Mengevaluasi aksesibilitas informasi publik pada situs organisasi mahasiswa DPM-KM UDINUS. Dimulai dari audit 10 Nielsen Heuristics oleh 3 evaluator ahli, perancangan ulang UI interaktif berbasis UCD, dan validasi empiris kepada 32 responden mahasiswa melalui instrumen System Usability Scale (SUS). Skor penerimaan meningkat dari 52.4 (Poor) menjadi 78.9 (Good / B), dengan reliabilitas instrumen Cronbach's Alpha α = 0.716.</p>
+        </div>
+        
+        <div class="sw-paper-card">
+          <div class="sw-mono-sub">Jurnal JOINS (Journal of Information System) · UDINUS</div>
+          <h3>Analisis Strategi Pengendalian Persediaan Bahan Baku Berbasis Kerangka SCOR dan Optimasi Metodologis untuk Keunggulan Kompetitif Industri</h3>
+          <div class="sw-paper-field">Riset Operasi & Manajemen Rantai Pasok (Supply Chain Operations Reference)</div>
+          <p>Kajian kuantitatif terhadap pengendalian persediaan bahan baku manufaktur untuk meminimalkan carrying cost dan stockout risk. Mengintegrasikan kerangka Supply Chain Operations Reference (SCOR) pada level proses Plan, Source, dan Make, serta menerapkan formulasi Economic Order Quantity (EOQ), Safety Stock probabilistik, dan Reorder Point (ROP) adaptif.</p>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="sw-section" id="courses">
+      <div class="sw-sec-header">
+        <span class="sw-sec-num">04 / KULIAH</span>
+        <h2>Mata Kuliah Aktif (Semester 5)</h2>
+      </div>
+      <div class="sw-courses-list">
+        
+        <div class="sw-course-line">
+          <span class="sw-code">A12.6501</span>
+          <strong>Penambangan Data (Data Mining)</strong>
+          <span>Clustering, Algoritma K-Means, Asosiasi Apriori, Klasifikasi Decision Tree</span>
+        </div>
+        
+        <div class="sw-course-line">
+          <span class="sw-code">A12.6502</span>
+          <strong>Analitika Data</strong>
+          <span>Pemodelan Prediktif, Visualisasi Data Lanjut, Analisis Tren Bisnis</span>
+        </div>
+        
+        <div class="sw-course-line">
+          <span class="sw-code">A12.6503</span>
+          <strong>Audit Sistem Informasi</strong>
+          <span>COBIT 2019, Struktur Pengendalian Internal COSO, Identifikasi Risiko TI & Kontrol</span>
+        </div>
+        
+        <div class="sw-course-line">
+          <span class="sw-code">A12.6504</span>
+          <strong>Sistem Pendukung Keputusan (SPK)</strong>
+          <span>Metode AHP, TOPSIS, SAW, Promethee untuk Seleksi Multi-Kriteria</span>
+        </div>
+        
+        <div class="sw-course-line">
+          <span class="sw-code">A12.6505</span>
+          <strong>Implementasi & Pengujian Sistem</strong>
+          <span>Black Box Testing, White Box (Cyclomatic Complexity), UAT, Quality Assurance</span>
+        </div>
+        
+        <div class="sw-course-line">
+          <span class="sw-code">A12.6506</span>
+          <strong>Kecerdasan Buatan (AI)</strong>
+          <span>Pencarian Jalur Heuristik, Knowledge Representation, Neural Networks Dasar</span>
+        </div>
+        
+        <div class="sw-course-line">
+          <span class="sw-code">A12.6507</span>
+          <strong>Sistem Informasi Akuntansi (SIA)</strong>
+          <span>Siklus Pendapatan & Pengeluaran, Audit Trail Transaksi Finansial</span>
+        </div>
+        
+        <div class="sw-course-line">
+          <span class="sw-code">A12.6508</span>
+          <strong>Keamanan Sistem Informasi</strong>
+          <span>CIA Triad, Kriptografi, CISSP Domain 1–8, Manajemen Insiden & Kerentanan</span>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="sw-section" id="creds">
+      <div class="sw-sec-header">
+        <span class="sw-sec-num">05 / KREDENSIAL</span>
+        <h2>17 Sertifikasi Coursera (2026)</h2>
+      </div>
+      <div class="sw-cred-top">
+        <div style="display:flex; gap:0.4rem; flex-wrap:wrap;">
+          <button type="button" class="cred-btn active" data-group="all">All (17)</button>
+          <button type="button" class="cred-btn" data-group="data-ux">Data & UX (5)</button>
+          <button type="button" class="cred-btn" data-group="gov">Governance & ERP (4)</button>
+          <button type="button" class="cred-btn" data-group="sec">CISSP Security (8)</button>
+        </div>
+        <input type="text" id="cred-search" class="sw-search-input" placeholder="Cari sertifikasi...">
+      </div>
+      <div class="sw-creds-list">
+        
+        <div class="cred-item sw-cred-row" data-group="data-ux">
+          <span class="sw-cred-idx">01</span>
+          <div class="sw-cred-main">
+            <strong>Data Integration, Data Storage, & Data Migration</strong>
+            <span>SkillUp · Coursera</span>
+          </div>
+          <span class="sw-cred-dom">Arsitektur & Integrasi Data</span>
+          <span class="sw-cred-date">April 2026</span>
+          <div class="sw-cred-act"><a href="https://coursera.org/verify/MI8X78N3INB9" target="_blank" rel="noopener" class="sw-verify">VERIFY (MI8X78N3INB9)</a></div>
+        </div>
+        
+        <div class="cred-item sw-cred-row" data-group="data-ux">
+          <span class="sw-cred-idx">02</span>
+          <div class="sw-cred-main">
+            <strong>Foundations of User Experience (UX) Design</strong>
+            <span>Google · Coursera</span>
+          </div>
+          <span class="sw-cred-dom">Riset & Desain UI/UX</span>
+          <span class="sw-cred-date">Mei 2026</span>
+          <div class="sw-cred-act"><span class="sw-done">VERIFIED</span></div>
+        </div>
+        
+        <div class="cred-item sw-cred-row" data-group="data-ux">
+          <span class="sw-cred-idx">03</span>
+          <div class="sw-cred-main">
+            <strong>Cluster Analysis in Data Mining</strong>
+            <span>University of Illinois Urbana-Champaign</span>
+          </div>
+          <span class="sw-cred-dom">Penambangan Data</span>
+          <span class="sw-cred-date">Oktober 2026</span>
+          <div class="sw-cred-act"><span class="sw-done">VERIFIED</span></div>
+        </div>
+        
+        <div class="cred-item sw-cred-row" data-group="data-ux">
+          <span class="sw-cred-idx">04</span>
+          <div class="sw-cred-main">
+            <strong>Pattern Discovery in Data Mining</strong>
+            <span>University of Illinois Urbana-Champaign</span>
+          </div>
+          <span class="sw-cred-dom">Penambangan Data</span>
+          <span class="sw-cred-date">September 2026</span>
+          <div class="sw-cred-act"><span class="sw-done">VERIFIED</span></div>
+        </div>
+        
+        <div class="cred-item sw-cred-row" data-group="data-ux">
+          <span class="sw-cred-idx">05</span>
+          <div class="sw-cred-main">
+            <strong>Data Visualization</strong>
+            <span>University of Illinois Urbana-Champaign</span>
+          </div>
+          <span class="sw-cred-dom">Visualisasi & Analitika</span>
+          <span class="sw-cred-date">September 2026</span>
+          <div class="sw-cred-act"><span class="sw-done">VERIFIED</span></div>
+        </div>
+        
+        <div class="cred-item sw-cred-row" data-group="gov">
+          <span class="sw-cred-idx">06</span>
+          <div class="sw-cred-main">
+            <strong>Governance and Management of IT</strong>
+            <span>Packt · Coursera</span>
+          </div>
+          <span class="sw-cred-dom">Tata Kelola TI</span>
+          <span class="sw-cred-date">Oktober 2026</span>
+          <div class="sw-cred-act"><span class="sw-done">VERIFIED</span></div>
+        </div>
+        
+        <div class="cred-item sw-cred-row" data-group="gov">
+          <span class="sw-cred-idx">07</span>
+          <div class="sw-cred-main">
+            <strong>Information Systems Auditing and Governance</strong>
+            <span>Packt · Coursera</span>
+          </div>
+          <span class="sw-cred-dom">Audit Sistem Informasi</span>
+          <span class="sw-cred-date">Oktober 2026</span>
+          <div class="sw-cred-act"><span class="sw-done">VERIFIED</span></div>
+        </div>
+        
+        <div class="cred-item sw-cred-row" data-group="gov">
+          <span class="sw-cred-idx">08</span>
+          <div class="sw-cred-main">
+            <strong>TOGAF 10 Foundation</strong>
+            <span>EDUCBA · Coursera</span>
+          </div>
+          <span class="sw-cred-dom">Arsitektur Enterprise</span>
+          <span class="sw-cred-date">April 2026</span>
+          <div class="sw-cred-act"><span class="sw-done">VERIFIED</span></div>
+        </div>
+        
+        <div class="cred-item sw-cred-row" data-group="gov">
+          <span class="sw-cred-idx">09</span>
+          <div class="sw-cred-main">
+            <strong>Enterprise Systems</strong>
+            <span>University of Minnesota · Coursera</span>
+          </div>
+          <span class="sw-cred-dom">Sistem Enterprise (ERP)</span>
+          <span class="sw-cred-date">April 2026</span>
+          <div class="sw-cred-act"><span class="sw-done">VERIFIED</span></div>
+        </div>
+        
+        <div class="cred-item sw-cred-row" data-group="sec">
+          <span class="sw-cred-idx">10</span>
+          <div class="sw-cred-main">
+            <strong>CISSP Domain 1: Security and Risk Management</strong>
+            <span>Infosec · Coursera</span>
+          </div>
+          <span class="sw-cred-dom">Keamanan & Risiko SI</span>
+          <span class="sw-cred-date">Oktober 2026</span>
+          <div class="sw-cred-act"><span class="sw-done">VERIFIED</span></div>
+        </div>
+        
+        <div class="cred-item sw-cred-row" data-group="sec">
+          <span class="sw-cred-idx">11</span>
+          <div class="sw-cred-main">
+            <strong>CISSP Domain 2: Asset Security</strong>
+            <span>Infosec · Coursera</span>
+          </div>
+          <span class="sw-cred-dom">Keamanan Aset Data</span>
+          <span class="sw-cred-date">Oktober 2026</span>
+          <div class="sw-cred-act"><span class="sw-done">VERIFIED</span></div>
+        </div>
+        
+        <div class="cred-item sw-cred-row" data-group="sec">
+          <span class="sw-cred-idx">12</span>
+          <div class="sw-cred-main">
+            <strong>CISSP Domain 3: Security Architecture and Engineering</strong>
+            <span>Infosec · Coursera</span>
+          </div>
+          <span class="sw-cred-dom">Arsitektur Keamanan</span>
+          <span class="sw-cred-date">Oktober 2026</span>
+          <div class="sw-cred-act"><span class="sw-done">VERIFIED</span></div>
+        </div>
+        
+        <div class="cred-item sw-cred-row" data-group="sec">
+          <span class="sw-cred-idx">13</span>
+          <div class="sw-cred-main">
+            <strong>CISSP Domain 4: Communication and Network Security</strong>
+            <span>Infosec · Coursera</span>
+          </div>
+          <span class="sw-cred-dom">Keamanan Jaringan</span>
+          <span class="sw-cred-date">Oktober 2026</span>
+          <div class="sw-cred-act"><span class="sw-done">VERIFIED</span></div>
+        </div>
+        
+        <div class="cred-item sw-cred-row" data-group="sec">
+          <span class="sw-cred-idx">14</span>
+          <div class="sw-cred-main">
+            <strong>CISSP Domain 5: Identity and Access Management (IAM)</strong>
+            <span>Infosec · Coursera</span>
+          </div>
+          <span class="sw-cred-dom">Manajemen Identitas (IAM)</span>
+          <span class="sw-cred-date">Oktober 2026</span>
+          <div class="sw-cred-act"><span class="sw-done">VERIFIED</span></div>
+        </div>
+        
+        <div class="cred-item sw-cred-row" data-group="sec">
+          <span class="sw-cred-idx">15</span>
+          <div class="sw-cred-main">
+            <strong>CISSP Domain 6: Security Assessment and Testing</strong>
+            <span>Infosec · Coursera</span>
+          </div>
+          <span class="sw-cred-dom">Pengujian Keamanan</span>
+          <span class="sw-cred-date">Oktober 2026</span>
+          <div class="sw-cred-act"><span class="sw-done">VERIFIED</span></div>
+        </div>
+        
+        <div class="cred-item sw-cred-row" data-group="sec">
+          <span class="sw-cred-idx">16</span>
+          <div class="sw-cred-main">
+            <strong>CISSP Domain 7: Security Operations</strong>
+            <span>Infosec · Coursera</span>
+          </div>
+          <span class="sw-cred-dom">Operasional Keamanan</span>
+          <span class="sw-cred-date">Oktober 2026</span>
+          <div class="sw-cred-act"><span class="sw-done">VERIFIED</span></div>
+        </div>
+        
+        <div class="cred-item sw-cred-row" data-group="sec">
+          <span class="sw-cred-idx">17</span>
+          <div class="sw-cred-main">
+            <strong>CISSP Domain 8: Software Development Security</strong>
+            <span>Infosec · Coursera</span>
+          </div>
+          <span class="sw-cred-dom">Keamanan Perangkat Lunak</span>
+          <span class="sw-cred-date">Oktober 2026</span>
+          <div class="sw-cred-act"><span class="sw-done">VERIFIED</span></div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="sw-section" id="experience">
+      <div class="sw-sec-header">
+        <span class="sw-sec-num">06 / PRAKTIK</span>
+        <h2>Pengalaman Industri & Komersial</h2>
+      </div>
+      <div class="sw-exp-box">
+        <h3>Perancang Desain Produk, Kemasan & Antarmuka Web</h3>
+        <span class="sw-exp-period">PT. LAMI Coffee · Desember 2023 — Sekarang</span>
+        <p>Merancang identitas visual merek, kemasan produk kopi komersial bersertifikasi halal, label nutrisi, serta perancangan tata letak antarmuka situs promosi dan katalog digital produk untuk mendukung kanal distribusi ritel.</p>
+      </div>
+    </section>
+
+    <footer class="sw-footer">
+      <div>Audrey Nabilla Laksono · A12.2024.07171</div>
+      <div>S1 Sistem Informasi · Universitas Dian Nuswantoro (UDINUS) Semarang</div>
+    </footer>
+  </div>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const projectButtons = document.querySelectorAll('.cat-btn');
+    const projects = document.querySelectorAll('.project-item');
+    projectButtons.forEach(btn => btn.addEventListener('click', () => {
+      projectButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const cat = btn.dataset.cat;
+      projects.forEach(card => card.style.display = cat === 'all' || card.dataset.cat === cat ? '' : 'none');
+    }));
+    const search = document.getElementById('cred-search');
+    const rows = document.querySelectorAll('.cred-item');
+    const credButtons = document.querySelectorAll('.cred-btn');
+    function filterCredentials() {
+      const q = search ? search.value.toLowerCase() : '';
+      const active = document.querySelector('.cred-btn.active');
+      const group = active ? active.dataset.group : 'all';
+      rows.forEach(row => {
+        row.style.display = (group === 'all' || row.dataset.group === group) && row.textContent.toLowerCase().includes(q) ? '' : 'none';
+      });
+    }
+    if (search) search.addEventListener('input', filterCredentials);
+    credButtons.forEach(btn => btn.addEventListener('click', () => {
+      credButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      filterCredentials();
+    }));
+  });
+  </script>
+</body>
+</html>
