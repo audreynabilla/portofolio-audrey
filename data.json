@@ -1,6 +1,5 @@
 {
   "name": "Audrey Nabilla Laksono",
-  "nim": "A12.2024.07171",
   "program": "S1 Sistem Informasi",
   "university": "Universitas Dian Nuswantoro (UDINUS) Semarang",
   "status": "Semester 5 Aktif · Kelas Unggulan",
@@ -63,48 +62,6 @@
         "ERP Odoo",
         "Ward & Peppard"
       ]
-    }
-  ],
-  "courses_sem5": [
-    {
-      "name": "Penambangan Data (Data Mining)",
-      "code": "A12.6501",
-      "focus": "Clustering, Algoritma K-Means, Asosiasi Apriori, Klasifikasi Decision Tree"
-    },
-    {
-      "name": "Analitika Data",
-      "code": "A12.6502",
-      "focus": "Pemodelan Prediktif, Visualisasi Data Lanjut, Analisis Tren Bisnis"
-    },
-    {
-      "name": "Audit Sistem Informasi",
-      "code": "A12.6503",
-      "focus": "COBIT 2019, Struktur Pengendalian Internal COSO, Identifikasi Risiko TI & Kontrol"
-    },
-    {
-      "name": "Sistem Pendukung Keputusan (SPK)",
-      "code": "A12.6504",
-      "focus": "Metode AHP, TOPSIS, SAW, Promethee untuk Seleksi Multi-Kriteria"
-    },
-    {
-      "name": "Implementasi & Pengujian Sistem",
-      "code": "A12.6505",
-      "focus": "Black Box Testing, White Box (Cyclomatic Complexity), UAT, Quality Assurance"
-    },
-    {
-      "name": "Kecerdasan Buatan (AI)",
-      "code": "A12.6506",
-      "focus": "Pencarian Jalur Heuristik, Knowledge Representation, Neural Networks Dasar"
-    },
-    {
-      "name": "Sistem Informasi Akuntansi (SIA)",
-      "code": "A12.6507",
-      "focus": "Siklus Pendapatan & Pengeluaran, Audit Trail Transaksi Finansial"
-    },
-    {
-      "name": "Keamanan Sistem Informasi",
-      "code": "A12.6508",
-      "focus": "CIA Triad, Kriptografi, CISSP Domain 1–8, Manajemen Insiden & Kerentanan"
     }
   ],
   "projects": [
@@ -249,20 +206,6 @@
       ],
       "github": null,
       "demo": null
-    }
-  ],
-  "papers": [
-    {
-      "title": "Redesign of the DPM-KM Website Interface Based on Heuristic Evaluation Using a User-Centered Design Approach and Validation via the System Usability Scale",
-      "journal": "Jurnal JOINS (Journal of Information System) · UDINUS",
-      "field": "Interaksi Manusia & Komputer (HCI) · Metodologi UCD & Evaluasi Heuristik",
-      "summary": "Mengevaluasi aksesibilitas informasi publik pada situs organisasi mahasiswa DPM-KM UDINUS. Dimulai dari audit 10 Nielsen Heuristics oleh 3 evaluator ahli, perancangan ulang UI interaktif berbasis UCD, dan validasi empiris kepada 32 responden mahasiswa melalui instrumen System Usability Scale (SUS). Skor penerimaan meningkat dari 52.4 (Poor) menjadi 78.9 (Good / B), dengan reliabilitas instrumen Cronbach's Alpha α = 0.716."
-    },
-    {
-      "title": "Analisis Strategi Pengendalian Persediaan Bahan Baku Berbasis Kerangka SCOR dan Optimasi Metodologis untuk Keunggulan Kompetitif Industri",
-      "journal": "Jurnal JOINS (Journal of Information System) · UDINUS",
-      "field": "Riset Operasi & Manajemen Rantai Pasok (Supply Chain Operations Reference)",
-      "summary": "Kajian kuantitatif terhadap pengendalian persediaan bahan baku manufaktur untuk meminimalkan carrying cost dan stockout risk. Mengintegrasikan kerangka Supply Chain Operations Reference (SCOR) pada level proses Plan, Source, dan Make, serta menerapkan formulasi Economic Order Quantity (EOQ), Safety Stock probabilistik, dan Reorder Point (ROP) adaptif."
     }
   ],
   "credentials": [
@@ -423,7 +366,7 @@
   "experience": {
     "role": "Perancang Desain Produk, Kemasan & Antarmuka Web",
     "company": "PT. LAMI Coffee",
-    "period": "Desember 2023 — Sekarang",
+    "period": "2025",
     "desc": "Merancang identitas visual merek, kemasan produk kopi komersial bersertifikasi halal, label nutrisi, serta perancangan tata letak antarmuka situs promosi dan katalog digital produk untuk mendukung kanal distribusi ritel."
   }
 }
