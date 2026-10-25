@@ -2,693 +2,63 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Audrey Nabilla Laksono — Portofolio Akademik & Rekayasa Sistem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FAF7F5">
+  <title>Audrey Nabilla Laksono — Portofolio Akademik &amp; Rekayasa Sistem</title>
+  <meta name="description" content="Menyelaraskan kebutuhan manusia, proses bisnis, dan rekayasa kode ke dalam aplikasi web berarsitektur MVC, riset UI/UX tervalidasi statistik, tata kelola enterprise, serta analitika data.">
+  <link rel="icon" href="crest.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #FAF8F5;
-      --card-bg: #FFFFFF;
-      --ink: #1C1917;
-      --ink-muted: #57534E;
-      --ink-light: #78716C;
-      --border: #E7E5E4;
-      --border-dark: #D6D3D1;
-      --accent: #B45309;
-      --accent-soft: #FEF3C7;
-      --font-serif: "Newsreader", Georgia, serif;
-      --font-sans: "Plus Jakarta Sans", -apple-system, sans-serif;
-      --font-mono: "JetBrains Mono", monospace;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      background: var(--bg);
-      color: var(--ink);
-      font-family: var(--font-sans);
-      line-height: 1.65;
-      font-size: 16px;
-      -webkit-font-smoothing: antialiased;
-    }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 3rem 1.5rem 6rem;
-    }
-    header.ed-header {
-      padding-bottom: 2.5rem;
-      border-bottom: 1px solid var(--border-dark);
-      margin-bottom: 3.5rem;
-    }
-    .ed-meta-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-bottom: 1.25rem;
-      font-family: var(--font-mono);
-      font-size: 0.8rem;
-      color: var(--ink-light);
-    }
-    .ed-badge {
-      display: inline-block;
-      padding: 0.2rem 0.6rem;
-      background: var(--accent-soft);
-      color: var(--accent);
-      border-radius: 4px;
-      font-weight: 600;
-    }
-    h1.ed-title {
-      font-family: var(--font-serif);
-      font-size: 2.75rem;
-      font-weight: 600;
-      line-height: 1.15;
-      margin-bottom: 1rem;
-      letter-spacing: -0.02em;
-    }
-    .ed-lead {
-      font-size: 1.15rem;
-      color: var(--ink-muted);
-      line-height: 1.65;
-      max-width: 780px;
-      margin-bottom: 1.5rem;
-    }
-    .ed-contact-strip {
-      display: flex;
-      gap: 1.25rem;
-      flex-wrap: wrap;
-      font-size: 0.9rem;
-    }
-    .ed-contact-strip a {
-      font-weight: 600;
-    }
-    section.ed-section {
-      margin-bottom: 4.5rem;
-    }
-    .ed-section-head {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      border-bottom: 2px solid var(--ink);
-      padding-bottom: 0.75rem;
-      margin-bottom: 2rem;
-    }
-    .ed-section-head h2 {
-      font-family: var(--font-serif);
-      font-size: 1.75rem;
-      font-weight: 600;
-    }
-    .ed-section-head span {
-      font-family: var(--font-mono);
-      font-size: 0.8rem;
-      color: var(--ink-light);
-    }
-    .ed-pillar-card {
-      display: grid;
-      grid-template-columns: 50px 1fr;
-      gap: 1.25rem;
-      padding: 1.75rem 0;
-      border-bottom: 1px solid var(--border);
-    }
-    .ed-pillar-num {
-      font-family: var(--font-serif);
-      font-size: 1.5rem;
-      font-style: italic;
-      color: var(--accent);
-    }
-    .ed-pillar-content h3 {
-      font-family: var(--font-serif);
-      font-size: 1.35rem;
-      margin: 0.25rem 0 0.5rem;
-    }
-    .ed-pillar-content p {
-      color: var(--ink-muted);
-      margin-bottom: 0.75rem;
-      font-size: 0.98rem;
-    }
-    .ed-sub {
-      font-family: var(--font-mono);
-      font-size: 0.76rem;
-      color: var(--ink-light);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    .ed-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-    }
-    .ed-tag {
-      display: inline-block;
-      font-size: 0.75rem;
-      font-family: var(--font-mono);
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      padding: 0.2rem 0.55rem;
-      border-radius: 4px;
-      color: var(--ink-muted);
-    }
-    .ed-filter-bar {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-      margin-bottom: 2rem;
-    }
-    .cat-btn, .cred-btn {
-      background: transparent;
-      border: 1px solid var(--border-dark);
-      padding: 0.35rem 0.8rem;
-      border-radius: 4px;
-      font-family: var(--font-sans);
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--ink-muted);
-      cursor: pointer;
-      transition: all 0.15s ease;
-    }
-    .cat-btn:hover, .cred-btn:hover {
-      background: var(--card-bg);
-      color: var(--ink);
-    }
-    .cat-btn.active, .cred-btn.active {
-      background: var(--ink);
-      color: #fff;
-      border-color: var(--ink);
-    }
-    .ed-project-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1.75rem;
-      margin-bottom: 1.5rem;
-      transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    }
-    .ed-project-card:hover {
-      border-color: var(--border-dark);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
-    }
-    .ed-project-meta {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      margin-bottom: 0.6rem;
-      font-size: 0.8rem;
-      font-family: var(--font-mono);
-      flex-wrap: wrap;
-    }
-    .ed-num {
-      font-weight: 700;
-      color: var(--accent);
-    }
-    .ed-cat-badge {
-      background: var(--bg);
-      padding: 0.15rem 0.5rem;
-      border-radius: 4px;
-      border: 1px solid var(--border);
-      color: var(--ink-muted);
-    }
-    .ed-context {
-      color: var(--ink-light);
-    }
-    .ed-project-title {
-      font-family: var(--font-serif);
-      font-size: 1.45rem;
-      font-weight: 600;
-      margin-bottom: 0.75rem;
-      line-height: 1.3;
-    }
-    .ed-project-desc {
-      color: var(--ink-muted);
-      font-size: 0.95rem;
-      margin-bottom: 1rem;
-      line-height: 1.6;
-    }
-    .ed-project-links {
-      margin-top: 1.25rem;
-      padding-top: 1rem;
-      border-top: 1px dashed var(--border);
-      display: flex;
-      gap: 1.25rem;
-      font-size: 0.85rem;
-      font-weight: 600;
-    }
-    .ed-paper-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1.75rem;
-      margin-bottom: 1.25rem;
-    }
-    .ed-paper-tag {
-      display: inline-block;
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      background: var(--accent-soft);
-      color: var(--accent);
-      padding: 0.2rem 0.5rem;
-      border-radius: 4px;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-    .ed-paper-card h3 {
-      font-family: var(--font-serif);
-      font-size: 1.3rem;
-      margin-bottom: 0.4rem;
-      line-height: 1.35;
-    }
-    .ed-paper-field {
-      font-size: 0.85rem;
-      color: var(--ink-light);
-      margin-bottom: 0.75rem;
-      font-family: var(--font-mono);
-    }
-    .ed-paper-summary {
-      font-size: 0.94rem;
-      color: var(--ink-muted);
-      line-height: 1.6;
-    }
-    .ed-course-row {
-      display: grid;
-      grid-template-columns: 100px 1fr;
-      gap: 1rem;
-      padding: 1rem 0;
-      border-bottom: 1px solid var(--border);
-    }
-    .ed-course-code {
-      font-family: var(--font-mono);
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--accent);
-    }
-    .ed-course-row strong {
-      font-size: 0.95rem;
-    }
-    .ed-course-row p {
-      font-size: 0.85rem;
-      color: var(--ink-light);
-      margin-top: 0.15rem;
-    }
-    .ed-cred-controls {
-      display: flex;
-      justify-content: space-between;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-bottom: 1.5rem;
-    }
-    .ed-search-input {
-      padding: 0.4rem 0.8rem;
-      border: 1px solid var(--border-dark);
-      border-radius: 4px;
-      font-family: var(--font-sans);
-      font-size: 0.85rem;
-      min-width: 260px;
-      background: var(--card-bg);
-      color: var(--ink);
-    }
-    .ed-cred-row {
-      display: grid;
-      grid-template-columns: 32px 1fr 180px 170px;
-      gap: 1rem;
-      align-items: center;
-      padding: 0.85rem 1rem;
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      margin-bottom: 0.5rem;
-      font-size: 0.88rem;
-    }
-    .ed-cred-id {
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      color: var(--accent);
-      font-weight: 600;
-    }
-    .ed-cred-info strong {
-      display: block;
-      line-height: 1.35;
-    }
-    .ed-cred-info span {
-      font-size: 0.78rem;
-      color: var(--ink-light);
-    }
-    .ed-cred-dom {
-      font-size: 0.78rem;
-      font-family: var(--font-mono);
-      color: var(--ink-muted);
-    }
-    .ed-cred-action {
-      text-align: right;
-    }
-    .ed-verify {
-      font-family: var(--font-mono);
-      font-size: 0.76rem;
-      font-weight: 600;
-      color: var(--accent);
-    }
-    .ed-completed {
-      font-family: var(--font-mono);
-      font-size: 0.76rem;
-      color: var(--ink-light);
-    }
-    .ed-exp-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1.75rem;
-    }
-    .ed-exp-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 0.5rem;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-    .ed-exp-period {
-      font-family: var(--font-mono);
-      font-size: 0.82rem;
-      color: var(--accent);
-      font-weight: 600;
-    }
-    footer.ed-footer {
-      margin-top: 5rem;
-      padding-top: 2rem;
-      border-top: 1px solid var(--border-dark);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-      font-size: 0.85rem;
-      color: var(--ink-light);
-      font-family: var(--font-mono);
-    }
-    @media (max-width: 768px) {
-      h1.ed-title { font-size: 2.1rem; }
-      .ed-cred-row {
-        grid-template-columns: 1fr;
-        gap: 0.5rem;
-      }
-      .ed-cred-action { text-align: left; }
-      .ed-course-row { grid-template-columns: 1fr; gap: 0.25rem; }
-    }
-  
-    /* ==== 4 PINK-ACCENT PALETTES ==== */
-    :root, [data-theme="sakura-cream"] {
-      --bg: #FAF7F5; --card-bg: #FFFFFF;
-      --ink: #1C1917; --ink-muted: #57534E; --ink-light: #78716C;
-      --border: #EAE3DE; --border-dark: #D4C9C2;
-      --accent: #D9467A; --accent-hover: #BE185D;
-      --accent-soft: #FDF2F8; --accent-border: #FBCFE8;
-    }
-    [data-theme="dusty-blush"] {
-      --bg: #FBF9F9; --card-bg: #FFFFFF;
-      --ink: #18181B; --ink-muted: #52525B; --ink-light: #71717A;
-      --border: #E4E4E7; --border-dark: #D4D4D8;
-      --accent: #BE185D; --accent-hover: #9D174D;
-      --accent-soft: #FDF2F8; --accent-border: #F9A8D4;
-    }
-    [data-theme="sakura-cream"] {
-      --bg: #FCFAF8; --card-bg: #FFFFFF;
-      --ink: #292524; --ink-muted: #57534E; --ink-light: #78716C;
-      --border: #E7E2DD; --border-dark: #D3CBC3;
-      --accent: #E11D48; --accent-hover: #BE123C;
-      --accent-soft: #FFE4E6; --accent-border: #FECDD3;
-    }
-    [data-theme="mauve-velvet"] {
-      --bg: #F8F6F8; --card-bg: #FFFFFF;
-      --ink: #1F1620; --ink-muted: #584A5A; --ink-light: #7C6D7E;
-      --border: #E6DEE7; --border-dark: #D2C4D3;
-      --accent: #C026D3; --accent-hover: #A21CAF;
-      --accent-soft: #FAE8FF; --accent-border: #F0ABFC;
-    }
-
-    /* ==== COURSERA REGISTRY ==== */
-    .registry-banner {
-      background: var(--card-bg); border: 1px solid var(--border);
-      border-left: 5px solid var(--accent); border-radius: 8px;
-      padding: 1.35rem 1.6rem; margin-bottom: 1.15rem;
-      display: flex; justify-content: space-between; align-items: center;
-      gap: 1.5rem; flex-wrap: wrap;
-    }
-    .registry-kicker {
-      display: block; font-family: "JetBrains Mono", monospace;
-      font-size: 0.71rem; font-weight: 700; color: var(--accent);
-      text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.22rem;
-    }
-    .registry-heading {
-      font-family: "Newsreader", Georgia, serif;
-      font-size: 1.3rem; font-weight: 600; margin-bottom: 0.3rem;
-    }
-    .registry-sub { color: var(--ink-muted); font-size: 0.88rem; line-height: 1.5; max-width: 560px; }
-    .registry-stats-box {
-      display: flex; gap: 1.4rem;
-      border-left: 1px solid var(--border); padding-left: 1.4rem;
-    }
-    .reg-stat { text-align: center; }
-    .reg-stat strong {
-      display: block; font-family: "JetBrains Mono", monospace;
-      font-size: 1.7rem; font-weight: 700; color: var(--accent); line-height: 1.1;
-    }
-    .reg-stat span { font-size: 0.74rem; color: var(--ink-light); }
-    .registry-controls-row {
-      display: flex; justify-content: space-between; gap: 0.9rem;
-      flex-wrap: wrap; margin-bottom: 1.1rem;
-    }
-    .reg-tabs { display: flex; gap: 0.32rem; flex-wrap: wrap; }
-    .reg-tab-btn {
-      background: var(--card-bg); border: 1px solid var(--border-dark);
-      padding: 0.35rem 0.72rem; border-radius: 6px;
-      font-family: inherit; font-size: 0.77rem; font-weight: 600;
-      color: var(--ink-muted); cursor: pointer; transition: all 0.15s;
-    }
-    .reg-tab-btn:hover { border-color: var(--accent); color: var(--accent); }
-    .reg-tab-btn.is-selected { background: var(--accent); color: #fff; border-color: var(--accent); }
-    .reg-search-input {
-      padding: 0.35rem 0.76rem; border: 1px solid var(--border-dark);
-      border-radius: 6px; font-family: inherit; font-size: 0.78rem;
-      min-width: 210px; background: var(--card-bg); color: var(--ink); outline: none;
-    }
-    .reg-search-input:focus { border-color: var(--accent); }
-    .credential-table { display: flex; flex-direction: column; gap: 0.42rem; }
-    .cred-row {
-      display: grid; grid-template-columns: 32px 1fr 170px 100px 180px;
-      gap: 1rem; align-items: center;
-      padding: 0.85rem 1.1rem;
-      background: var(--card-bg); border: 1px solid var(--border);
-      border-radius: 8px; font-size: 0.86rem; transition: all 0.15s;
-    }
-    .cred-row:hover { border-color: var(--accent-border); box-shadow: 0 2px 6px rgba(0,0,0,0.03); }
-    .cred-row-verified { border-left: 3px solid var(--accent); }
-    .cred-idx { font-family: "JetBrains Mono", monospace; font-size: 0.77rem; font-weight: 700; color: var(--accent); }
-    .cred-main { display: flex; flex-direction: column; gap: 0.1rem; }
-    .cred-course-title { font-size: 0.92rem; font-weight: 600; color: var(--ink); line-height: 1.3; }
-    .cred-issuer { font-size: 0.75rem; color: var(--ink-light); }
-    .cred-domain-tag {
-      display: inline-block; font-family: "JetBrains Mono", monospace;
-      font-size: 0.71rem; padding: 0.17rem 0.48rem; border-radius: 4px;
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-    }
-    .tag-data { background: #EFF6FF; color: #1D4ED8; border: 1px solid #BFDBFE; }
-    .tag-web { background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent-border); }
-    .tag-gov { background: #ECFDF5; color: #047857; border: 1px solid #A7F3D0; }
-    .tag-sec { background: #F3E8FF; color: #7E22CE; border: 1px solid #E9D5FF; }
-    .cred-date { font-family: "JetBrains Mono", monospace; font-size: 0.73rem; color: var(--ink-light); white-space: nowrap; }
-    .cred-action { text-align: right; }
-    .cred-verify-pill {
-      display: inline-flex; align-items: center; gap: 0.32rem;
-      padding: 0.28rem 0.7rem; border-radius: 999px;
-      font-family: "JetBrains Mono", monospace; font-size: 0.72rem; font-weight: 600;
-      color: var(--accent); background: var(--accent-soft);
-      border: 1px solid var(--accent-border); text-decoration: none; transition: all 0.15s;
-    }
-    .cred-verify-pill:hover { background: var(--accent); color: #fff; text-decoration: none; }
-    .cred-completed-stamp {
-      display: inline-flex; align-items: center; gap: 0.28rem;
-      font-family: "JetBrains Mono", monospace; font-size: 0.71rem; color: var(--ink-light);
-    }
-    @media (max-width: 820px) {
-      .registry-banner { flex-direction: column; }
-      .registry-stats-box { border-left: none; padding-left: 0; border-top: 1px solid var(--border); padding-top: 0.9rem; }
-      .cred-row { grid-template-columns: 1fr; gap: 0.3rem; }
-      .cred-action { text-align: left; }
-    }
-
-    
-    /* ==== COURSERA MOBILE RESPONSIVE ==== */
-    @media (max-width: 720px) {
-      .registry-banner { flex-direction: column; }
-      .registry-stats-box {
-        border-left: none; padding-left: 0;
-        border-top: 1px solid var(--border); padding-top: 0.85rem;
-        width: 100%; justify-content: flex-start;
-      }
-      .registry-controls-row { flex-direction: column; }
-      .reg-search-input { width: 100%; min-width: 0; }
-
-      /* Card layout on mobile: stacked 2-line design */
-      .cred-row {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap: 0.25rem;
-        padding: 0.85rem 1rem;
-        position: relative;
-      }
-      .cred-idx {
-        position: absolute; top: 0.85rem; left: 1rem;
-        font-size: 0.72rem;
-      }
-      .cred-main {
-        padding-left: 1.8rem;
-      }
-      .cred-course-title { font-size: 0.88rem; }
-      .cred-issuer { font-size: 0.72rem; }
-      .cred-domain-tag {
-        margin-left: 1.8rem; max-width: fit-content;
-        font-size: 0.68rem;
-      }
-      .cred-date {
-        margin-left: 1.8rem; font-size: 0.7rem;
-        display: inline-block;
-      }
-      .cred-action {
-        text-align: left;
-        margin-left: 1.8rem;
-        margin-top: 0.15rem;
-      }
-      .cred-verify-pill {
-        font-size: 0.7rem; padding: 0.25rem 0.6rem;
-        display: inline-flex; width: auto;
-      }
-      .cred-completed-stamp {
-        font-size: 0.69rem;
-      }
-    }
-
-    </style>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js')</script>
+  <style>[hidden]{display:none!important}</style>
+  <link rel="stylesheet" href="site.css?v=1">
 </head>
-<body data-theme="rose-gold">
-</div>
+<body>
+  <div class="progress" aria-hidden="true"></div>
 
-  
-    <aside id="sw-bar" aria-label="Pemilih Opsi Desain">
-      <div class="sw-inner">
-        <div class="sw-title">
-          <span class="sw-dot"></span>
-          <strong>PILIH OPSI DESAIN:</strong>
-          <span>Klik tombol untuk membandingkan 5 gaya UI/UX</span>
-        </div>
-        <nav class="sw-nav">
-          <a href="opsi-1.html" class="sw-btn active">1. Editorial Warm</a><a href="opsi-2.html" class="sw-btn ">2. Dark Precision</a><a href="opsi-3.html" class="sw-btn ">3. Bento Workspace</a><a href="opsi-4.html" class="sw-btn ">4. Swiss Modern</a><a href="opsi-5.html" class="sw-btn ">5. Cyber-Academic</a>
-        </nav>
-      </div>
-    </aside>
-    <style>
-      #sw-bar {
-        position: sticky;
-        top: 0;
-        z-index: 10000;
-        background: rgba(15, 23, 42, 0.94);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-        padding: 0.5rem 1rem;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        font-size: 0.8rem;
-        color: #f8fafc;
-      }
-      .sw-inner {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 0.75rem;
-        flex-wrap: wrap;
-      }
-      .sw-title {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        font-size: 0.78rem;
-      }
-      .sw-dot {
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background: #38bdf8;
-        box-shadow: 0 0 8px #38bdf8;
-      }
-      .sw-title strong {
-        color: #38bdf8;
-        letter-spacing: 0.03em;
-      }
-      .sw-title span {
-        color: #94a3b8;
-      }
-      .sw-nav {
-        display: flex;
-        align-items: center;
-        gap: 0.35rem;
-        flex-wrap: wrap;
-      }
-      .sw-btn {
-        padding: 0.28rem 0.65rem;
-        border-radius: 6px;
-        font-size: 0.75rem;
-        font-weight: 600;
-        text-decoration: none;
-        color: #cbd5e1;
-        background: rgba(255, 255, 255, 0.06);
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        transition: all 0.15s ease;
-      }
-      .sw-btn:hover {
-        background: rgba(255, 255, 255, 0.15);
-        color: #fff;
-        border-color: #38bdf8;
-      }
-      .sw-btn.active {
-        background: #0284c7;
-        color: #ffffff;
-        border-color: #38bdf8;
-      }
-      @media (max-width: 768px) {
-        .sw-inner {
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 0.4rem;
-        }
-      }
-    </style>
-    
-  <div class="container">
-    <header class="ed-header">
-      <div class="ed-meta-top">
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#top" aria-label="Beranda">
+        <span class="brand-mark">AN</span>
+        <span class="brand-name">Audrey Nabilla</span>
+      </a>
+      <nav class="nav-desktop" aria-label="Navigasi utama">
+        <span class="nav-pill" aria-hidden="true"></span>
+        <ul><li><a href="#pilar">Pilar</a></li><li><a href="#karya">Karya</a></li><li><a href="#sertifikasi">Sertifikasi</a></li><li><a href="#pengalaman">Pengalaman</a></li></ul>
+      </nav>
+      <button type="button" class="menu-btn" aria-label="Buka menu" aria-expanded="false" aria-controls="mobile-menu"><svg viewBox="0 0 15 15" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 3C1.22 3 1 3.22 1 3.5S1.22 4 1.5 4h12c.28 0 .5-.22.5-.5S13.78 3 13.5 3h-12ZM1 7.5c0-.28.22-.5.5-.5h12c.28 0 .5.22.5.5s-.22.5-.5.5h-12A.5.5 0 0 1 1 7.5Zm0 4c0-.28.22-.5.5-.5h12c.28 0 .5.22.5.5s-.22.5-.5.5h-12a.5.5 0 0 1-.5-.5Z"/></svg></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mm-top">
+      <a class="brand" href="#top"><span class="brand-mark">AN</span><span class="brand-name">Audrey Nabilla</span></a>
+      <button type="button" class="mm-close" aria-label="Tutup menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18L18 6M6 6l12 12"/></svg></button>
+    </div>
+    <nav class="mm-nav" aria-label="Navigasi seluler"><a class="mm-link" href="#pilar" style="--i:0"><small>01</small>Pilar<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="mm-link" href="#karya" style="--i:1"><small>02</small>Karya<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="mm-link" href="#sertifikasi" style="--i:2"><small>03</small>Sertifikasi<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="mm-link" href="#pengalaman" style="--i:3"><small>04</small>Pengalaman<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></nav>
+    <div class="mm-foot">112202407171@mhs.dinus.ac.id<br>Semarang, Jawa Tengah, Indonesia</div>
+  </div>
+
+  <main class="container" id="top">
+    <section class="hero">
+      <div class="ed-meta-top reveal">
         <span>S1 Sistem Informasi · UDINUS</span>
         <span class="ed-badge">Semester 5 Aktif · Kelas Unggulan</span>
       </div>
-      <h1 class="ed-title">Audrey Nabilla Laksono</h1>
-      <p class="ed-lead">Menyelaraskan kebutuhan manusia, proses bisnis, dan rekayasa kode ke dalam aplikasi web berarsitektur MVC, riset UI/UX tervalidasi statistik, tata kelola enterprise, serta analitika data.</p>
-      <div class="ed-contact-strip">
+      <h1 class="ed-title" aria-label="Audrey Nabilla Laksono"><span class="w"><span style="--i:0">Audrey</span></span> <span class="w"><span style="--i:1">Nabilla</span></span> <span class="w"><span style="--i:2">Laksono</span></span> </h1>
+      <p class="ed-lead reveal" style="--d:100ms">Menyelaraskan kebutuhan manusia, proses bisnis, dan rekayasa kode ke dalam aplikasi web berarsitektur MVC, riset UI/UX tervalidasi statistik, tata kelola enterprise, serta analitika data.</p>
+      <div class="ed-contact-strip reveal" style="--d:200ms">
         <a href="mailto:112202407171@mhs.dinus.ac.id">✉ 112202407171@mhs.dinus.ac.id</a>
         <a href="https://github.com/audreynabilla" target="_blank" rel="noopener">↗ github.com/audreynabilla</a>
         <span>📍 Semarang, Jawa Tengah, Indonesia</span>
       </div>
-    </header>
+    </section>
 
     <section class="ed-section" id="pilar">
-      <div class="ed-section-head">
-        <h2>Empat Pilar Keahlian</h2>
-        <span>Semester 1 — Semester 5</span>
-      </div>
+      <div class="ed-section-head"><h2>Empat Pilar Keahlian</h2><span>Semester 1 — Semester 5</span></div>
       <div class="ed-pillars-list">
-        
-        <article class="ed-pillar-card">
+        <article class="ed-pillar-card reveal" style="--d:0ms">
           <div class="ed-pillar-num">01</div>
           <div class="ed-pillar-content">
             <span class="ed-sub">PWD · PWL · Konsep Basis Data · CRM</span>
@@ -697,369 +67,288 @@
             <div class="ed-tags"><span class="ed-tag">PHP 7.4+ OOP</span><span class="ed-tag">Custom MVC</span><span class="ed-tag">MySQL / MariaDB PDO</span><span class="ed-tag">RESTful JSON API</span><span class="ed-tag">Apache .htaccess</span></div>
           </div>
         </article>
-        
-        <article class="ed-pillar-card">
+        <article class="ed-pillar-card reveal" style="--d:60ms">
           <div class="ed-pillar-num">02</div>
           <div class="ed-pillar-content">
             <span class="ed-sub">APST · APSIO · IMK · Literasi Informasi</span>
-            <h3>Analisis Sistem, Proses Bisnis & UI/UX</h3>
+            <h3>Analisis Sistem, Proses Bisnis &amp; UI/UX</h3>
             <p>Menganalisis kebutuhan fungsional dan operasional organisasi, memodelkan alur kerja sistem menggunakan BPMN 2.0 dan UML komprehensif, serta merancang antarmuka berbasis User-Centered Design (UCD) yang divalidasi statistik dengan System Usability Scale (SUS) dan 10 Heuristik Nielsen.</p>
             <div class="ed-tags"><span class="ed-tag">BPMN 2.0 (Bizagi)</span><span class="ed-tag">UML Suite</span><span class="ed-tag">UCD Framework</span><span class="ed-tag">Heuristic Evaluation</span><span class="ed-tag">SUS Testing</span><span class="ed-tag">IBM SPSS</span></div>
           </div>
         </article>
-        
-        <article class="ed-pillar-card">
+        <article class="ed-pillar-card reveal" style="--d:120ms">
           <div class="ed-pillar-num">03</div>
           <div class="ed-pillar-content">
             <span class="ed-sub">Statistika Bisnis · Riset Operasi · Analitika Data · Data Mining</span>
-            <h3>Sains Data, Statistika & Riset Operasi</h3>
+            <h3>Sains Data, Statistika &amp; Riset Operasi</h3>
             <p>Mengolah dataset bisnis dan operasional melalui teknik clustering, klasifikasi, optimasi alokasi sumber daya dengan Linear Programming (Simplex), serta pemodelan rantai pasok berbasis SCOR. Menerjemahkan data mentah menjadi keputusan terukur.</p>
             <div class="ed-tags"><span class="ed-tag">Data Mining</span><span class="ed-tag">Cluster Analysis</span><span class="ed-tag">Linear Programming</span><span class="ed-tag">SCOR Framework</span><span class="ed-tag">Statistika Inferensial</span></div>
           </div>
         </article>
-        
-        <article class="ed-pillar-card">
+        <article class="ed-pillar-card reveal" style="--d:180ms">
           <div class="ed-pillar-num">04</div>
           <div class="ed-pillar-content">
             <span class="ed-sub">IT Governance · Audit SI · TKMLTI · Manajemen Inovasi</span>
-            <h3>Tata Kelola TI, Audit & Enterprise</h3>
+            <h3>Tata Kelola TI, Audit &amp; Enterprise</h3>
             <p>Mengevaluasi keselarasan strategi bisnis dan TI menggunakan kerangka kerja COBIT 2019, merancang katalog layanan dan Service Level Agreement berbasis ITIL v4, serta menilai kepatuhan dan risiko keamanan informasi merujuk pada standar ISO/IEC 27001 dan COSO.</p>
-            <div class="ed-tags"><span class="ed-tag">COBIT 2019</span><span class="ed-tag">ITIL v4</span><span class="ed-tag">ISO/IEC 27001</span><span class="ed-tag">COSO Internal Control</span><span class="ed-tag">ERP Odoo</span><span class="ed-tag">Ward & Peppard</span></div>
+            <div class="ed-tags"><span class="ed-tag">COBIT 2019</span><span class="ed-tag">ITIL v4</span><span class="ed-tag">ISO/IEC 27001</span><span class="ed-tag">COSO Internal Control</span><span class="ed-tag">ERP Odoo</span><span class="ed-tag">Ward &amp; Peppard</span></div>
           </div>
         </article>
-        
       </div>
     </section>
 
     <section class="ed-section" id="karya">
-      <div class="ed-section-head">
-        <h2>Arsip Karya & Studi Kasus Sistem</h2>
-        <span>8 Proyek Terpilih</span>
-      </div>
-      <div class="ed-filter-bar">
-        <button type="button" class="cat-btn active" data-cat="all">Semua Karya (8)</button>
-        <button type="button" class="cat-btn" data-cat="web">Aplikasi Web & REST API (4)</button>
-        <button type="button" class="cat-btn" data-cat="ux">Analisis UML/BPMN & UI/UX (2)</button>
-        <button type="button" class="cat-btn" data-cat="gov">Tata Kelola & Audit TI (2)</button>
-      </div>
+      <div class="ed-section-head"><h2>Arsip Karya &amp; Studi Kasus Sistem</h2><span>8 Proyek Terpilih</span></div>
+      <div class="ed-filter-bar reveal"><button type="button" class="cat-btn active" data-cat="all" aria-pressed="true">Semua Karya (8)</button><button type="button" class="cat-btn" data-cat="web" aria-pressed="false">Aplikasi Web &amp; REST API (4)</button><button type="button" class="cat-btn" data-cat="ux" aria-pressed="false">Analisis UML/BPMN &amp; UI/UX (2)</button><button type="button" class="cat-btn" data-cat="gov" aria-pressed="false">Tata Kelola &amp; Audit TI (2)</button></div>
       <div class="ed-projects-list">
-        
-        <article class="project-item ed-project-card" data-cat="web">
-          <div class="ed-project-meta">
-            <span class="ed-num">01</span>
-            <span class="ed-cat-badge">Aplikasi Web & REST API</span>
-            <span class="ed-context">Pemrograman Web Lanjut (Semester 4) · Proyek Akhir Kelompok 7</span>
+        <article class="proj spot reveal" data-cat="web" style="--d:0ms">
+          <div class="proj-head">
+            <div class="proj-meta"><span class="ed-num">01</span><span class="ed-cat-badge">Aplikasi Web &amp; REST API</span></div>
+            <button type="button" class="proj-trigger" aria-expanded="false" aria-controls="pb-pawspa">
+              <h3 class="ed-project-title">PawSpa — Sistem Reservasi &amp; Manajemen Layanan Grooming Hewan</h3>
+            </button>
+            <p class="proj-short">Aplikasi web reservasi grooming hewan peliharaan dengan dua peran: pelanggan dan administrator.</p>
+            <div class="proj-foot">
+              <div class="ed-tags"><span class="ed-tag">PHP 7.4+ OOP</span><span class="ed-tag">Custom MVC</span><span class="ed-tag">MySQL / MariaDB</span><span class="ed-tag more">+2</span></div>
+              <span class="proj-toggle"><span>Lihat detail</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span>
+            </div>
+            <span class="proj-plus"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 2v12M2 8h12"/></svg></span>
           </div>
-          <h3 class="ed-project-title">PawSpa — Sistem Reservasi & Manajemen Layanan Grooming Hewan</h3>
-          <p class="ed-project-desc">Aplikasi web reservasi perawatan hewan peliharaan (anjing dan kucing) yang dibangun menggunakan arsitektur Model-View-Controller (MVC) dengan PHP Native OOP dan MySQL. Mendukung alur lengkap dua peran: pelanggan dapat memilih paket layanan, mengunggah foto hewan serta bukti transfer pembayaran, dan memantau status reservasi secara real-time; administrator mengelola katalog paket, memverifikasi bukti transaksi, dan memantau laporan layanan.</p>
-          <div class="ed-tags"><span class="ed-tag">PHP 7.4+ OOP</span><span class="ed-tag">Custom MVC</span><span class="ed-tag">MySQL / MariaDB</span><span class="ed-tag">Apache .htaccess Rewrite</span><span class="ed-tag">Multi-Role Auth</span></div>
-          <div class="ed-project-links"><a href="https://github.com/audreynabilla/UAS-kelompok-7" target="_blank" rel="noopener" class="ed-link">GitHub Repositori &rarr;</a></div>
-        </article>
-        
-        <article class="project-item ed-project-card" data-cat="web">
-          <div class="ed-project-meta">
-            <span class="ed-num">02</span>
-            <span class="ed-cat-badge">Aplikasi Web & REST API</span>
-            <span class="ed-context">Pemrograman Web Lanjut (Semester 4) · Proyek Individu (A12.2024.07171)</span>
+          <div class="proj-body" id="pb-pawspa" aria-hidden="true">
+            <div class="proj-body-inner"><div class="proj-detail"><div class="proj-detail-box">
+              <p class="ed-context">Pemrograman Web Lanjut (Semester 4) · Proyek Akhir Kelompok 7</p>
+              <p class="ed-project-desc">Aplikasi web reservasi perawatan hewan peliharaan (anjing dan kucing) yang dibangun menggunakan arsitektur Model-View-Controller (MVC) dengan PHP Native OOP dan MySQL. Mendukung alur lengkap dua peran: pelanggan dapat memilih paket layanan, mengunggah foto hewan serta bukti transfer pembayaran, dan memantau status reservasi secara real-time; administrator mengelola katalog paket, memverifikasi bukti transaksi, dan memantau laporan layanan.</p>
+              <div class="ed-tags"><span class="ed-tag">PHP 7.4+ OOP</span><span class="ed-tag">Custom MVC</span><span class="ed-tag">MySQL / MariaDB</span><span class="ed-tag">Apache .htaccess Rewrite</span><span class="ed-tag">Multi-Role Auth</span></div>
+              <div class="ed-project-links"><a class="ed-link" href="https://github.com/audreynabilla/UAS-kelompok-7" target="_blank" rel="noopener">GitHub Repositori <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+            </div></div></div>
           </div>
-          <h3 class="ed-project-title">Sistem Manajemen Inventaris Berbasis MVC & Layanan RESTful JSON API</h3>
-          <p class="ed-project-desc">Sistem inventaris terstruktur dengan arsitektur MVC murni berbasis PHP PDO. Mengintegrasikan lapisan RESTful API JSON lengkap (GET, POST, PUT, DELETE) untuk interoperabilitas antar-aplikasi, SecurityHelper untuk sanitasi XSS/CSRF, serta hashing password menggunakan algoritma BCRYPT.</p>
-          <div class="ed-tags"><span class="ed-tag">PHP PDO</span><span class="ed-tag">Arsitektur MVC</span><span class="ed-tag">RESTful JSON API</span><span class="ed-tag">SecurityHelper Sanitizer</span><span class="ed-tag">Bcrypt Hashing</span></div>
-          <div class="ed-project-links"><a href="https://github.com/audreynabilla/pwl-crud-07171" target="_blank" rel="noopener" class="ed-link">GitHub Repositori &rarr;</a></div>
         </article>
-        
-        <article class="project-item ed-project-card" data-cat="web">
-          <div class="ed-project-meta">
-            <span class="ed-num">03</span>
-            <span class="ed-cat-badge">Aplikasi Web & REST API</span>
-            <span class="ed-context">Pengelolaan Hubungan Pelanggan / CRM (Semester 3 — Kelas Unggulan)</span>
+        <article class="proj spot reveal" data-cat="web" style="--d:60ms">
+          <div class="proj-head">
+            <div class="proj-meta"><span class="ed-num">02</span><span class="ed-cat-badge">Aplikasi Web &amp; REST API</span></div>
+            <button type="button" class="proj-trigger" aria-expanded="false" aria-controls="pb-pwl-crud">
+              <h3 class="ed-project-title">Sistem Manajemen Inventaris Berbasis MVC &amp; Layanan RESTful JSON API</h3>
+            </button>
+            <p class="proj-short">Sistem inventaris berarsitektur MVC dengan layanan RESTful JSON API dan keamanan berlapis.</p>
+            <div class="proj-foot">
+              <div class="ed-tags"><span class="ed-tag">PHP PDO</span><span class="ed-tag">Arsitektur MVC</span><span class="ed-tag">RESTful JSON API</span><span class="ed-tag more">+2</span></div>
+              <span class="proj-toggle"><span>Lihat detail</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span>
+            </div>
+            <span class="proj-plus"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 2v12M2 8h12"/></svg></span>
           </div>
-          <h3 class="ed-project-title">Sistem Informasi CRM & Kasir Multi-Cabang pada Djuara Coffee</h3>
-          <p class="ed-project-desc">Rancang bangun sistem CRM dan Point of Sale (POS) untuk jaringan kedai kopi dengan 4 outlet cabang. Mengelola database pelanggan terpusat, engine perhitungan poin loyalitas otomatis berdasarkan tier pembelanjaan, pencatatan transaksi kasir harian, serta perancangan skema relasional ERD dan sequence diagram alur transaksi.</p>
-          <div class="ed-tags"><span class="ed-tag">PHP Native</span><span class="ed-tag">MySQL Relational</span><span class="ed-tag">Multi-Branch POS</span><span class="ed-tag">Loyalty Points Engine</span><span class="ed-tag">ERD & Sequence Modeling</span></div>
-          
-        </article>
-        
-        <article class="project-item ed-project-card" data-cat="web">
-          <div class="ed-project-meta">
-            <span class="ed-num">04</span>
-            <span class="ed-cat-badge">Aplikasi Web & REST API</span>
-            <span class="ed-context">Pemrograman Web Dasar (Semester 3) · Proyek Individu (penjualan_7171baru)</span>
+          <div class="proj-body" id="pb-pwl-crud" aria-hidden="true">
+            <div class="proj-body-inner"><div class="proj-detail"><div class="proj-detail-box">
+              <p class="ed-context">Pemrograman Web Lanjut (Semester 4) · Proyek Individu (A12.2024.07171)</p>
+              <p class="ed-project-desc">Sistem inventaris terstruktur dengan arsitektur MVC murni berbasis PHP PDO. Mengintegrasikan lapisan RESTful API JSON lengkap (GET, POST, PUT, DELETE) untuk interoperabilitas antar-aplikasi, SecurityHelper untuk sanitasi XSS/CSRF, serta hashing password menggunakan algoritma BCRYPT.</p>
+              <div class="ed-tags"><span class="ed-tag">PHP PDO</span><span class="ed-tag">Arsitektur MVC</span><span class="ed-tag">RESTful JSON API</span><span class="ed-tag">SecurityHelper Sanitizer</span><span class="ed-tag">Bcrypt Hashing</span></div>
+              <div class="ed-project-links"><a class="ed-link" href="https://github.com/audreynabilla/pwl-crud-07171" target="_blank" rel="noopener">GitHub Repositori <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="ed-link alt" href="https://youtu.be/afBZMuH899g" target="_blank" rel="noopener">Video Demo <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+            </div></div></div>
           </div>
-          <h3 class="ed-project-title">Aplikasi Web Manajemen Penjualan, Pegawai, Kategori & Supplier</h3>
-          <p class="ed-project-desc">Aplikasi web operasional ritel berbasis PHP dan MySQL yang menghubungkan 4 modul CRUD relasional yang saling berelasi: transaksi penjualan kasir, master data supplier, manajemen pegawai, dan kategori produk. Dilengkapi validasi form sisi server dan antarmuka responsif.</p>
-          <div class="ed-tags"><span class="ed-tag">PHP & MySQL</span><span class="ed-tag">4 Modul CRUD Relasional</span><span class="ed-tag">HTML5 / CSS3 / Vanilla JS</span><span class="ed-tag">Bootstrap 5 Components</span></div>
-          
         </article>
-        
-        <article class="project-item ed-project-card" data-cat="ux">
-          <div class="ed-project-meta">
-            <span class="ed-num">05</span>
-            <span class="ed-cat-badge">Analisis UML/BPMN & UI/UX</span>
-            <span class="ed-context">APST (Semester 2) & APSIO (Semester 3 — Kelas Unggulan)</span>
+        <article class="proj spot reveal" data-cat="web" style="--d:120ms">
+          <div class="proj-head">
+            <div class="proj-meta"><span class="ed-num">03</span><span class="ed-cat-badge">Aplikasi Web &amp; REST API</span></div>
+            <button type="button" class="proj-trigger" aria-expanded="false" aria-controls="pb-djuara-coffee">
+              <h3 class="ed-project-title">Sistem Informasi CRM &amp; Kasir Multi-Cabang pada Djuara Coffee</h3>
+            </button>
+            <p class="proj-short">Sistem CRM dan kasir untuk jaringan kedai kopi 4 cabang dengan poin loyalitas otomatis.</p>
+            <div class="proj-foot">
+              <div class="ed-tags"><span class="ed-tag">PHP Native</span><span class="ed-tag">MySQL Relational</span><span class="ed-tag">Multi-Branch POS</span><span class="ed-tag more">+2</span></div>
+              <span class="proj-toggle"><span>Lihat detail</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span>
+            </div>
+            <span class="proj-plus"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 2v12M2 8h12"/></svg></span>
           </div>
-          <h3 class="ed-project-title">Analisis & Perancangan Sistem Informasi Jual Beli Alat Kesehatan pada PT. Bina Givensa</h3>
-          <p class="ed-project-desc">Kajian komprehensif analisis sistem rantai distribusi alat kesehatan medis. Memodelkan proses bisnis As-Is dan To-Be dengan standar notasi BPMN 2.0, menyusun spesifikasi kebutuhan sistem berbasis kerangka PIECES, serta merancang artefak diagram UML lengkap (Use Case, Activity, Sequence, dan Class Diagram).</p>
-          <div class="ed-tags"><span class="ed-tag">BPMN 2.0 (Bizagi)</span><span class="ed-tag">UML (Use Case, Sequence, Class)</span><span class="ed-tag">PIECES Analysis</span><span class="ed-tag">Data Flow Diagram (DFD)</span></div>
-          
-        </article>
-        
-        <article class="project-item ed-project-card" data-cat="ux">
-          <div class="ed-project-meta">
-            <span class="ed-num">06</span>
-            <span class="ed-cat-badge">Analisis UML/BPMN & UI/UX</span>
-            <span class="ed-context">Interaksi Manusia & Komputer (Semester 4) & Riset Publikasi Ilmiah</span>
+          <div class="proj-body" id="pb-djuara-coffee" aria-hidden="true">
+            <div class="proj-body-inner"><div class="proj-detail"><div class="proj-detail-box">
+              <p class="ed-context">Pengelolaan Hubungan Pelanggan / CRM (Semester 3 — Kelas Unggulan)</p>
+              <p class="ed-project-desc">Rancang bangun sistem CRM dan Point of Sale (POS) untuk jaringan kedai kopi dengan 4 outlet cabang. Mengelola database pelanggan terpusat, engine perhitungan poin loyalitas otomatis berdasarkan tier pembelanjaan, pencatatan transaksi kasir harian, serta perancangan skema relasional ERD dan sequence diagram alur transaksi.</p>
+              <div class="ed-tags"><span class="ed-tag">PHP Native</span><span class="ed-tag">MySQL Relational</span><span class="ed-tag">Multi-Branch POS</span><span class="ed-tag">Loyalty Points Engine</span><span class="ed-tag">ERD &amp; Sequence Modeling</span></div>
+              <div class="ed-project-links"><span class="no-repo">Repositori belum dipublikasikan.</span></div>
+            </div></div></div>
           </div>
-          <h3 class="ed-project-title">Redesain UI/UX Situs Web DPM-KM UDINUS & Marketplace Pujasera</h3>
-          <p class="ed-project-desc">Riset antarmuka pengguna berbasis metode User-Centered Design (UCD). Melakukan evaluasi heuristik terhadap 10 prinsip Nielsen-Norman, merancang prototipe antarmuka wireframe hingga high-fidelity di Figma, serta menguji penerimaan pengguna melalui kuesioner System Usability Scale (SUS) dengan skor akhir 78.9 (Kategori Good / Grade B).</p>
-          <div class="ed-tags"><span class="ed-tag">10 Nielsen Heuristics</span><span class="ed-tag">User-Centered Design (UCD)</span><span class="ed-tag">System Usability Scale (SUS: 78.9)</span><span class="ed-tag">Figma Hi-Fi Prototype</span><span class="ed-tag">IBM SPSS Statistics</span></div>
-          
         </article>
-        
-        <article class="project-item ed-project-card" data-cat="gov">
-          <div class="ed-project-meta">
-            <span class="ed-num">07</span>
-            <span class="ed-cat-badge">Tata Kelola & Audit TI</span>
-            <span class="ed-context">Tata Kelola Manajemen Layanan TI (Semester 4) & Audit SI (Semester 5)</span>
+        <article class="proj spot reveal" data-cat="web" style="--d:180ms">
+          <div class="proj-head">
+            <div class="proj-meta"><span class="ed-num">04</span><span class="ed-cat-badge">Aplikasi Web &amp; REST API</span></div>
+            <button type="button" class="proj-trigger" aria-expanded="false" aria-controls="pb-penjualan-multimodul">
+              <h3 class="ed-project-title">Aplikasi Web Manajemen Penjualan, Pegawai, Kategori &amp; Supplier</h3>
+            </button>
+            <p class="proj-short">Aplikasi web ritel dengan 4 modul CRUD: penjualan, supplier, pegawai, dan kategori.</p>
+            <div class="proj-foot">
+              <div class="ed-tags"><span class="ed-tag">PHP &amp; MySQL</span><span class="ed-tag">4 Modul CRUD Relasional</span><span class="ed-tag">HTML5 / CSS3 / Vanilla JS</span><span class="ed-tag more">+1</span></div>
+              <span class="proj-toggle"><span>Lihat detail</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span>
+            </div>
+            <span class="proj-plus"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 2v12M2 8h12"/></svg></span>
           </div>
-          <h3 class="ed-project-title">Tata Kelola ITIL & Audit Layanan TI PDAM Tirta Moedal serta ERP Odoo PT Batik Semarang 16</h3>
-          <p class="ed-project-desc">Perancangan Service Strategy dan Service Catalogue berbasis ITIL v4 pada unit PDAM Tirta Moedal Kota Semarang, mencakup manajemen insiden, Service Level Agreement (SLA), dan Request for Change (RFC). Dilanjutkan dengan simulasi implementasi modul Supply Chain dan CRM pada open-source ERP Odoo.</p>
-          <div class="ed-tags"><span class="ed-tag">ITIL v4 Framework</span><span class="ed-tag">COBIT 5 Governance</span><span class="ed-tag">ERP Odoo Open-Source</span><span class="ed-tag">SLA & Incident Design</span><span class="ed-tag">RFC Workflow</span></div>
-          
-        </article>
-        
-        <article class="project-item ed-project-card" data-cat="gov">
-          <div class="ed-project-meta">
-            <span class="ed-num">08</span>
-            <span class="ed-cat-badge">Tata Kelola & Audit TI</span>
-            <span class="ed-context">Perencanaan Strategis SI & Transformasi Digital (Semester 4)</span>
+          <div class="proj-body" id="pb-penjualan-multimodul" aria-hidden="true">
+            <div class="proj-body-inner"><div class="proj-detail"><div class="proj-detail-box">
+              <p class="ed-context">Pemrograman Web Dasar (Semester 3) · Proyek Individu (penjualan_7171baru)</p>
+              <p class="ed-project-desc">Aplikasi web operasional ritel berbasis PHP dan MySQL yang menghubungkan 4 modul CRUD relasional yang saling berelasi: transaksi penjualan kasir, master data supplier, manajemen pegawai, dan kategori produk. Dilengkapi validasi form sisi server dan antarmuka responsif.</p>
+              <div class="ed-tags"><span class="ed-tag">PHP &amp; MySQL</span><span class="ed-tag">4 Modul CRUD Relasional</span><span class="ed-tag">HTML5 / CSS3 / Vanilla JS</span><span class="ed-tag">Bootstrap 5 Components</span></div>
+              <div class="ed-project-links"><span class="no-repo">Repositori belum dipublikasikan.</span></div>
+            </div></div></div>
           </div>
-          <h3 class="ed-project-title">Perencanaan Strategis SI (Shopee & Bukalapak) serta Transformasi Digital Posyandu IoT</h3>
-          <p class="ed-project-desc">Penyusunan blueprint perencanaan strategis sistem informasi menggunakan metodologi Ward & Peppard, analisis kompetitif pasar e-commerce dengan Balanced Scorecard dan McFarlan Strategic Grid, serta perancangan konseptual integrasi perangkat IoT timbangan digital dengan sistem rekam medik Posyandu.</p>
-          <div class="ed-tags"><span class="ed-tag">Ward & Peppard Metodologi</span><span class="ed-tag">Balanced Scorecard</span><span class="ed-tag">McFarlan Strategic Grid</span><span class="ed-tag">Arsitektur IoT & Cloud</span><span class="ed-tag">Analisis Value Chain Porter</span></div>
-          
         </article>
-        
+        <article class="proj spot reveal" data-cat="ux" style="--d:0ms">
+          <div class="proj-head">
+            <div class="proj-meta"><span class="ed-num">05</span><span class="ed-cat-badge">Analisis UML/BPMN &amp; UI/UX</span></div>
+            <button type="button" class="proj-trigger" aria-expanded="false" aria-controls="pb-pt-alkes">
+              <h3 class="ed-project-title">Analisis &amp; Perancangan Sistem Informasi Jual Beli Alat Kesehatan pada PT. Bina Givensa</h3>
+            </button>
+            <p class="proj-short">Analisis dan perancangan sistem jual beli alat kesehatan memakai BPMN 2.0 dan UML.</p>
+            <div class="proj-foot">
+              <div class="ed-tags"><span class="ed-tag">BPMN 2.0 (Bizagi)</span><span class="ed-tag">UML (Use Case, Sequence, Class)</span><span class="ed-tag">PIECES Analysis</span><span class="ed-tag more">+1</span></div>
+              <span class="proj-toggle"><span>Lihat detail</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span>
+            </div>
+            <span class="proj-plus"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 2v12M2 8h12"/></svg></span>
+          </div>
+          <div class="proj-body" id="pb-pt-alkes" aria-hidden="true">
+            <div class="proj-body-inner"><div class="proj-detail"><div class="proj-detail-box">
+              <p class="ed-context">APST (Semester 2) &amp; APSIO (Semester 3 — Kelas Unggulan)</p>
+              <p class="ed-project-desc">Kajian komprehensif analisis sistem rantai distribusi alat kesehatan medis. Memodelkan proses bisnis As-Is dan To-Be dengan standar notasi BPMN 2.0, menyusun spesifikasi kebutuhan sistem berbasis kerangka PIECES, serta merancang artefak diagram UML lengkap (Use Case, Activity, Sequence, dan Class Diagram).</p>
+              <div class="ed-tags"><span class="ed-tag">BPMN 2.0 (Bizagi)</span><span class="ed-tag">UML (Use Case, Sequence, Class)</span><span class="ed-tag">PIECES Analysis</span><span class="ed-tag">Data Flow Diagram (DFD)</span></div>
+              <div class="ed-project-links"><span class="no-repo">Repositori belum dipublikasikan.</span></div>
+            </div></div></div>
+          </div>
+        </article>
+        <article class="proj spot reveal" data-cat="ux" style="--d:60ms">
+          <div class="proj-head">
+            <div class="proj-meta"><span class="ed-num">06</span><span class="ed-cat-badge">Analisis UML/BPMN &amp; UI/UX</span></div>
+            <button type="button" class="proj-trigger" aria-expanded="false" aria-controls="pb-dpm-km-joins">
+              <h3 class="ed-project-title">Redesain UI/UX Situs Web DPM-KM UDINUS &amp; Marketplace Pujasera</h3>
+            </button>
+            <p class="proj-short">Redesain UI/UX situs DPM-KM UDINUS dengan metode UCD dan skor SUS 78.9.</p>
+            <div class="proj-foot">
+              <div class="ed-tags"><span class="ed-tag">10 Nielsen Heuristics</span><span class="ed-tag">User-Centered Design (UCD)</span><span class="ed-tag">System Usability Scale (SUS: 78.9)</span><span class="ed-tag more">+2</span></div>
+              <span class="proj-toggle"><span>Lihat detail</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span>
+            </div>
+            <span class="proj-plus"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 2v12M2 8h12"/></svg></span>
+          </div>
+          <div class="proj-body" id="pb-dpm-km-joins" aria-hidden="true">
+            <div class="proj-body-inner"><div class="proj-detail"><div class="proj-detail-box">
+              <p class="ed-context">Interaksi Manusia &amp; Komputer (Semester 4) &amp; Riset Publikasi Ilmiah</p>
+              <p class="ed-project-desc">Riset antarmuka pengguna berbasis metode User-Centered Design (UCD). Melakukan evaluasi heuristik terhadap 10 prinsip Nielsen-Norman, merancang prototipe antarmuka wireframe hingga high-fidelity di Figma, serta menguji penerimaan pengguna melalui kuesioner System Usability Scale (SUS) dengan skor akhir 78.9 (Kategori Good / Grade B).</p>
+              <div class="ed-tags"><span class="ed-tag">10 Nielsen Heuristics</span><span class="ed-tag">User-Centered Design (UCD)</span><span class="ed-tag">System Usability Scale (SUS: 78.9)</span><span class="ed-tag">Figma Hi-Fi Prototype</span><span class="ed-tag">IBM SPSS Statistics</span></div>
+              <div class="ed-project-links"><span class="no-repo">Repositori belum dipublikasikan.</span></div>
+            </div></div></div>
+          </div>
+        </article>
+        <article class="proj spot reveal" data-cat="gov" style="--d:120ms">
+          <div class="proj-head">
+            <div class="proj-meta"><span class="ed-num">07</span><span class="ed-cat-badge">Tata Kelola &amp; Audit TI</span></div>
+            <button type="button" class="proj-trigger" aria-expanded="false" aria-controls="pb-itil-audit">
+              <h3 class="ed-project-title">Tata Kelola ITIL &amp; Audit Layanan TI PDAM Tirta Moedal serta ERP Odoo PT Batik Semarang 16</h3>
+            </button>
+            <p class="proj-short">Perancangan layanan TI berbasis ITIL v4 untuk PDAM Tirta Moedal dan simulasi ERP Odoo.</p>
+            <div class="proj-foot">
+              <div class="ed-tags"><span class="ed-tag">ITIL v4 Framework</span><span class="ed-tag">COBIT 5 Governance</span><span class="ed-tag">ERP Odoo Open-Source</span><span class="ed-tag more">+2</span></div>
+              <span class="proj-toggle"><span>Lihat detail</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span>
+            </div>
+            <span class="proj-plus"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 2v12M2 8h12"/></svg></span>
+          </div>
+          <div class="proj-body" id="pb-itil-audit" aria-hidden="true">
+            <div class="proj-body-inner"><div class="proj-detail"><div class="proj-detail-box">
+              <p class="ed-context">Tata Kelola Manajemen Layanan TI (Semester 4) &amp; Audit SI (Semester 5)</p>
+              <p class="ed-project-desc">Perancangan Service Strategy dan Service Catalogue berbasis ITIL v4 pada unit PDAM Tirta Moedal Kota Semarang, mencakup manajemen insiden, Service Level Agreement (SLA), dan Request for Change (RFC). Dilanjutkan dengan simulasi implementasi modul Supply Chain dan CRM pada open-source ERP Odoo.</p>
+              <div class="ed-tags"><span class="ed-tag">ITIL v4 Framework</span><span class="ed-tag">COBIT 5 Governance</span><span class="ed-tag">ERP Odoo Open-Source</span><span class="ed-tag">SLA &amp; Incident Design</span><span class="ed-tag">RFC Workflow</span></div>
+              <div class="ed-project-links"><span class="no-repo">Repositori belum dipublikasikan.</span></div>
+            </div></div></div>
+          </div>
+        </article>
+        <article class="proj spot reveal" data-cat="gov" style="--d:180ms">
+          <div class="proj-head">
+            <div class="proj-meta"><span class="ed-num">08</span><span class="ed-cat-badge">Tata Kelola &amp; Audit TI</span></div>
+            <button type="button" class="proj-trigger" aria-expanded="false" aria-controls="pb-renstra-iot">
+              <h3 class="ed-project-title">Perencanaan Strategis SI (Shopee &amp; Bukalapak) serta Transformasi Digital Posyandu IoT</h3>
+            </button>
+            <p class="proj-short">Blueprint perencanaan strategis SI e-commerce dan konsep digitalisasi Posyandu berbasis IoT.</p>
+            <div class="proj-foot">
+              <div class="ed-tags"><span class="ed-tag">Ward &amp; Peppard Metodologi</span><span class="ed-tag">Balanced Scorecard</span><span class="ed-tag">McFarlan Strategic Grid</span><span class="ed-tag more">+2</span></div>
+              <span class="proj-toggle"><span>Lihat detail</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span>
+            </div>
+            <span class="proj-plus"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 2v12M2 8h12"/></svg></span>
+          </div>
+          <div class="proj-body" id="pb-renstra-iot" aria-hidden="true">
+            <div class="proj-body-inner"><div class="proj-detail"><div class="proj-detail-box">
+              <p class="ed-context">Perencanaan Strategis SI &amp; Transformasi Digital (Semester 4)</p>
+              <p class="ed-project-desc">Penyusunan blueprint perencanaan strategis sistem informasi menggunakan metodologi Ward &amp; Peppard, analisis kompetitif pasar e-commerce dengan Balanced Scorecard dan McFarlan Strategic Grid, serta perancangan konseptual integrasi perangkat IoT timbangan digital dengan sistem rekam medik Posyandu.</p>
+              <div class="ed-tags"><span class="ed-tag">Ward &amp; Peppard Metodologi</span><span class="ed-tag">Balanced Scorecard</span><span class="ed-tag">McFarlan Strategic Grid</span><span class="ed-tag">Arsitektur IoT &amp; Cloud</span><span class="ed-tag">Analisis Value Chain Porter</span></div>
+              <div class="ed-project-links"><span class="no-repo">Repositori belum dipublikasikan.</span></div>
+            </div></div></div>
+          </div>
+        </article>
       </div>
     </section>
 
-    
-
-    
-
     <section class="ed-section" id="sertifikasi">
-      <div class="ed-section-head">
-        <h2>Sertifikasi Internasional Coursera</h2>
-        <span>17 Kredensial Global</span>
-      </div>
-
-      <div class="registry-banner">
-        <div class="registry-banner-text">
-          <span class="registry-kicker">ARSIP LISENSI &amp; KREDENSIAL PROFESIONAL</span>
+      <div class="ed-section-head"><h2>Sertifikasi Internasional Coursera</h2><span>21 Kredensial Terverifikasi</span></div>
+      <div class="registry-banner reveal">
+        <div>
+          <span class="registry-kicker">Arsip lisensi &amp; kredensial profesional</span>
           <h3 class="registry-heading">Sertifikasi Internasional Coursera (2026)</h3>
-          <p class="registry-sub">17 sertifikat penyelesaian kursus pada bidang Sains Data, Desain UX, Arsitektur &amp; Audit TI, serta Keamanan SI (CISSP Domain 1&#8211;8).</p>
+          <p class="registry-sub">Sertifikat penyelesaian kursus pada bidang Sains Data, Desain UX, Audit &amp; Tata Kelola TI, serta Keamanan SI. Klik sebuah bidang untuk melihat sertifikatnya, lalu klik Verifikasi untuk membuka halaman resmi Coursera.</p>
         </div>
         <div class="registry-stats-box">
-          <div class="reg-stat"><strong>17</strong><span>Sertifikat Lulus</span></div>
-          <div class="reg-stat"><strong>7</strong><span>Institusi Global</span></div>
+          <div class="reg-stat"><strong>21</strong><span>Sertifikat Terverifikasi</span></div>
+          <div class="reg-stat"><strong>6</strong><span>Institusi Global</span></div>
         </div>
       </div>
-
-      <div class="registry-controls-row">
-        <div class="reg-tabs">
-          <button type="button" class="reg-tab-btn is-selected" data-cred-group="all">Semua (17)</button>
-          <button type="button" class="reg-tab-btn" data-cred-group="data-ux">Sains Data &amp; UX (5)</button>
-          <button type="button" class="reg-tab-btn" data-cred-group="gov-ent">Tata Kelola &amp; Enterprise (4)</button>
-          <button type="button" class="reg-tab-btn" data-cred-group="cissp-sec">Keamanan CISSP 1&#8211;8 (8)</button>
-        </div>
-        <input type="text" id="cred-search" class="reg-search-input" placeholder="Cari nama sertifikasi / penerbit...">
+      <div class="registry-controls-row reveal">
+        <span class="reg-hint">7 bidang · ketuk kartu untuk membuka</span>
+        <input type="search" id="cred-search" class="reg-search-input" placeholder="Cari nama sertifikasi / penerbit..." aria-label="Cari sertifikasi">
       </div>
-
-      <div class="credential-table">
-        <div class="cred-row cred-row-verified" data-cred-cat="data-ux">
-          <span class="cred-idx">01</span>
-          <div class="cred-main">
-            <strong class="cred-course-title">Data Integration, Data Storage, & Data Migration</strong>
-            <span class="cred-issuer">SkillUp · Coursera</span>
-          </div>
-          <span class="cred-domain-tag tag-data">Arsitektur & Integrasi Data</span>
-          <span class="cred-date">April 2026</span>
-          <div class="cred-action"><a href="https://coursera.org/verify/MI8X78N3INB9" target="_blank" rel="noopener noreferrer" class="cred-verify-pill"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verifikasi (MI8X78N3INB9)</span><svg width="10" height="10" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
-        </div>
-        <div class="cred-row" data-cred-cat="data-ux">
-          <span class="cred-idx">02</span>
-          <div class="cred-main">
-            <strong class="cred-course-title">Foundations of User Experience (UX) Design</strong>
-            <span class="cred-issuer">Google · Coursera</span>
-          </div>
-          <span class="cred-domain-tag tag-web">Riset & Desain UI/UX</span>
-          <span class="cred-date">Mei 2026</span>
-          <div class="cred-action"><span class="cred-completed-stamp"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></div>
-        </div>
-        <div class="cred-row" data-cred-cat="data-ux">
-          <span class="cred-idx">03</span>
-          <div class="cred-main">
-            <strong class="cred-course-title">Cluster Analysis in Data Mining</strong>
-            <span class="cred-issuer">University of Illinois Urbana-Champaign · Coursera</span>
-          </div>
-          <span class="cred-domain-tag tag-data">Penambangan Data</span>
-          <span class="cred-date">Oktober 2026</span>
-          <div class="cred-action"><span class="cred-completed-stamp"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></div>
-        </div>
-        <div class="cred-row" data-cred-cat="data-ux">
-          <span class="cred-idx">04</span>
-          <div class="cred-main">
-            <strong class="cred-course-title">Pattern Discovery in Data Mining</strong>
-            <span class="cred-issuer">University of Illinois Urbana-Champaign · Coursera</span>
-          </div>
-          <span class="cred-domain-tag tag-data">Penambangan Data</span>
-          <span class="cred-date">September 2026</span>
-          <div class="cred-action"><span class="cred-completed-stamp"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></div>
-        </div>
-        <div class="cred-row" data-cred-cat="data-ux">
-          <span class="cred-idx">05</span>
-          <div class="cred-main">
-            <strong class="cred-course-title">Data Visualization</strong>
-            <span class="cred-issuer">University of Illinois Urbana-Champaign · Coursera</span>
-          </div>
-          <span class="cred-domain-tag tag-data">Visualisasi & Analitika</span>
-          <span class="cred-date">September 2026</span>
-          <div class="cred-action"><span class="cred-completed-stamp"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></div>
-        </div>
-        <div class="cred-row" data-cred-cat="gov-ent">
-          <span class="cred-idx">06</span>
-          <div class="cred-main">
-            <strong class="cred-course-title">Governance and Management of IT</strong>
-            <span class="cred-issuer">Packt · Coursera</span>
-          </div>
-          <span class="cred-domain-tag tag-gov">Tata Kelola TI</span>
-          <span class="cred-date">Oktober 2026</span>
-          <div class="cred-action"><span class="cred-completed-stamp"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></div>
-        </div>
-        <div class="cred-row" data-cred-cat="gov-ent">
-          <span class="cred-idx">07</span>
-          <div class="cred-main">
-            <strong class="cred-course-title">Information Systems Auditing and Governance</strong>
-            <span class="cred-issuer">Packt · Coursera</span>
-          </div>
-          <span class="cred-domain-tag tag-gov">Audit Sistem Informasi</span>
-          <span class="cred-date">Oktober 2026</span>
-          <div class="cred-action"><span class="cred-completed-stamp"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></div>
-        </div>
-        <div class="cred-row" data-cred-cat="gov-ent">
-          <span class="cred-idx">08</span>
-          <div class="cred-main">
-            <strong class="cred-course-title">TOGAF 10 Foundation</strong>
-            <span class="cred-issuer">EDUCBA · Coursera</span>
-          </div>
-          <span class="cred-domain-tag tag-gov">Arsitektur Enterprise</span>
-          <span class="cred-date">April 2026</span>
-          <div class="cred-action"><span class="cred-completed-stamp"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></div>
-        </div>
-        <div class="cred-row" data-cred-cat="gov-ent">
-          <span class="cred-idx">09</span>
-          <div class="cred-main">
-            <strong class="cred-course-title">Enterprise Systems</strong>
-            <span class="cred-issuer">University of Minnesota · Coursera</span>
-          </div>
-          <span class="cred-domain-tag tag-gov">Sistem Enterprise (ERP)</span>
-          <span class="cred-date">April 2026</span>
-          <div class="cred-action"><span class="cred-completed-stamp"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></div>
-        </div>
-        <div class="cred-row" data-cred-cat="cissp-sec">
-          <span class="cred-idx">10</span>
-          <div class="cred-main">
-            <strong class="cred-course-title">CISSP Domain 1: Security and Risk Management</strong>
-            <span class="cred-issuer">Infosec · Coursera</span>
-          </div>
-          <span class="cred-domain-tag tag-sec">Keamanan & Risiko SI</span>
-          <span class="cred-date">Oktober 2026</span>
-          <div class="cred-action"><span class="cred-completed-stamp"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></div>
-        </div>
-        <div class="cred-row" data-cred-cat="cissp-sec">
-          <span class="cred-idx">11</span>
-          <div class="cred-main">
-            <strong class="cred-course-title">CISSP Domain 2: Asset Security</strong>
-            <span class="cred-issuer">Infosec · Coursera</span>
-          </div>
-          <span class="cred-domain-tag tag-sec">Keamanan Aset Data</span>
-          <span class="cred-date">Oktober 2026</span>
-          <div class="cred-action"><span class="cred-completed-stamp"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></div>
-        </div>
-        <div class="cred-row" data-cred-cat="cissp-sec">
-          <span class="cred-idx">12</span>
-          <div class="cred-main">
-            <strong class="cred-course-title">CISSP Domain 3: Security Architecture and Engineering</strong>
-            <span class="cred-issuer">Infosec · Coursera</span>
-          </div>
-          <span class="cred-domain-tag tag-sec">Arsitektur Keamanan</span>
-          <span class="cred-date">Oktober 2026</span>
-          <div class="cred-action"><span class="cred-completed-stamp"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></div>
-        </div>
-        <div class="cred-row" data-cred-cat="cissp-sec">
-          <span class="cred-idx">13</span>
-          <div class="cred-main">
-            <strong class="cred-course-title">CISSP Domain 4: Communication and Network Security</strong>
-            <span class="cred-issuer">Infosec · Coursera</span>
-          </div>
-          <span class="cred-domain-tag tag-sec">Keamanan Jaringan</span>
-          <span class="cred-date">Oktober 2026</span>
-          <div class="cred-action"><span class="cred-completed-stamp"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></div>
-        </div>
-        <div class="cred-row" data-cred-cat="cissp-sec">
-          <span class="cred-idx">14</span>
-          <div class="cred-main">
-            <strong class="cred-course-title">CISSP Domain 5: Identity and Access Management (IAM)</strong>
-            <span class="cred-issuer">Infosec · Coursera</span>
-          </div>
-          <span class="cred-domain-tag tag-sec">Manajemen Identitas (IAM)</span>
-          <span class="cred-date">Oktober 2026</span>
-          <div class="cred-action"><span class="cred-completed-stamp"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></div>
-        </div>
-        <div class="cred-row" data-cred-cat="cissp-sec">
-          <span class="cred-idx">15</span>
-          <div class="cred-main">
-            <strong class="cred-course-title">CISSP Domain 6: Security Assessment and Testing</strong>
-            <span class="cred-issuer">Infosec · Coursera</span>
-          </div>
-          <span class="cred-domain-tag tag-sec">Pengujian Keamanan</span>
-          <span class="cred-date">Oktober 2026</span>
-          <div class="cred-action"><span class="cred-completed-stamp"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></div>
-        </div>
-        <div class="cred-row" data-cred-cat="cissp-sec">
-          <span class="cred-idx">16</span>
-          <div class="cred-main">
-            <strong class="cred-course-title">CISSP Domain 7: Security Operations</strong>
-            <span class="cred-issuer">Infosec · Coursera</span>
-          </div>
-          <span class="cred-domain-tag tag-sec">Operasional Keamanan</span>
-          <span class="cred-date">Oktober 2026</span>
-          <div class="cred-action"><span class="cred-completed-stamp"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></div>
-        </div>
-        <div class="cred-row" data-cred-cat="cissp-sec">
-          <span class="cred-idx">17</span>
-          <div class="cred-main">
-            <strong class="cred-course-title">CISSP Domain 8: Software Development Security</strong>
-            <span class="cred-issuer">Infosec · Coursera</span>
-          </div>
-          <span class="cred-domain-tag tag-sec">Keamanan Perangkat Lunak</span>
-          <span class="cred-date">Oktober 2026</span>
-          <div class="cred-action"><span class="cred-completed-stamp"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8.5L6.5 11.5L12.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tersertifikasi · Coursera</span></span></div>
-        </div>
+      <div class="group-grid">
+          <button type="button" class="group-card spot pop" data-group="cisa" data-text="cisa — audit sistem informasi packt · coursera governance and management of it information systems auditing and governance systems acquisition, development and implementation information systems operations and business resiliency protection of information assets cisa: certified information systems auditor (specialization)" style="--d:0ms" aria-haspopup="dialog">
+            <div class="gc-top"><span class="gc-badge">CISA</span><span class="gc-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+            <h3 class="gc-title">CISA — Audit Sistem Informasi</h3>
+            <span class="gc-sub">Packt · Coursera</span>
+            <span class="gc-count">6 sertifikat</span>
+          </button>
+          <button type="button" class="group-card spot pop" data-group="cissp" data-text="cissp — keamanan informasi infosec · coursera cissp domain 1: security and risk management cissp domain 2: asset security cissp domain 3: security architecture and engineering cissp domain 4: communication and network security cissp domain 5: identity and access management (iam) cissp domain 6: security assessment and testing cissp domain 7: security operations cissp domain 8: software development security certified information systems security professional — cissp (specialization)" style="--d:70ms" aria-haspopup="dialog">
+            <div class="gc-top"><span class="gc-badge">CISSP</span><span class="gc-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+            <h3 class="gc-title">CISSP — Keamanan Informasi</h3>
+            <span class="gc-sub">Infosec · Coursera</span>
+            <span class="gc-count">9 sertifikat</span>
+          </button>
+          <button type="button" class="group-card spot pop" data-group="data-mining" data-text="data mining university of illinois urbana-champaign · coursera data visualization pattern discovery in data mining cluster analysis in data mining" style="--d:140ms" aria-haspopup="dialog">
+            <div class="gc-top"><span class="gc-badge">DM</span><span class="gc-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+            <h3 class="gc-title">Data Mining</h3>
+            <span class="gc-sub">University of Illinois Urbana-Champaign · Coursera</span>
+            <span class="gc-count">3 sertifikat</span>
+          </button>
+          <button type="button" class="group-card spot pop" data-group="data-integration" data-text="data integration, data storage &amp; data migration skillup · coursera data integration, data storage, &amp; data migration" style="--d:210ms" aria-haspopup="dialog">
+            <div class="gc-top"><span class="gc-badge">DB</span><span class="gc-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+            <h3 class="gc-title">Data Integration, Data Storage &amp; Data Migration</h3>
+            <span class="gc-sub">SkillUp · Coursera</span>
+            <span class="gc-count">1 sertifikat</span>
+          </button>
+          <button type="button" class="group-card spot pop" data-group="google-ux" data-text="google ux design google · coursera foundations of user experience (ux) design" style="--d:280ms" aria-haspopup="dialog">
+            <div class="gc-top"><span class="gc-badge">UX</span><span class="gc-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+            <h3 class="gc-title">Google UX Design</h3>
+            <span class="gc-sub">Google · Coursera</span>
+            <span class="gc-count">1 sertifikat</span>
+          </button>
+          <button type="button" class="group-card spot pop" data-group="python-ds" data-text="python untuk data science &amp; ai ibm · coursera python for data science, ai &amp; development" style="--d:350ms" aria-haspopup="dialog">
+            <div class="gc-top"><span class="gc-badge">PY</span><span class="gc-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+            <h3 class="gc-title">Python untuk Data Science &amp; AI</h3>
+            <span class="gc-sub">IBM · Coursera</span>
+            <span class="gc-count">1 sertifikat</span>
+          </button>
+          <button type="button" class="group-card spot pop" data-group="enterprise" data-text="arsitektur &amp; sistem enterprise educba · university of minnesota · coursera togaf 10 foundation enterprise systems" style="--d:420ms" aria-haspopup="dialog">
+            <div class="gc-top"><span class="gc-badge">EA</span><span class="gc-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+            <h3 class="gc-title">Arsitektur &amp; Sistem Enterprise</h3>
+            <span class="gc-sub">EDUCBA · University of Minnesota · Coursera</span>
+            <span class="gc-count">2 sertifikat</span>
+          </button>
+        <p class="no-result" hidden>Tidak ada sertifikasi yang cocok.</p>
       </div>
     </section>
 
     <section class="ed-section" id="pengalaman">
-      <div class="ed-section-head">
-        <h2>Pengalaman Praktis</h2>
-        <span>Industri & Kreatif</span>
-      </div>
-      <article class="ed-exp-card">
-        <div class="ed-exp-header">
-          <h3>Perancang Desain Produk, Kemasan & Antarmuka Web · PT. LAMI Coffee</h3>
-          <span class="ed-exp-period">2025</span>
-        </div>
-        <p style="color:var(--ink-muted); font-size:0.95rem; line-height:1.6;">Merancang identitas visual merek, kemasan produk kopi komersial bersertifikasi halal, label nutrisi, serta perancangan tata letak antarmuka situs promosi dan katalog digital produk untuk mendukung kanal distribusi ritel.</p>
+      <div class="ed-section-head"><h2>Pengalaman Praktis</h2><span>Industri &amp; Kreatif</span></div>
+      <article class="ed-exp-card spot reveal">
+        <div class="ed-exp-header"><h3>Perancang Desain Produk, Kemasan &amp; Antarmuka Web · PT. LAMI Coffee</h3><span class="ed-exp-period">2025</span></div>
+        <p>Merancang identitas visual merek, kemasan produk kopi komersial bersertifikasi halal, label nutrisi, serta perancangan tata letak antarmuka situs promosi dan katalog digital produk untuk mendukung kanal distribusi ritel.</p>
       </article>
     </section>
 
@@ -1067,95 +356,17 @@
       <div>Audrey Nabilla Laksono</div>
       <div>S1 Sistem Informasi · Universitas Dian Nuswantoro (UDINUS) Semarang</div>
     </footer>
-  </div>
-  
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Project category filtering
-  const filterBtns = document.querySelectorAll('.cat-btn');
-  const projectCards = document.querySelectorAll('.project-item');
-  
-  if (filterBtns.length > 0) {
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const cat = btn.getAttribute('data-cat');
-        
-        projectCards.forEach(card => {
-          if (cat === 'all' || card.getAttribute('data-cat') === cat) {
-            card.style.display = '';
-          } else {
-            card.style.display = 'none';
-          }
-        });
-      });
-    });
-  }
+  </main>
 
-  // Credential search & category filter
-  const credSearch = document.getElementById('cred-search');
-  const credRows = document.querySelectorAll('.cred-item');
-  const credBtns = document.querySelectorAll('.cred-btn');
+  <dialog class="cert-dlg" id="cert-dlg" aria-labelledby="dlg-title">
+    <div class="dlg-head">
+      <div><div class="dlg-kicker"></div><h3 class="dlg-title" id="dlg-title"></h3><div class="dlg-sub"></div></div>
+      <button type="button" class="dlg-close" aria-label="Tutup"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18L18 6M6 6l12 12"/></svg></button>
+    </div>
+    <ul class="dlg-list"></ul>
+  </dialog>
+  <template id="tpl-cisa"><li class="ci" style="--i:0"><span class="ci-idx">01</span><div class="ci-main"><strong>Governance and Management of IT</strong><span>Packt · Coursera · 14 Okt 2026</span></div><a class="verify" href="https://coursera.org/verify/R0WJRU6VRCKS" target="_blank" rel="noopener noreferrer" aria-label="Verifikasi Governance and Management of IT di Coursera"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verifikasi · R0WJRU6VRCKS</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li class="ci" style="--i:1"><span class="ci-idx">02</span><div class="ci-main"><strong>Information Systems Auditing and Governance</strong><span>Packt · Coursera · 14 Okt 2026</span></div><a class="verify" href="https://coursera.org/verify/T92EH32V03CS" target="_blank" rel="noopener noreferrer" aria-label="Verifikasi Information Systems Auditing and Governance di Coursera"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verifikasi · T92EH32V03CS</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li class="ci" style="--i:2"><span class="ci-idx">03</span><div class="ci-main"><strong>Systems Acquisition, Development and Implementation</strong><span>Packt · Coursera · 16 Okt 2026</span></div><a class="verify" href="https://coursera.org/verify/C72TDKTWOYHY" target="_blank" rel="noopener noreferrer" aria-label="Verifikasi Systems Acquisition, Development and Implementation di Coursera"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verifikasi · C72TDKTWOYHY</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li class="ci" style="--i:3"><span class="ci-idx">04</span><div class="ci-main"><strong>Information Systems Operations and Business Resiliency</strong><span>Packt · Coursera · 16 Okt 2026</span></div><a class="verify" href="https://coursera.org/verify/951XAIXFH40E" target="_blank" rel="noopener noreferrer" aria-label="Verifikasi Information Systems Operations and Business Resiliency di Coursera"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verifikasi · 951XAIXFH40E</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li class="ci" style="--i:4"><span class="ci-idx">05</span><div class="ci-main"><strong>Protection of Information Assets</strong><span>Packt · Coursera · 18 Okt 2026</span></div><a class="verify" href="https://coursera.org/verify/NVAZ4BOB517K" target="_blank" rel="noopener noreferrer" aria-label="Verifikasi Protection of Information Assets di Coursera"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verifikasi · NVAZ4BOB517K</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li class="ci spec" style="--i:5"><span class="ci-idx">06</span><div class="ci-main"><strong>CISA: Certified Information Systems Auditor (Specialization)<span class="ci-badge">SPESIALISASI</span></strong><span>Packt · Coursera · 18 Okt 2026</span></div><a class="verify" href="https://coursera.org/verify/specialization/JSNZDAE1VIHX" target="_blank" rel="noopener noreferrer" aria-label="Verifikasi CISA: Certified Information Systems Auditor (Specialization) di Coursera"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verifikasi · JSNZDAE1VIHX</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li></template><template id="tpl-cissp"><li class="ci" style="--i:0"><span class="ci-idx">01</span><div class="ci-main"><strong>CISSP Domain 1: Security and Risk Management</strong><span>Infosec · Coursera · 7 Okt 2026</span></div><a class="verify" href="https://coursera.org/verify/04K5WNWUJA4B" target="_blank" rel="noopener noreferrer" aria-label="Verifikasi CISSP Domain 1: Security and Risk Management di Coursera"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verifikasi · 04K5WNWUJA4B</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li class="ci" style="--i:1"><span class="ci-idx">02</span><div class="ci-main"><strong>CISSP Domain 2: Asset Security</strong><span>Infosec · Coursera · 8 Okt 2026</span></div><a class="verify" href="https://coursera.org/verify/0XA077W2N4QD" target="_blank" rel="noopener noreferrer" aria-label="Verifikasi CISSP Domain 2: Asset Security di Coursera"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verifikasi · 0XA077W2N4QD</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li class="ci" style="--i:2"><span class="ci-idx">03</span><div class="ci-main"><strong>CISSP Domain 3: Security Architecture and Engineering</strong><span>Infosec · Coursera · 11 Okt 2026</span></div><a class="verify" href="https://coursera.org/verify/414I9NOCCBOW" target="_blank" rel="noopener noreferrer" aria-label="Verifikasi CISSP Domain 3: Security Architecture and Engineering di Coursera"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verifikasi · 414I9NOCCBOW</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li class="ci" style="--i:3"><span class="ci-idx">04</span><div class="ci-main"><strong>CISSP Domain 4: Communication and Network Security</strong><span>Infosec · Coursera · 12 Okt 2026</span></div><a class="verify" href="https://coursera.org/verify/XAZTWDZ42N4A" target="_blank" rel="noopener noreferrer" aria-label="Verifikasi CISSP Domain 4: Communication and Network Security di Coursera"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verifikasi · XAZTWDZ42N4A</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li class="ci" style="--i:4"><span class="ci-idx">05</span><div class="ci-main"><strong>CISSP Domain 5: Identity and Access Management (IAM)</strong><span>Infosec · Coursera · 12 Okt 2026</span></div><a class="verify" href="https://coursera.org/verify/GL2F0KE2SLAU" target="_blank" rel="noopener noreferrer" aria-label="Verifikasi CISSP Domain 5: Identity and Access Management (IAM) di Coursera"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verifikasi · GL2F0KE2SLAU</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li class="ci" style="--i:5"><span class="ci-idx">06</span><div class="ci-main"><strong>CISSP Domain 6: Security Assessment and Testing</strong><span>Infosec · Coursera · 12 Okt 2026</span></div><a class="verify" href="https://coursera.org/verify/OHT94P7FFJ7R" target="_blank" rel="noopener noreferrer" aria-label="Verifikasi CISSP Domain 6: Security Assessment and Testing di Coursera"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verifikasi · OHT94P7FFJ7R</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li class="ci" style="--i:6"><span class="ci-idx">07</span><div class="ci-main"><strong>CISSP Domain 7: Security Operations</strong><span>Infosec · Coursera · 12 Okt 2026</span></div><a class="verify" href="https://coursera.org/verify/0F7B9HCA89LE" target="_blank" rel="noopener noreferrer" aria-label="Verifikasi CISSP Domain 7: Security Operations di Coursera"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verifikasi · 0F7B9HCA89LE</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li class="ci" style="--i:7"><span class="ci-idx">08</span><div class="ci-main"><strong>CISSP Domain 8: Software Development Security</strong><span>Infosec · Coursera · 12 Okt 2026</span></div><a class="verify" href="https://coursera.org/verify/4UCPNY5LGYH0" target="_blank" rel="noopener noreferrer" aria-label="Verifikasi CISSP Domain 8: Software Development Security di Coursera"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verifikasi · 4UCPNY5LGYH0</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li class="ci spec" style="--i:8"><span class="ci-idx">09</span><div class="ci-main"><strong>Certified Information Systems Security Professional — CISSP (Specialization)<span class="ci-badge">SPESIALISASI</span></strong><span>Infosec · Coursera · 12 Okt 2026</span></div><a class="verify" href="https://coursera.org/verify/specialization/Y5ZOIG62VTDR" target="_blank" rel="noopener noreferrer" aria-label="Verifikasi Certified Information Systems Security Professional — CISSP (Specialization) di Coursera"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verifikasi · Y5ZOIG62VTDR</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li></template><template id="tpl-data-mining"><li class="ci" style="--i:0"><span class="ci-idx">01</span><div class="ci-main"><strong>Data Visualization</strong><span>University of Illinois Urbana-Champaign · 28 Sep 2026</span></div><a class="verify" href="https://coursera.org/verify/JJK032VTQSS4" target="_blank" rel="noopener noreferrer" aria-label="Verifikasi Data Visualization di Coursera"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verifikasi · JJK032VTQSS4</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li class="ci" style="--i:1"><span class="ci-idx">02</span><div class="ci-main"><strong>Pattern Discovery in Data Mining</strong><span>University of Illinois Urbana-Champaign · 29 Sep 2026</span></div><a class="verify" href="https://coursera.org/verify/HIR3HZRRM6HK" target="_blank" rel="noopener noreferrer" aria-label="Verifikasi Pattern Discovery in Data Mining di Coursera"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verifikasi · HIR3HZRRM6HK</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li class="ci" style="--i:2"><span class="ci-idx">03</span><div class="ci-main"><strong>Cluster Analysis in Data Mining</strong><span>University of Illinois Urbana-Champaign · 7 Okt 2026</span></div><a class="verify" href="https://coursera.org/verify/H58AP4Y2UNFC" target="_blank" rel="noopener noreferrer" aria-label="Verifikasi Cluster Analysis in Data Mining di Coursera"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verifikasi · H58AP4Y2UNFC</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li></template><template id="tpl-data-integration"><li class="ci" style="--i:0"><span class="ci-idx">01</span><div class="ci-main"><strong>Data Integration, Data Storage, &amp; Data Migration</strong><span>SkillUp · Coursera · 12 Apr 2026</span></div><a class="verify" href="https://coursera.org/verify/MI8X78N3INB9" target="_blank" rel="noopener noreferrer" aria-label="Verifikasi Data Integration, Data Storage, &amp; Data Migration di Coursera"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verifikasi · MI8X78N3INB9</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li></template><template id="tpl-google-ux"><li class="ci" style="--i:0"><span class="ci-idx">01</span><div class="ci-main"><strong>Foundations of User Experience (UX) Design</strong><span>Google · Coursera · 14 Mei 2026</span></div><a class="verify" href="https://coursera.org/verify/2FUG2N7AUUF9" target="_blank" rel="noopener noreferrer" aria-label="Verifikasi Foundations of User Experience (UX) Design di Coursera"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verifikasi · 2FUG2N7AUUF9</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li></template><template id="tpl-python-ds"><li class="ci" style="--i:0"><span class="ci-idx">01</span><div class="ci-main"><strong>Python for Data Science, AI &amp; Development</strong><span>IBM · Coursera · 21 Okt 2026</span></div><a class="verify" href="https://coursera.org/verify/6ONP0GNPNJ6J" target="_blank" rel="noopener noreferrer" aria-label="Verifikasi Python for Data Science, AI &amp; Development di Coursera"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 8L7.2 9.7L10.5 6.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Verifikasi · 6ONP0GNPNJ6J</span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H6M11.5 4.5V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li></template><template id="tpl-enterprise"><li class="ci" style="--i:0"><span class="ci-idx">01</span><div class="ci-main"><strong>TOGAF 10 Foundation</strong><span>EDUCBA · Coursera · Apr 2026</span></div><span class="no-link">Tautan verifikasi belum tersedia</span></li><li class="ci" style="--i:1"><span class="ci-idx">02</span><div class="ci-main"><strong>Enterprise Systems</strong><span>University of Minnesota · Coursera · Apr 2026</span></div><span class="no-link">Tautan verifikasi belum tersedia</span></li></template>
 
-  function filterCreds() {
-    const q = (credSearch ? credSearch.value.toLowerCase() : '');
-    const activeBtn = document.querySelector('.cred-btn.active');
-    const cat = activeBtn ? activeBtn.getAttribute('data-group') : 'all';
-
-    credRows.forEach(row => {
-      const text = row.textContent.toLowerCase();
-      const matchQ = text.includes(q);
-      const matchCat = (cat === 'all' || row.getAttribute('data-group') === cat);
-      if (matchQ && matchCat) {
-        row.style.display = '';
-      } else {
-        row.style.display = 'none';
-      }
-    });
-  }
-
-  if (credSearch) {
-    credSearch.addEventListener('input', filterCreds);
-  }
-
-  if (credBtns.length > 0) {
-    credBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        credBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        filterCreds();
-      });
-    });
-  }
-});
-</script>
-
-<script>
-// theme: sakura-cream (fixed)
-(function(){
-  var tabs = document.querySelectorAll('.reg-tab-btn');
-  var rows = document.querySelectorAll('.cred-row');
-  var search = document.getElementById('cred-search');
-  function filter(){
-    var activeTab = document.querySelector('.reg-tab-btn.is-selected');
-    var group = activeTab ? activeTab.getAttribute('data-cred-group') : 'all';
-    var q = search ? search.value.toLowerCase().trim() : '';
-    rows.forEach(function(row){
-      var ok = (group === 'all' || row.getAttribute('data-cred-cat') === group)
-               && (q === '' || row.textContent.toLowerCase().includes(q));
-      row.style.display = ok ? '' : 'none';
-    });
-  }
-  tabs.forEach(function(tab){
-    tab.addEventListener('click', function(){
-      tabs.forEach(function(t){ t.classList.remove('is-selected'); });
-      tab.classList.add('is-selected');
-      filter();
-    });
-  });
-  if(search) search.addEventListener('input', filter);
-})();
-</script>
+  <script src="site.js?v=1"></script>
 </body>
 </html>

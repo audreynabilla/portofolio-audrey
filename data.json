@@ -81,7 +81,8 @@
         "Multi-Role Auth"
       ],
       "github": "https://github.com/audreynabilla/UAS-kelompok-7",
-      "demo": null
+      "demo": null,
+      "short": "Aplikasi web reservasi grooming hewan peliharaan dengan dua peran: pelanggan dan administrator."
     },
     {
       "id": "pwl-crud",
@@ -99,7 +100,8 @@
         "Bcrypt Hashing"
       ],
       "github": "https://github.com/audreynabilla/pwl-crud-07171",
-      "demo": "https://youtu.be/afBZMuH899g"
+      "demo": "https://youtu.be/afBZMuH899g",
+      "short": "Sistem inventaris berarsitektur MVC dengan layanan RESTful JSON API dan keamanan berlapis."
     },
     {
       "id": "djuara-coffee",
@@ -117,7 +119,8 @@
         "ERD & Sequence Modeling"
       ],
       "github": null,
-      "demo": null
+      "demo": null,
+      "short": "Sistem CRM dan kasir untuk jaringan kedai kopi 4 cabang dengan poin loyalitas otomatis."
     },
     {
       "id": "penjualan-multimodul",
@@ -134,7 +137,8 @@
         "Bootstrap 5 Components"
       ],
       "github": null,
-      "demo": null
+      "demo": null,
+      "short": "Aplikasi web ritel dengan 4 modul CRUD: penjualan, supplier, pegawai, dan kategori."
     },
     {
       "id": "pt-alkes",
@@ -151,7 +155,8 @@
         "Data Flow Diagram (DFD)"
       ],
       "github": null,
-      "demo": null
+      "demo": null,
+      "short": "Analisis dan perancangan sistem jual beli alat kesehatan memakai BPMN 2.0 dan UML."
     },
     {
       "id": "dpm-km-joins",
@@ -169,7 +174,8 @@
         "IBM SPSS Statistics"
       ],
       "github": null,
-      "demo": null
+      "demo": null,
+      "short": "Redesain UI/UX situs DPM-KM UDINUS dengan metode UCD dan skor SUS 78.9."
     },
     {
       "id": "itil-audit",
@@ -187,7 +193,8 @@
         "RFC Workflow"
       ],
       "github": null,
-      "demo": null
+      "demo": null,
+      "short": "Perancangan layanan TI berbasis ITIL v4 untuk PDAM Tirta Moedal dan simulasi ERP Odoo."
     },
     {
       "id": "renstra-iot",
@@ -205,162 +212,8 @@
         "Analisis Value Chain Porter"
       ],
       "github": null,
-      "demo": null
-    }
-  ],
-  "credentials": [
-    {
-      "id": 1,
-      "title": "Data Integration, Data Storage, & Data Migration",
-      "issuer": "SkillUp · Coursera",
-      "domain": "Arsitektur & Integrasi Data",
-      "date": "April 2026",
-      "code": "MI8X78N3INB9",
-      "url": "https://coursera.org/verify/MI8X78N3INB9"
-    },
-    {
-      "id": 2,
-      "title": "Foundations of User Experience (UX) Design",
-      "issuer": "Google · Coursera",
-      "domain": "Riset & Desain UI/UX",
-      "date": "Mei 2026",
-      "code": null,
-      "url": null
-    },
-    {
-      "id": 3,
-      "title": "Cluster Analysis in Data Mining",
-      "issuer": "University of Illinois Urbana-Champaign",
-      "domain": "Penambangan Data",
-      "date": "Oktober 2026",
-      "code": null,
-      "url": null
-    },
-    {
-      "id": 4,
-      "title": "Pattern Discovery in Data Mining",
-      "issuer": "University of Illinois Urbana-Champaign",
-      "domain": "Penambangan Data",
-      "date": "September 2026",
-      "code": null,
-      "url": null
-    },
-    {
-      "id": 5,
-      "title": "Data Visualization",
-      "issuer": "University of Illinois Urbana-Champaign",
-      "domain": "Visualisasi & Analitika",
-      "date": "September 2026",
-      "code": null,
-      "url": null
-    },
-    {
-      "id": 6,
-      "title": "Governance and Management of IT",
-      "issuer": "Packt · Coursera",
-      "domain": "Tata Kelola TI",
-      "date": "Oktober 2026",
-      "code": null,
-      "url": null
-    },
-    {
-      "id": 7,
-      "title": "Information Systems Auditing and Governance",
-      "issuer": "Packt · Coursera",
-      "domain": "Audit Sistem Informasi",
-      "date": "Oktober 2026",
-      "code": null,
-      "url": null
-    },
-    {
-      "id": 8,
-      "title": "TOGAF 10 Foundation",
-      "issuer": "EDUCBA · Coursera",
-      "domain": "Arsitektur Enterprise",
-      "date": "April 2026",
-      "code": null,
-      "url": null
-    },
-    {
-      "id": 9,
-      "title": "Enterprise Systems",
-      "issuer": "University of Minnesota · Coursera",
-      "domain": "Sistem Enterprise (ERP)",
-      "date": "April 2026",
-      "code": null,
-      "url": null
-    },
-    {
-      "id": 10,
-      "title": "CISSP Domain 1: Security and Risk Management",
-      "issuer": "Infosec · Coursera",
-      "domain": "Keamanan & Risiko SI",
-      "date": "Oktober 2026",
-      "code": null,
-      "url": null
-    },
-    {
-      "id": 11,
-      "title": "CISSP Domain 2: Asset Security",
-      "issuer": "Infosec · Coursera",
-      "domain": "Keamanan Aset Data",
-      "date": "Oktober 2026",
-      "code": null,
-      "url": null
-    },
-    {
-      "id": 12,
-      "title": "CISSP Domain 3: Security Architecture and Engineering",
-      "issuer": "Infosec · Coursera",
-      "domain": "Arsitektur Keamanan",
-      "date": "Oktober 2026",
-      "code": null,
-      "url": null
-    },
-    {
-      "id": 13,
-      "title": "CISSP Domain 4: Communication and Network Security",
-      "issuer": "Infosec · Coursera",
-      "domain": "Keamanan Jaringan",
-      "date": "Oktober 2026",
-      "code": null,
-      "url": null
-    },
-    {
-      "id": 14,
-      "title": "CISSP Domain 5: Identity and Access Management (IAM)",
-      "issuer": "Infosec · Coursera",
-      "domain": "Manajemen Identitas (IAM)",
-      "date": "Oktober 2026",
-      "code": null,
-      "url": null
-    },
-    {
-      "id": 15,
-      "title": "CISSP Domain 6: Security Assessment and Testing",
-      "issuer": "Infosec · Coursera",
-      "domain": "Pengujian Keamanan",
-      "date": "Oktober 2026",
-      "code": null,
-      "url": null
-    },
-    {
-      "id": 16,
-      "title": "CISSP Domain 7: Security Operations",
-      "issuer": "Infosec · Coursera",
-      "domain": "Operasional Keamanan",
-      "date": "Oktober 2026",
-      "code": null,
-      "url": null
-    },
-    {
-      "id": 17,
-      "title": "CISSP Domain 8: Software Development Security",
-      "issuer": "Infosec · Coursera",
-      "domain": "Keamanan Perangkat Lunak",
-      "date": "Oktober 2026",
-      "code": null,
-      "url": null
+      "demo": null,
+      "short": "Blueprint perencanaan strategis SI e-commerce dan konsep digitalisasi Posyandu berbasis IoT."
     }
   ],
   "experience": {
@@ -368,5 +221,254 @@
     "company": "PT. LAMI Coffee",
     "period": "2025",
     "desc": "Merancang identitas visual merek, kemasan produk kopi komersial bersertifikasi halal, label nutrisi, serta perancangan tata letak antarmuka situs promosi dan katalog digital produk untuk mendukung kanal distribusi ritel."
-  }
+  },
+  "certificate_groups": [
+    {
+      "id": "cisa",
+      "badge": "CISA",
+      "title": "CISA — Audit Sistem Informasi",
+      "sub": "Packt · Coursera",
+      "folder": "CISA",
+      "items": [
+        {
+          "title": "Governance and Management of IT",
+          "issuer": "Packt · Coursera",
+          "date": "14 Okt 2026",
+          "code": "R0WJRU6VRCKS",
+          "url": "https://coursera.org/verify/R0WJRU6VRCKS",
+          "specialization": false
+        },
+        {
+          "title": "Information Systems Auditing and Governance",
+          "issuer": "Packt · Coursera",
+          "date": "14 Okt 2026",
+          "code": "T92EH32V03CS",
+          "url": "https://coursera.org/verify/T92EH32V03CS",
+          "specialization": false
+        },
+        {
+          "title": "Systems Acquisition, Development and Implementation",
+          "issuer": "Packt · Coursera",
+          "date": "16 Okt 2026",
+          "code": "C72TDKTWOYHY",
+          "url": "https://coursera.org/verify/C72TDKTWOYHY",
+          "specialization": false
+        },
+        {
+          "title": "Information Systems Operations and Business Resiliency",
+          "issuer": "Packt · Coursera",
+          "date": "16 Okt 2026",
+          "code": "951XAIXFH40E",
+          "url": "https://coursera.org/verify/951XAIXFH40E",
+          "specialization": false
+        },
+        {
+          "title": "Protection of Information Assets",
+          "issuer": "Packt · Coursera",
+          "date": "18 Okt 2026",
+          "code": "NVAZ4BOB517K",
+          "url": "https://coursera.org/verify/NVAZ4BOB517K",
+          "specialization": false
+        },
+        {
+          "title": "CISA: Certified Information Systems Auditor (Specialization)",
+          "issuer": "Packt · Coursera",
+          "date": "18 Okt 2026",
+          "code": "JSNZDAE1VIHX",
+          "url": "https://coursera.org/verify/specialization/JSNZDAE1VIHX",
+          "specialization": true
+        }
+      ]
+    },
+    {
+      "id": "cissp",
+      "badge": "CISSP",
+      "title": "CISSP — Keamanan Informasi",
+      "sub": "Infosec · Coursera",
+      "folder": "CISSP",
+      "items": [
+        {
+          "title": "CISSP Domain 1: Security and Risk Management",
+          "issuer": "Infosec · Coursera",
+          "date": "7 Okt 2026",
+          "code": "04K5WNWUJA4B",
+          "url": "https://coursera.org/verify/04K5WNWUJA4B",
+          "specialization": false
+        },
+        {
+          "title": "CISSP Domain 2: Asset Security",
+          "issuer": "Infosec · Coursera",
+          "date": "8 Okt 2026",
+          "code": "0XA077W2N4QD",
+          "url": "https://coursera.org/verify/0XA077W2N4QD",
+          "specialization": false
+        },
+        {
+          "title": "CISSP Domain 3: Security Architecture and Engineering",
+          "issuer": "Infosec · Coursera",
+          "date": "11 Okt 2026",
+          "code": "414I9NOCCBOW",
+          "url": "https://coursera.org/verify/414I9NOCCBOW",
+          "specialization": false
+        },
+        {
+          "title": "CISSP Domain 4: Communication and Network Security",
+          "issuer": "Infosec · Coursera",
+          "date": "12 Okt 2026",
+          "code": "XAZTWDZ42N4A",
+          "url": "https://coursera.org/verify/XAZTWDZ42N4A",
+          "specialization": false
+        },
+        {
+          "title": "CISSP Domain 5: Identity and Access Management (IAM)",
+          "issuer": "Infosec · Coursera",
+          "date": "12 Okt 2026",
+          "code": "GL2F0KE2SLAU",
+          "url": "https://coursera.org/verify/GL2F0KE2SLAU",
+          "specialization": false
+        },
+        {
+          "title": "CISSP Domain 6: Security Assessment and Testing",
+          "issuer": "Infosec · Coursera",
+          "date": "12 Okt 2026",
+          "code": "OHT94P7FFJ7R",
+          "url": "https://coursera.org/verify/OHT94P7FFJ7R",
+          "specialization": false
+        },
+        {
+          "title": "CISSP Domain 7: Security Operations",
+          "issuer": "Infosec · Coursera",
+          "date": "12 Okt 2026",
+          "code": "0F7B9HCA89LE",
+          "url": "https://coursera.org/verify/0F7B9HCA89LE",
+          "specialization": false
+        },
+        {
+          "title": "CISSP Domain 8: Software Development Security",
+          "issuer": "Infosec · Coursera",
+          "date": "12 Okt 2026",
+          "code": "4UCPNY5LGYH0",
+          "url": "https://coursera.org/verify/4UCPNY5LGYH0",
+          "specialization": false
+        },
+        {
+          "title": "Certified Information Systems Security Professional — CISSP (Specialization)",
+          "issuer": "Infosec · Coursera",
+          "date": "12 Okt 2026",
+          "code": "Y5ZOIG62VTDR",
+          "url": "https://coursera.org/verify/specialization/Y5ZOIG62VTDR",
+          "specialization": true
+        }
+      ]
+    },
+    {
+      "id": "data-mining",
+      "badge": "DM",
+      "title": "Data Mining",
+      "sub": "University of Illinois Urbana-Champaign · Coursera",
+      "folder": "Data Mining",
+      "items": [
+        {
+          "title": "Data Visualization",
+          "issuer": "University of Illinois Urbana-Champaign",
+          "date": "28 Sep 2026",
+          "code": "JJK032VTQSS4",
+          "url": "https://coursera.org/verify/JJK032VTQSS4",
+          "specialization": false
+        },
+        {
+          "title": "Pattern Discovery in Data Mining",
+          "issuer": "University of Illinois Urbana-Champaign",
+          "date": "29 Sep 2026",
+          "code": "HIR3HZRRM6HK",
+          "url": "https://coursera.org/verify/HIR3HZRRM6HK",
+          "specialization": false
+        },
+        {
+          "title": "Cluster Analysis in Data Mining",
+          "issuer": "University of Illinois Urbana-Champaign",
+          "date": "7 Okt 2026",
+          "code": "H58AP4Y2UNFC",
+          "url": "https://coursera.org/verify/H58AP4Y2UNFC",
+          "specialization": false
+        }
+      ]
+    },
+    {
+      "id": "data-integration",
+      "badge": "DB",
+      "title": "Data Integration, Data Storage & Data Migration",
+      "sub": "SkillUp · Coursera",
+      "folder": "Data Integration, Data Storage, & Data Migration",
+      "items": [
+        {
+          "title": "Data Integration, Data Storage, & Data Migration",
+          "issuer": "SkillUp · Coursera",
+          "date": "12 Apr 2026",
+          "code": "MI8X78N3INB9",
+          "url": "https://coursera.org/verify/MI8X78N3INB9",
+          "specialization": false
+        }
+      ]
+    },
+    {
+      "id": "google-ux",
+      "badge": "UX",
+      "title": "Google UX Design",
+      "sub": "Google · Coursera",
+      "folder": "Google UX",
+      "items": [
+        {
+          "title": "Foundations of User Experience (UX) Design",
+          "issuer": "Google · Coursera",
+          "date": "14 Mei 2026",
+          "code": "2FUG2N7AUUF9",
+          "url": "https://coursera.org/verify/2FUG2N7AUUF9",
+          "specialization": false
+        }
+      ]
+    },
+    {
+      "id": "python-ds",
+      "badge": "PY",
+      "title": "Python untuk Data Science & AI",
+      "sub": "IBM · Coursera",
+      "folder": "(folder utama)",
+      "items": [
+        {
+          "title": "Python for Data Science, AI & Development",
+          "issuer": "IBM · Coursera",
+          "date": "21 Okt 2026",
+          "code": "6ONP0GNPNJ6J",
+          "url": "https://coursera.org/verify/6ONP0GNPNJ6J",
+          "specialization": false
+        }
+      ]
+    },
+    {
+      "id": "enterprise",
+      "badge": "EA",
+      "title": "Arsitektur & Sistem Enterprise",
+      "sub": "EDUCBA · University of Minnesota · Coursera",
+      "folder": "(belum ada file)",
+      "items": [
+        {
+          "title": "TOGAF 10 Foundation",
+          "issuer": "EDUCBA · Coursera",
+          "date": "Apr 2026",
+          "code": null,
+          "url": null,
+          "specialization": false
+        },
+        {
+          "title": "Enterprise Systems",
+          "issuer": "University of Minnesota · Coursera",
+          "date": "Apr 2026",
+          "code": null,
+          "url": null,
+          "specialization": false
+        }
+      ]
+    }
+  ]
 }
