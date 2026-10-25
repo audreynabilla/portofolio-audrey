@@ -470,5 +470,27 @@
         }
       ]
     }
+  ],
+  "contacts": [
+    {
+      "label": "GitHub",
+      "value": "github.com/audreynabilla",
+      "url": "https://github.com/audreynabilla"
+    },
+    {
+      "label": "Email",
+      "value": "audreynabilla06@gmail.com",
+      "url": "mailto:audreynabilla06@gmail.com"
+    },
+    {
+      "label": "Telepon",
+      "value": "081226749514",
+      "url": "tel:+6281226749514"
+    },
+    {
+      "label": "Instagram",
+      "value": "@audrey.nabilla",
+      "url": "https://instagram.com/audrey.nabilla"
+    }
   ]
 }

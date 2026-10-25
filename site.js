@@ -4,14 +4,11 @@
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------- Header: bayangan saat scroll + progress bar ---------- */
+  /* ---------- Header: bayangan saat scroll ---------- */
   var header = $('.site-header');
-  var bar = $('.progress');
   function onScroll() {
     var y = window.scrollY || 0;
-    var max = document.documentElement.scrollHeight - window.innerHeight;
     header.classList.toggle('scrolled', y > 8);
-    bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(y / max, 1) : 0) + ')';
   }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();

@@ -40,13 +40,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 
 .container { max-width: 1000px; margin: 0 auto; padding: 0 1.5rem; }
 
-/* ===== Progress bar ===== */
-.progress {
-  position: fixed; top: 0; left: 0; right: 0; height: 2px; z-index: 60;
-  background: var(--accent); transform-origin: 0 50%; transform: scaleX(0);
-  pointer-events: none;
-}
-
 /* ===== Header / Navbar ===== */
 .site-header {
   position: sticky; top: 0; z-index: 50;
@@ -190,16 +183,11 @@ section.ed-section { margin-bottom: 5rem; }
 .ed-pillar-card {
   display: grid; grid-template-columns: 56px 1fr; gap: 1.25rem; padding: 1.75rem 0.5rem;
   border-bottom: 1px solid var(--border); position: relative;
-  transition: padding-left 0.5s var(--ease), background 0.4s;
 }
-.ed-pillar-num { font-family: var(--font-serif); font-size: 1.6rem; font-style: italic; color: var(--accent); transition: transform 0.5s var(--ease); }
+.ed-pillar-num { font-family: var(--font-serif); font-size: 1.6rem; font-style: italic; color: var(--accent); }
 .ed-pillar-content h3 { font-family: var(--font-serif); font-size: 1.35rem; margin: 0.25rem 0 0.5rem; }
 .ed-pillar-content p { color: var(--ink-muted); margin-bottom: 0.9rem; font-size: 0.98rem; }
 .ed-sub { font-family: var(--font-mono); font-size: 0.76rem; color: var(--ink-light); text-transform: uppercase; letter-spacing: 0.05em; }
-@media (hover: hover) {
-  .ed-pillar-card:hover { padding-left: 1.25rem; background: linear-gradient(90deg, var(--accent-soft), transparent 70%); }
-  .ed-pillar-card:hover .ed-pillar-num { transform: scale(1.2) translateX(4px); }
-}
 
 /* ===== Tags ===== */
 .ed-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
@@ -211,6 +199,9 @@ section.ed-section { margin-bottom: 5rem; }
 }
 .ed-tag.more { background: var(--accent-soft); border-color: var(--accent-border); color: var(--accent); }
 @media (hover: hover) { .ed-tag:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); } }
+
+/* tag di pilar tidak punya efek hover */
+.ed-pillar-card .ed-tag:hover { border-color: var(--border); color: var(--ink-muted); transform: none; }
 
 /* ===== Spotlight (cursor glow) ===== */
 .spot { position: relative; isolation: isolate; }
@@ -389,6 +380,20 @@ dialog.cert-dlg.closing::backdrop { animation: fade 0.22s ease reverse forwards;
 .ed-exp-period { font-family: var(--font-mono); font-size: 0.82rem; color: var(--accent); font-weight: 700; }
 .ed-exp-card p { color: var(--ink-muted); font-size: 0.95rem; line-height: 1.7; }
 
+/* ===== Kontak ===== */
+.contact-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.contact-card {
+  position: relative; display: flex; flex-direction: column; gap: 0.2rem; min-height: 96px; padding: 1.25rem 3.5rem 1.25rem 1.4rem;
+  background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; color: var(--ink);
+  transition: border-color 0.35s, box-shadow 0.5s var(--ease), transform 0.5s var(--ease);
+}
+.cc-label { font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; }
+.cc-value { font-family: var(--font-serif); font-size: 1.2rem; font-weight: 600; word-break: break-word; }
+.cc-arrow { position: absolute; top: 50%; right: 1.25rem; width: 34px; height: 34px; margin-top: -17px; border-radius: 50%; border: 1px solid var(--border-dark); display: grid; place-items: center; color: var(--ink-muted); transition: background 0.3s, color 0.3s, border-color 0.3s, transform 0.4s var(--ease); }
+.cc-arrow svg { width: 14px; height: 14px; }
+@media (hover: hover) { .contact-card:hover { border-color: var(--accent); box-shadow: 0 18px 36px -24px rgba(217, 70, 122, 0.5); transform: translateY(-3px); } .contact-card:hover .cc-arrow { background: var(--accent); color: #fff; border-color: var(--accent); transform: rotate(45deg); } }
+.contact-card:active { transform: scale(0.985); }
+
 /* ===== Footer ===== */
 footer.ed-footer {
   margin-top: 5rem; padding: 2rem 0 calc(2.5rem + env(safe-area-inset-bottom)); border-top: 1px solid var(--border-dark);
@@ -418,7 +423,7 @@ footer.ed-footer {
   .registry-banner { padding: 1.15rem; }
   .registry-stats-box { justify-content: flex-start; }
   .reg-search-input { width: 100%; min-width: 0; }
-  .group-grid { grid-template-columns: 1fr; }
+  .group-grid, .contact-grid { grid-template-columns: 1fr; }
   .group-card { min-height: 0; padding: 1.15rem; }
   .ed-exp-card { padding: 1.25rem; }
   footer.ed-footer { flex-direction: column; align-items: flex-start; }
